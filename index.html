@@ -8,11 +8,14 @@
 </head>
 <body>
     <header>
-        <a href="twitter.com.ar"><img src="" alt="twitter"></a>
-        <a href="instagram.com.ar"><img src="" alt="instagram"></a>
-        <a href="facebook.com.ar"><img src="" alt="facebook"></a>
-        <button>ARS <img src="" alt="flecha"></button>
-        <div></div>
+        <div class="barraHeader">
+            <div class="iconHeader">
+                <a href="twitter.com.ar"><img src="assets/img/x.png" alt="twitter"></a>
+                <a href="instagram.com.ar"><img src="assets/img/instagram.png" alt="instagram"></a>
+                <a href="facebook.com.ar"><img src="assets/img/facebook.png" alt="facebook"></a>
+            </div>
+            <button>ARS <img src="" alt="flecha"></button>
+        </div>
         <div>
             <nav>
                 <ul class="navbar">
@@ -23,8 +26,10 @@
                     <li><a href="./pages/faq.html">FAQ</a></li>
                 </ul>
                 <h1>KARUNE</h1>
-                <button>iniciar sesion <img src="" alt="icon person"></button>
-                <a href="img"><img src="" alt="carrito"></a>
+                <div>
+                    <button>iniciar sesion <img src="" alt="icon person"></button>
+                    <a href="img"><img src="" alt="carrito"></a>
+                </div>
             </nav>
         </div>
     </header>
@@ -61,9 +66,12 @@
                         <img src="./assets/img/frente.png" alt="">
                     </div>
                     <div class="info">
-                        <h4>Buso Oversize</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div>
+                        <div class="info-producto">
+                            <h4>Buso Oversize</h4>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="info-precio">
                             <h5>$29.99 USD</h5>
                             <button>Agregar al carrito</button>
                         </div>
@@ -73,10 +81,13 @@
                     <div class="img-card">
                         <img src="./assets/img/frente.png" alt="">
                     </div>
-                    <div info-card>
-                        <h4>Buso Oversize</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div>
+                    <div class="info">
+                        <div class="info-producto">
+                            <h4>Buso Oversize</h4>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="info-precio">
                             <h5>$29.99 USD</h5>
                             <button>Agregar al carrito</button>
                         </div>
@@ -86,10 +97,13 @@
                     <div class="img-card">
                         <img src="./assets/img/frente.png" alt="">
                     </div>
-                    <div info-card>
-                        <h4>Buso Oversize</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div>
+                    <div class="info">
+                        <div class="info-producto">
+                            <h4>Buso Oversize</h4>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="info-precio">
                             <h5>$29.99 USD</h5>
                             <button>Agregar al carrito</button>
                         </div>
@@ -97,12 +111,13 @@
                 </div>
             </div>
         </section>
-        <div class="cartel-ofertas">
-            <div class="linea"></div>
-            <div class="texto-ofertas">
-                <h4>OFERTAS DE TEMPORADA</h4>
+        <section class="cartelTemporada">
+            <div class="cartel-ofertas">
+                <div class="texto-ofertas">
+                    <h4>OFERTAS DE TEMPORADA</h4>
+                </div>
             </div>
-        </div>
+        </section>
         <section class="section-ofertas">
             <div class="contenedor-ofertas">
                 <div class="cardOferta nueva-coleccion">
@@ -117,39 +132,64 @@
                 </div>
             </div>
         </section>
+        <section class="metodosPagosImg">
+            <ul class="contenedorPagos">
+                <li><img src="assets/img/visa.png" alt=""></li>
+                <li><img src="assets/img/bitcoin.png" alt=""></li>
+                <li><img src="assets/img/paypal.png" alt=""></li>
+                <li><img src="assets/img/mercadopago.png" alt=""></li>
+                <li><img src="assets/img/mastercard.png" alt=""></li>
+            </ul>
+        </section>
     </main>
-    <footer class="fondo-footer">
-        <div>
-            <h4>AYUDA</h4>
-            <p>Envios y entregas</p>
-            <p>Devoluciones</p>
-            <p>Cambios</p>
-            <p>Opciones de pago</p>
-            <p>Contactanos</p>
-            <p>Defensa al consumidor</p>
-            <p>Libro de quejas online</p>
-            <p>Boton de arrepentimiento</p>
-            <p>Ver todos</p>
+    <hr>
+    <footer>
+        <div class="contenedorFooter">
+            <div>
+                <ul>
+                    <li class="tituloLista">AYUDA</li>
+                    <li><a href="">Envíos y entregas</a></li>
+                    <li><a href="">Devoluciones</a></li>
+                    <li><a href="">Cambios</a></li>
+                    <li><a href="">Opciones de pago</a></li>
+                    <li><a href="">Contactanos</a></li>
+                    <li><a href="">Defensa al consumidor</a></li>
+                    <li><a href="">Libro de quejas online</a></li>
+                    <li><a href="">Boton de arrepentimiento</a></li>
+                    <li><a href="">Ver todos</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="tituloLista">ACERCA DE KARUNE</li>
+                    <li><a href="">Proposito</a></li>
+                    <li><a href="">Noticias</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="tituloLista">NOVEDADES KARUNE</li>
+                    <li><a href="">Encontra tu talla</a></li>
+                    <li><a href="">Conjuntos personalizados</a></li>
+                    <li><a href="">Promociones</a></li>
+                    <li><a href="">¿Cómo seguir mi pedido?</a></li>
+                </ul>
+            </div>
+            <div class="mapaIndex">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.75954328803!2d-58.59810537791326!3d-34.61571293711431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1721667051072!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <div>
-            <h4>ACERCA DE KARUNE</h4>
-            <p>Proposito</p>
-            <p>Noticias</p>
+        <hr>
+        <div class="pieDePagina">
+            <div>
+                <p>Argentina</p>
+                <p> Copyright 2024 Karune</p>
+            </div>
+            <div>
+                <p>Terminos y condiciones</p>
+                <p>Politica de privacidad y cookies</p>
+            </div>
         </div>
-        <div>
-            <h4>NOVEDADES KARUNE</h4>
-            <p>Encontra tu talla</p>
-            <p>Conjuntos personalizados</p>
-            <p>Promociones</p>
-            <p>¿COmo seguir mi pedido?</p>
-        </div>
-        <div style="background-color: rgb(161, 68, 68);">
-            <H1>PONER MAPA ACA</H1>
-        </div>
-        <p>Argentina</p>
-        <p> Copyright 2024 Karune</p>
-        <p>Terminos y condiciones</p>
-        <p>Politica de privacidad y cookies</p>
     </footer>
 </body>
 </html>

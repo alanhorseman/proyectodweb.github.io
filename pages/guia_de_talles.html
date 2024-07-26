@@ -3,89 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Guia de talles</title>
 </head>
 <body>
     <header>
-        <a href="twitter.com.ar"><img src="" alt="twitter"></a>
-        <a href="instagram.com.ar"><img src="" alt="instagram"></a>
-        <a href="facebook.com.ar"><img src="" alt="facebook"></a>
-        <button>ARS <img src="" alt="flecha"></button>
-        <div></div>
+        <div class="barraHeader">
+            <div class="iconHeader">
+                <a href="twitter.com.ar"><img src="../assets/img/x.png" alt="twitter"></a>
+                <a href="instagram.com.ar"><img src="../assets/img/instagram.png" alt="instagram"></a>
+                <a href="facebook.com.ar"><img src="../assets/img/facebook.png" alt="facebook"></a>
+            </div>
+        </div>
         <div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="#">Guia de talles</a></li>
-                    <li><a href="contactos.html">Contacto</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-                <h1>KARUNE</h1>
-                <button>iniciar sesion <img src="" alt="icon person"></button>
-                <a href="img"><img src="" alt="carrito"></a>
+            <nav class="nav">
+                <div class="contenedorNav1">
+                    <ul class="navbar">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="#">Guia de talles</a></li>
+                        <li><a href="./contactos.html">Contacto</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="contenedorNav2">
+                    <h1>KARUNE</h1>
+                </div>
+                <div class="contenedorNav3">
+                    <button class="buttonSesion">Login<img class="personIconSesion iconnav" src="../assets/img/personicon.webp" alt="icon person"></button>
+                    <button class="buttonSesion">Carrito<img class="imgIconbag iconnav" src="../assets/img/iconbag.png" alt="carrito"></button>
+                    <button class="buttonSesion">ARS<img class="iconArrow iconnav" src="../assets/img/iconarrow.png" alt=""></button>
+                </div>
             </nav>
         </div>
     </header>
     <main>
-        <section class="banner-guia">
-            <div>
-                <img src="" alt="ropa colgando">
-                <h2>GUIA DE TALLES</h4>
-                <h6>Encuentra la talla perfecta para usted</h6>
+        <section class="bannerGuia">
+            <div class="contenedorBannerGuia">
+                <div class="tituloGuiaTalles">
+                    <h2>GUIA DE TALLES</h4>
+                </div>
+                <div class="txtGuiaTalles">
+                    <h3>Encuentra la talla perfecta para usted</h3>
+                </div>
             </div>
         </section>
-        <section>
-            <div>
-                <img src="" alt="tallas">
-                <p>Las medidas son aproximadas y pueden variar segun el estilo de la prenda</p>
+        <section class="sectionTablaTalles">
+            <div class="contenedorInfoTablas">
+                <div class="tablasTalles">
+                    <div class="tablasM">
+                        <div class="tituloM">
+                            <h3>MUJER</h3>
+                            <h5>Medidas en cm</h5>
+                        </div>
+                        <div class="tabla1M">
+                            <table>
+                                <tr>
+                                    <th>Talle</th>
+                                    <th>34</th>
+                                    <th>36</th>
+                                    <th>38</th>
+                                    <th>40</th>
+                                    <th>42</th>
+                                    <th>44</th>
+                                    <th>46</th>
+                                    <th>48</th>
+                                    <th>50</th>
+                                    <th>52</th>
+                                    <th>54</th>
+                                </tr>
+                                <tr>
+                                    <th>Busto</th>
+                                    <td>81</td>
+                                    <td>85</td>
+                                    <td>89</td>
+                                    <td>93</td>
+                                    <td>97</td>
+                                    <td>102</td>
+                                    <td>107</td>
+                                    <td>113</td>
+                                    <td>119</td>
+                                    <td>125</td>
+                                    <td>131</td>
+                                </tr>
+                                <tr>
+                                    <th>Cintura</th>
+                                    <td>63</td>
+                                    <td>67</td>
+                                    <td>71</td>
+                                    <td>75</td>
+                                    <td>79</td>
+                                    <td>84</td>
+                                    <td>89</td>
+                                    <td>95</td>
+                                    <td>102</td>
+                                    <td>110</td>
+                                    <td>119</td>
+                                </tr>
+                                <tr>
+                                    <th>Cadera</th>
+                                    <td>90</td>
+                                    <td>94</td>
+                                    <td>98</td>
+                                    <td>102</td>
+                                    <td>106</td>
+                                    <td>111</td>
+                                    <td>116</td>
+                                    <td>123</td>
+                                    <td>131</td>
+                                    <td>140</td>
+                                    <td>150</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tabla2M">
+                            <table>
+                                <tr>
+                                    <th>Talle</th>
+                                    <th>XS</th>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>L</th>
+                                    <th>XL</th>
+                                    <th>2XL</th>
+                                    <th>3XL</th>
+                                </tr>
+                                <tr>
+                                    <th>Busto</th>
+                                    <td>85</td>
+                                    <td>89</td>
+                                    <td>95</td>
+                                    <td>102</td>
+                                    <td>110</td>
+                                    <td>119</td>
+                                    <td>128</td>
+                                </tr>
+                                <tr>
+                                    <th>Cintura</th>
+                                    <td>67</td>
+                                    <td>71</td>
+                                    <td>77</td>
+                                    <td>84</td>
+                                    <td>92</td>
+                                    <td>102</td>
+                                    <td>113</td>
+                                </tr>
+                                <tr>
+                                    <th>Cadera</th>
+                                    <td>94</td>
+                                    <td>98</td>
+                                    <td>104</td>
+                                    <td>111</td>
+                                    <td>120</td>
+                                    <td>130</td>
+                                    <td>140</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tablasH">
+                        <div class="tituloH">
+                            <h3>HOMBRE</h3>
+                            <h5>Medidas en cm</h5>
+                        </div>
+                        <div class="tabla1H">
+                            <table>
+                                <tr>
+                                    <th>Talle</th>
+                                    <th>38</th>
+                                    <th>40</th>
+                                    <th>M</th>
+                                    <th>44</th>
+                                    <th>46</th>
+                                    <th>48</th>
+                                    <th>50</th>
+                                    <th>52</th>
+                                    <th>54</th>
+                                </tr>
+                                <tr>
+                                    <th>Cintura</th>
+                                    <td>70</td>
+                                    <td>82</td>
+                                    <td>86</td>
+                                    <td>90</td>
+                                    <td>94</td>
+                                    <td>98</td>
+                                    <td>102</td>
+                                    <td>106</td>
+                                    <td>110</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tabla2H">
+                            <table>
+                                <tr>
+                                    <th>Talle</th>
+                                    <th>XS</th>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>L</th>
+                                    <th>XL</th>
+                                    <th>2XL</th>
+                                </tr>
+                                <tr>
+                                    <th>Pecho</th>
+                                    <td>93</td>
+                                    <td>99</td>
+                                    <td>105</td>
+                                    <td>111</td>
+                                    <td>117</td>
+                                    <td>123</td>
+                                </tr>
+                                <tr>
+                                    <th>Cintura</th>
+                                    <td>76</td>
+                                    <td>80</td>
+                                    <td>86</td>
+                                    <td>92</td>
+                                    <td>98</td>
+                                    <td>104</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="infoTablas">
+                </div>
             </div>
-            <div class="texto-guia">
-                <h4>¿como tomar mis medidas correctamente?</h4>
-                <p>Utiliza una cinta métrica flexible. No uses una cuerda o un trozo de tela, ya que no son precisos.</p>
-                <p>Toma las medidas sobre tu ropa interior. Esto te dará una medición más precisa de tu cuerpo.</p>
-                <p>Mantén la cinta métrica ajustada, pero sin apretar. No te aprietes la piel, ya que esto podría alterar las medidas.</p>
-                <p>Registra las medidas en centímetros.</p>
-                <h4>¿Qué debo hacer si estoy entre dos tallas?</h4>
-                <p>Si estás entre dos tallas, te recomendamos que elijas la talla más grande. Esto te asegurará que la prenda te quede cómoda y holgada. Sin embargo, si prefieres un ajuste más ceñido, puedes elegir la talla más pequeña.</p>
-                <h4>¿Las medidas corresponden a la talla argentina?</h4>
-                <p>Sí, las medidas de la guía de talles corresponden a la talla argentina.</p>
+            <div class="tallesTxt">
+                <div class="talles pregunta1">
+                    <div>
+                        <h3>¿Cómo tomar mis medidas correctamente?</h3>
+                    </div>
+                    <div>
+                        <p>Utiliza una cinta métrica flexible. No uses una cuerda o un trozo de tela, ya que no son precisos</p>
+                        <p>Toma las medidas sobre tu ropa interior. Esto te dará una medición más precisa de tu cuerpo.</p>
+                        <p>Mantén la cinta métrica ajustada, pero sin apretar. No te aprietes la piel, ya que esto podría alterar las medidas.</p>
+                        <p>Registra las medidas en centímetros</p>
+                    </div>
+                </div>
+                <div class="talles pregunta2">
+                    <div>
+                        <h3>¿Qué debo hacer si estoy entre dos tallas</h3>
+                    </div>
+                    <div>
+                        <p>Si estás enre dos tallas, te recomendamos que elijas la talla más grande. Esto te asegurará que la prenda te quede cómoda y holgada. Sin embargo, si prefieres un ajuste más ceñido, puedes elegir la talla más pequeña.</p>
+                    </div>
+                </div>
+                <div class="talles pregunta3">
+                    <div>
+                        <h3>¿Las medidas corresponden a la talla Argentina?</h3>
+                    </div>
+                    <div>
+                        <p>Si, las medidas de la guía de talles corresponden a la talla Argentina.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="fondo-footer">
-        <div>
-            <h4>AYUDA</h4>
-            <p>Envios y entregas</p>
-            <p>Devoluciones</p>
-            <p>Cambios</p>
-            <p>Opciones de pago</p>
-            <p>Contactanos</p>
-            <p>Defensa al consumidor</p>
-            <p>Libro de quejas online</p>
-            <p>Boton de arrepentimiento</p>
-            <p>Ver todos</p>
+    <footer>
+        <div class="contenedorFooter">
+            <div>
+                <ul>
+                    <li class="tituloLista">AYUDA</li>
+                    <li><a href="">Envíos y entregas</a></li>
+                    <li><a href="">Devoluciones</a></li>
+                    <li><a href="">Cambios</a></li>
+                    <li><a href="">Opciones de pago</a></li>
+                    <li><a href="">Contactanos</a></li>
+                    <li><a href="">Defensa al consumidor</a></li>
+                    <li><a href="">Libro de quejas online</a></li>
+                    <li><a href="">Boton de arrepentimiento</a></li>
+                    <li><a href="">Ver todos</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="tituloLista">ACERCA DE KARUNE</li>
+                    <li><a href="">Proposito</a></li>
+                    <li><a href="">Noticias</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="tituloLista">NOVEDADES KARUNE</li>
+                    <li><a href="">Encontra tu talla</a></li>
+                    <li><a href="">Conjuntos personalizados</a></li>
+                    <li><a href="">Promociones</a></li>
+                    <li><a href="">¿Cómo seguir mi pedido?</a></li>
+                </ul>
+            </div>
+            <div class="mapaIndex">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.75954328803!2d-58.59810537791326!3d-34.61571293711431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1721667051072!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <div>
-            <h4>ACERCA DE KARUNE</h4>
-            <p>Proposito</p>
-            <p>Noticias</p>
+        <hr>
+        <div class="pieDePagina">
+            <div>
+                <p>Argentina</p>
+                <p> Copyright 2024 Karune</p>
+            </div>
+            <div>
+                <p>Terminos y condiciones</p>
+                <p>Politica de privacidad y cookies</p>
+            </div>
         </div>
-        <div>
-            <h4>NOVEDADES KARUNE</h4>
-            <p>Encontra tu talla</p>
-            <p>Conjuntos personalizados</p>
-            <p>Promociones</p>
-            <p>¿COmo seguir mi pedido?</p>
-        </div>
-        <div style="background-color: rgb(161, 68, 68);">
-            <H1>PONER MAPA ACA</H1>
-        </div>
-        <p>Argentina</p>
-        <p> Copyright 2024 Karune</p>
-        <p>Terminos y condiciones</p>
-        <p>Politica de privacidad y cookies</p>
     </footer>
 </body>
 </html>

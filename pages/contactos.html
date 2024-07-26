@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contactos</title>
 </head>
 <body>
     <header>
-        <a href="twitter.com.ar"><img src="" alt="twitter"></a>
-        <a href="instagram.com.ar"><img src="" alt="instagram"></a>
-        <a href="facebook.com.ar"><img src="" alt="facebook"></a>
-        <button>ARS <img src="" alt="flecha"></button>
-        <div></div>
+        <div class="barraHeader">
+            <div class="iconHeader">
+                <a href="twitter.com.ar"><img src="../assets/img/x.png" alt="twitter"></a>
+                <a href="instagram.com.ar"><img src="../assets/img/instagram.png" alt="instagram"></a>
+                <a href="facebook.com.ar"><img src="../assets/img/facebook.png" alt="facebook"></a>
+            </div>
+        </div>
         <div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="guia_de_talles.html">Guia de talles</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-                <h1>KARUNE</h1>
-                <button>iniciar sesion <img src="" alt="icon person"></button>
-                <a href="img"><img src="" alt="carrito"></a>
+            <nav class="nav">
+                <div class="contenedorNav1">
+                    <ul class="navbar">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./guia_de_talles.html">Guia de talles</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="contenedorNav2">
+                    <h1>KARUNE</h1>
+                </div>
+                <div class="contenedorNav3">
+                    <button class="buttonSesion">Login<img class="personIconSesion iconnav" src="../assets/img/personicon.webp" alt="icon person"></button>
+                    <button class="buttonSesion">Carrito<img class="imgIconbag iconnav" src="../assets/img/iconbag.png" alt="carrito"></button>
+                    <button class="buttonSesion">ARS<img class="iconArrow iconnav" src="../assets/img/iconarrow.png" alt=""></button>
+                </div>
             </nav>
         </div>
     </header>
     <main>
-        <div class="banner-contactos">
-            <h1>Let's Talk</h1>
-            <h3>no te quedes con la duda</h3>
-        </div>
-        <section>
-            <div class="card-contactos">
+        <section class="bannerContactos">
+            <div class="txtBannerContactos bannerC">
+                <h1>Let's Talk</h1>
+                <h3>no te quedes con la duda</h3>
+            </div>
+            <div class="imgBannerContactos bannerC">
+                <img src="../assets/img/manos.png" alt="">
+            </div>
+        </section>
+        <section class="infoForm">
+            <div class="infoContactos">
                 <h2>Contacto</h2>
                 <h4>email</h4>
                 <p>karune@gmail.com</p>
@@ -44,21 +59,18 @@
                 <p>Lunes a viernes: 12hs a 19hs</p>
                 <p>Sabados 9hs a 13hs</p>
             </div>
-            <form action=" ">
-                <label for="nombre-form">Nombre</label>
-                <input type="text" name="nombre-form" id="nombre-form">
-                <label for="email-form">Email</label>
-                <input type="text" name="email-form" id="email-form">
-                <label for="telefono-form">Telefono</label>
-                <input type="text" name="telefono-form" id="telefono-form">
-                <label for="mensaje-form">Mensaje</label>
-                <input type="text" name="mensaje-form" id="mensaje-form">
-                <img src="" alt="captcha">
-                <input type="submit" value="ENVIAR">
-            </form>
+            <div class="contenedorForm">
+                <form action="" class="formContactos">
+                    <input type="text" name="nombre-form" id="nombre-form" value="Nombre" class="formControl">
+                    <input type="text" name="email-form" id="email-form" value="Email" class="formControl">
+                    <input type="text" name="telefono-form" id="telefono-form" value="Telefono" class="formControl">
+                    <input type="text" name="mensaje-form" id="mensaje-form" value="Mensaje" class="formControl">
+                    <input type="submit" value="ENVIAR">
+                </form>
+            </div>
         </section>
-        <section>
-            <div class="maps-info">
+        <section class="sectionMapa">
+            <div class="mapsInfo">
                 <h3>Donde encontrarnos</h3>
                 <h5>Buenos Aires</h5>
                 <p>CP: 0000</p>
@@ -75,38 +87,53 @@
             </div>
         </section>
     </main>
-    <footer class="fondo-footer">
-        <div>
-            <h4>AYUDA</h4>
-            <p>Envios y entregas</p>
-            <p>Devoluciones</p>
-            <p>Cambios</p>
-            <p>Opciones de pago</p>
-            <p>Contactanos</p>
-            <p>Defensa al consumidor</p>
-            <p>Libro de quejas online</p>
-            <p>Boton de arrepentimiento</p>
-            <p>Ver todos</p>
+    <footer>
+        <div class="contenedorFooter">
+            <div>
+                <ul>
+                    <li class="tituloLista">AYUDA</li>
+                    <li><a href="">Envíos y entregas</a></li>
+                    <li><a href="">Devoluciones</a></li>
+                    <li><a href="">Cambios</a></li>
+                    <li><a href="">Opciones de pago</a></li>
+                    <li><a href="">Contactanos</a></li>
+                    <li><a href="">Defensa al consumidor</a></li>
+                    <li><a href="">Libro de quejas online</a></li>
+                    <li><a href="">Boton de arrepentimiento</a></li>
+                    <li><a href="">Ver todos</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="tituloLista">ACERCA DE KARUNE</li>
+                    <li><a href="">Proposito</a></li>
+                    <li><a href="">Noticias</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="tituloLista">NOVEDADES KARUNE</li>
+                    <li><a href="">Encontra tu talla</a></li>
+                    <li><a href="">Conjuntos personalizados</a></li>
+                    <li><a href="">Promociones</a></li>
+                    <li><a href="">¿Cómo seguir mi pedido?</a></li>
+                </ul>
+            </div>
+            <div class="mapaIndex">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.75954328803!2d-58.59810537791326!3d-34.61571293711431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1721667051072!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <div>
-            <h4>ACERCA DE KARUNE</h4>
-            <p>Proposito</p>
-            <p>Noticias</p>
+        <hr>
+        <div class="pieDePagina">
+            <div>
+                <p>Argentina</p>
+                <p> Copyright 2024 Karune</p>
+            </div>
+            <div>
+                <p>Terminos y condiciones</p>
+                <p>Politica de privacidad y cookies</p>
+            </div>
         </div>
-        <div>
-            <h4>NOVEDADES KARUNE</h4>
-            <p>Encontra tu talla</p>
-            <p>Conjuntos personalizados</p>
-            <p>Promociones</p>
-            <p>¿COmo seguir mi pedido?</p>
-        </div>
-        <div style="background-color: rgb(161, 68, 68);">
-            <H1>PONER MAPA ACA</H1>
-        </div>
-        <p>Argentina</p>
-        <p> Copyright 2024 Karune</p>
-        <p>Terminos y condiciones</p>
-        <p>Politica de privacidad y cookies</p>
     </footer>
 </body>
 </html>

@@ -540,6 +540,10 @@ hr {
     border: 2px solid orange;
 }
 
+.tabla1M, .tabla2M {
+    border: 2px solid purple;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -559,10 +563,6 @@ td {
     border: 3px solid yellowgreen;
 }
 
-.tabla1M, .tabla2M {
-    border: 2px solid purple;
-}
-
 .tablasH {
     display: flex;
     flex-direction: column;
@@ -578,28 +578,6 @@ td {
     margin: 0px 10px;
     width: 40%;
 }
-
-.formContactos {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    border: 1px solid black;
-    padding: 10px;
-    height: 100%;
-    justify-content: space-around;
-}
-
-.formControl {
-    display: block;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 400px;
-    line-height: 1.5;
-    padding: .375rem .75rem;
-    border-radius: 30px;
-    margin: 10px;
-}
-
 
 .bannerContactos {
     width: 100%;
@@ -621,31 +599,66 @@ td {
     height: 100%;
 }
 
+/* FORM CONTACTOS */
+
 .infoForm {
     display: flex;
     width: 100%;
+    height: 400px;
+    text-align: center;
 }
 
 .infoContactos {
     width: 40%;
-    border: 1px solid black;
+    align-content: center;
 }
 
 .contenedorForm {
     width: 60%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.formContactos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.formControl {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400px;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+    border-radius: 30px;
+    border-width: 1px;
+    margin: 10px 0px;
+}
+
+.formMensaje {
+    padding-bottom: 100px;
+}
+
+.botonForm {
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+}
+
+/* SECCION MAPA CONTACTOS */
+
 .sectionMapa {
     display: flex;
     width: 100%;
     margin: 20px 0px;
     padding: 20px 20px ;
-    border: 1px solid red;
 }
 
 .mapsInfo {
@@ -670,10 +683,15 @@ td {
 
 /* CONTENIDO FAQ */
 
+.contenedoresFaq {
+    margin: 50px 10px;
+}
+
 .contenedorMetodos {
     display: flex;
     justify-content: space-between;
     height: 400px;
+    padding: 0px 30px;
 }
 
 .contenedorEnvios {
@@ -691,19 +709,27 @@ td {
 /* METODOS DE PAGO */
 
 .cartelFaq {
-    align-content: center;
+    display: flex;
     width: 40%;
+    background-color: #f1631123;
+    border: 40px solid rgba(255, 255, 255, 0.507);
+    justify-content: center;
+    align-items: center;
 }
 
 .cartel1 {
     text-align: center;
+    width: fit-content;
+    padding: 100px;
 }
 
 .infoFaq {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 60%;
+    width: 57%;
+    background-color: #f1631123;
+    border: 40px solid rgba(255, 238, 0, 0.123)
 }
 
 .txtFaq {
@@ -761,8 +787,7 @@ td {
 
 .enviosTitulo {
     width: 40%;
-}
-
-.enviosTitulo {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }

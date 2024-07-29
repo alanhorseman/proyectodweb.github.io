@@ -9,15 +9,12 @@
 
 /* HEADER */
 
-
-.nav {
-}
-
 .navbar {
     display: flex;
     list-style-type: none;
     height: 100%;
 }
+
 .navbar li {
     margin: 0px 10px;
 }
@@ -75,11 +72,6 @@ nav {
     margin-left: 5px;
 }
 
-.headerProductos {
-    margin-top: 20px;
-}
-
-
 
 h1{
     font-family: "Poppins", sans-serif;
@@ -107,13 +99,11 @@ p{
     height: 1300px;
     background-image: url(../assets/img/fondo-banner2.png);
     background-size: cover;
-
 }
 
 .bannerHomeGrid {
     margin: 20px 0px;
     display: grid;
-    height: 450px;
     grid-template-columns: repeat(14, 100px);
     grid-template-rows: repeat(6, 1fr);
 }
@@ -145,12 +135,17 @@ p{
 }
 
 .cartelPopulares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-column: 1/3;
     grid-row: 1/3;
     background-color: white;
     border-radius: 28px;
     align-content: center;
 }
+
+
 
 .shadowPopulares {
     background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
@@ -468,7 +463,7 @@ ul .tituloLista {
 
 .pieDePagina {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .pieDePagina div {
@@ -495,12 +490,54 @@ hr {
     color: black;
 }
 
+/* PRODUCTOS */
+
+.mainProductos {
+    background-image: url(../assets/img/fondo-banner2.png);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.headerProductos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    /* background-image: url(../assets/img/fondo-banner2.png); */
+    background-size: cover;
+}
+
 .gridBannerProductos {
     display: grid;
     grid-template-columns: 300px 300px auto 300px 300px;
     grid-template-rows: repeat(5, 150px);
     justify-content: center;
     gap: 0px;
+    padding-top: 30px;
+}
+
+.barraGridProductos {
+    display: grid;
+    grid-template-columns: 8px 1215px 8px;
+    grid-template-rows: 9px 60px 9px;
+    margin: 40px 0px;
+    align-self: center;
+}
+
+.barraProductos {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: white;
+    border-radius: 28px;
+    align-content: center;
+}
+
+.shadowBarraProductos {
+    background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
+    grid-column: 2/4;
+    grid-row: 2/4;
+    border-radius: 28px;
 }
 
 .gap-editado {
@@ -545,187 +582,139 @@ hr {
     align-content: center;
 }
 
-.nav-producto {
-    width: 100%;
-    margin-top: 20px;
-}
-.nav-contenedor-items {
-    display: flex;
-    width: 60%;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 25px;
-    justify-content: space-between;
-    padding: 10px;
-    margin-left: 20%;
-}
+/* SECTION CARD PRODUCTOS */
 
-.nav-contenedor-items a {
-    align-self: center;
-}
-
-.nav-items-producto {
-    display: flex;
-}
-
-.nav-items-producto li {
-    margin: 10px;
-}
-
-.contenedorCard {
+.sectionCards {
     display: grid;
-    width: 1000px;
-    grid-template-columns: repeat(3, 333px);
-    grid-template-rows: repeat(3, 570px);
-    gap: 10px;
-    margin: 20px auto;
+    grid-template-columns: repeat(3, 316px);
+    grid-template-rows: repeat(3, 458px);
+    justify-content: center;
+    gap: 25px 100px;
+    background: linear-gradient(to top, #F2055D, #F64323, transparent);
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 40px;
 }
 
-.chica-producto {
+
+.gridCard {
+    display: grid;
+    grid-template-columns: 8px 300px 8px;
+    grid-template-rows: 9px 440px 9px;
+}
+
+.shadowCardProducto {
+    width: 300px;
+    height: 440px;
+    border-radius: 0px 26px;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
+}
+
+.cardProducto {
+    width: 300px;
+    height: 440px;
+    border-radius: 0px 26px;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.cardProducto img {
     width: 100%;
-    height: 100%;
-    border: 2px solid black;
-}
-
-.colorOpcion {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 1px solid black;
-}
-
-.img-card-chica {
-    width: 100%;
-    height: 80%;
-}
-
-.img-card-chica img {
-    width: 100%;
-    height: 100%;
+    height: 85%;
     object-fit: cover;
+    border-radius: 0px 26px 0px 0px;
 }
 
-.card-info {
+.infoCardProductos {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    margin-bottom: 3px;
-    margin: 0px 5px;
-}
-
-.txt-card-nombre {
     width: 100%;
-    text-align: center;
-    padding: 10px;
+    height: 15%;
+    padding: 2px 10px;
+    background-color: white;
+    border-radius: 0px 0px 0px 26px;
 }
 
-.colores {
+.colorInfoCard {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 50%;
-    padding-right: 20px;
 }
-.colores .colorOpcion {
+
+.color {
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 30px;
     margin: 2px;
-}
-
-.color1 {
-    background-color: aqua;
-}
-
-.color2 {
-    background-color: palevioletred;
-}
-
-.color3 {
-    background-color: black;
-}
-
-.txt-card-precio {
-    width: 50%;
-}
-.txt-card-precio p {
-    width: 100%;
-    height: 100%;
-    align-content: center;
-}
-.txt-card-chica {
-    display: flex;
-    flex-direction: column;
-    height: 20%;
-}
-
-.separador {
-    flex-grow: 1;
 }
 
 /* BANNER GUIA DE TALLES */
 
 .bannerGuia {
-    width: 70%;
-    height: 300px;
-    margin: 20px auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.contenedorBannerGuia {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.contenedorBannerGuia::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url(../assets/img/ropa.jpg);
-    background-size: cover;
+    height: 500px;
+    align-content: center;
+    background-image: url(../assets/img/fondo-banner2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     background-position: center;
-    filter: blur(10px);
-    z-index: -1;
-}
-
-.tituloGuiaTalles {
-    text-align: center;
     margin-bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
 }
 
-.txtGuiaTalles {
+.gridBannerGuia {
+    display: grid;
+    grid-template-columns: 8px 800px 8px;
+    grid-template-rows: 8px 200px 8px;
     text-align: center;
-    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtBannerGuia {
+    align-content: center;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    border-radius: 25px;
+    background-color: white;
+    border-radius: 28px;
+    height: 100%;
+    
+}
+
+.shadowBannerGuia {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    height: 100%;
+    border-radius: 28px;
+    background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
 }
 
 /* SECCION TABLA TALLES */
 
 .sectionTablaTalles {
     display: flex;
+    justify-content: space-around;
     width: 100%;
-    height: 800px;
-    border: 5px solid red;
+    height: 1000px;
     padding: 20px;
+    background: linear-gradient(to top, #F2055D, #F64323, transparent);
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .contenedorInfoTablas {
     width: 50%;
     height: 100%;
-    border: 4px solid blue;
 }
 
 .tablasTalles {
-    width: 100%;
+    width: 80%;
     height: 95%;
-    border: 3px solid yellow;
+    background-color: white;
+    padding-left: 40px;
 }
 
 .tablasM {
@@ -733,18 +722,13 @@ hr {
     flex-direction: column;
     width: 100%;
     height: 50%;
-    border: 2px solid violet;
     justify-content: space-around;
 }
 
 .tituloM {
     width: 100%;
-    border: 2px solid orange;
 }
 
-.tabla1M, .tabla2M {
-    border: 2px solid purple;
-}
 
 table, th, td {
     border: 1px solid black;
@@ -762,7 +746,6 @@ td {
 .infoTablas {
     width: 100%;
     height: 5%;
-    border: 3px solid yellowgreen;
 }
 
 .tablasH {
@@ -777,14 +760,16 @@ td {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0px 10px;
     width: 40%;
 }
+
+/* BANNER CONTACTOS */
 
 .bannerContactos {
     width: 100%;
     height: 200px;
     display: flex;
+    justify-content: center;
 }
 
 .txtBannerContactos {
@@ -803,17 +788,38 @@ td {
 
 /* FORM CONTACTOS */
 
-.infoForm {
+.sectionGridContactos {
     display: flex;
     width: 100%;
-    height: 400px;
-    text-align: center;
+    height: 600px;
+    justify-content: center;
+    background: linear-gradient(to top, #F64323, transparent);
 }
 
-.infoContactos {
-    width: 40%;
+.gridContactos {
+    display: grid;
+    grid-template-columns: 8px 300px 8px;
+    grid-template-rows: 8px 400px 8px;
     align-content: center;
 }
+
+.gridInfoContactos {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: white;
+    border-radius: 28px;
+    text-align: center;
+    align-content: center;
+}
+
+.shadowGridContactos {
+    background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
+    grid-column: 2/4;
+    grid-row: 2/4;
+    border-radius: 28px;
+}
+
+
 
 .contenedorForm {
     width: 60%;
@@ -829,7 +835,7 @@ td {
     width: 50%;
     height: 100%;
     padding: 10px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .formControl {
@@ -849,6 +855,8 @@ td {
 }
 
 .botonForm {
+    width: 300px;
+    align-self: center;
     background-color: aqua;
     border: none;
     border-radius: 10px;
@@ -858,53 +866,86 @@ td {
 
 .sectionMapa {
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    margin: 20px 0px;
     padding: 20px 20px ;
+    background: linear-gradient(to top, #F2055D, #F64323);
 }
 
 .mapsInfo {
-    width: 50%;
+    text-align: center;
+    align-content: center;
+    width: 30%;
 }
+
+
 
 /* BANNER FAQ */
 
 .bannerFaq {
     width: 100%;
-    height: 200px;
-    background-color: beige;
+    height: 350px;
+    align-content: center;
+    background-image: url(../assets/img/fondo-banner2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
 }
 
 .bannerInfoFaq {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 8px 800px 8px;
+    grid-template-rows: 8px 150px 8px;
     text-align: center;
+    justify-content: center;
     align-items: center;
+}
+
+.txtInfoFaq {
+    align-content: center;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    border-radius: 25px;
+    background-color: white;
+    border-radius: 28px;
     height: 100%;
+}
+
+.shadowInfoFaq {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    height: 100%;
+    border-radius: 28px;
+    background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
 }
 
 /* CONTENIDO FAQ */
 
 .contenedoresFaq {
-    margin: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1300px;
+    padding: 10px 40px;
+    background: linear-gradient(to top, #F2055D, #F64323, transparent);
 }
 
 .contenedorMetodos {
     display: flex;
     justify-content: space-between;
     height: 400px;
-    padding: 0px 30px;
 }
 
 .contenedorEnvios {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 400px;
 }
 
 .contenedorReenvolso {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 400px;
 }
 
@@ -968,23 +1009,13 @@ td {
 
 /* ENVIOS */
 
-.contenedorEnvios {
-    display: flex;
-}
-
 .enviosInfo {
     display: flex;
-    width: 60%;
+    width: 57%;
 }
 
 .txtEnvios {
     padding: 0px 20px;
-}
-
-.enviosTxt1 {
-}
-
-.enviosTxt2 {
 }
 
 .enviosTitulo {
@@ -992,4 +1023,225 @@ td {
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 768px){
+    /* HEADER */
+    nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .nav {
+        text-align: center;
+    }
+
+    .navbar li {
+        margin: 0px 10px;
+    }
+
+    /* BANNER HOME */
+
+    .sectionHome1 {
+        height: 1650px;
+    }
+
+    .bannerHomeGrid {
+        grid-template-columns: repeat(6, 100px);
+    }
+
+    .karuneLogoBanner {
+        grid-column: 2/6;
+    }
+
+    .lineaBanner {
+        grid-column: 1/7;
+        width: 600px;
+    }
+
+    .masPopularesGrid {
+        grid-template-columns: 8px 700px 8px;
+    }
+
+    /* CARDS BANNER HOME */
+
+    .cardBannerHome {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* SECTION INFO SHOP */
+
+    .sectionInfoShop {
+        height: 500px;
+    }
+
+    .contenedorItems {
+        flex-wrap: wrap;
+        height: 100%;
+        align-items: center;
+    }
+
+    .contenedorItemShop {
+        height: 220px;
+    }
+
+    /* FOOTER */
+    
+    .contenedorFooter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div p {
+        margin-right: 5px;
+    }
+
+    /* PAGINA PRODUCTOS */
+
+    .mainProductos {
+        background-size: auto;
+    }
+
+    .headerProductos {
+        height: 1550px;
+    }
+
+    .gridBannerProductos {
+        width: 100%;
+        grid-template-columns: 700px;
+        grid-template-rows: 150px 600px 10px 600px 150px;
+    }
+    
+    .gridBannerProductos h2 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .gridBannerProductos .img1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+    }
+
+    .gridBannerProductos .img2 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .gridBannerProductos .img3 {
+        justify-self: center;
+        width: 150px;
+        grid-column: 1/2;
+        grid-row: 2/5;
+    }
+
+    .gap-editado {
+        grid-column: 1/2;
+    }
+
+    .t2 {
+        grid-column: 1/2;
+    }
+
+    .barraGridProductos {
+        grid-template-columns: 8px 700px 8px;
+    }
+
+    .sectionCards {
+        margin-top: 150px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 390px){
+
+    /* HOME BANNER */
+
+    .sectionHome1 {
+        height: 2500px;
+    }
+
+    .bannerHomeGrid {
+        grid-template-columns: 370px;
+        grid-template-rows: 100px;
+        width: 100%;
+    }
+
+    .karuneLogoBanner {
+        width: 350px;
+        grid-column: 1/2;
+        grid-row: 1/6;
+    }
+
+    .lineaBanner {
+        width: 0px;
+        border: none;
+    }
+
+    .masPopularesGrid {
+        grid-template-columns: 8px 350px 8px;
+    }
+
+    /* SECTION INFO SHOP */
+
+    .sectionInfoShop {
+        height: 1000px;
+    }
+
+    /* SECTION SLIDE */
+
+    .sectionSlide {
+        display: flex;
+        height: 600px;
+        
+    }
+
+    .contenedorSlide {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        
+    }
+
+    .slideImg {
+        width: 100%;
+        margin: 0px;
+        
+    }
+
+    .slideImg img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .slideInfo {
+        width: 95%;
+        margin: 2px;
+    }
+
+    .mapaIndex iframe {
+        width: 95%;
+    }
+
+    /* PAGINA PRODUCTOS */
+
+    .headerProductos {
+        height: 980px;
+    }
+
+    .gridBannerProductos {
+        grid-template-columns: 380px;
+        grid-template-rows: 70px 380px 10px 380px 70px;
+    }
+
+    .barraGridProductos {
+        grid-template-columns: 8px 360px 8px;
+    }
+
+    .gridBannerProductos .img3 {
+        width: 100px;
+    }
 }

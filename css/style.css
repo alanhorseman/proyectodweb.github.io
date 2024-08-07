@@ -1,0 +1,321 @@
+/* UTILITIES */
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* LAYOUT */
+header nav {
+  display: flex;
+  justify-content: space-between; }
+
+.barraHeader {
+  display: flex; }
+  .barraHeader .iconHeader {
+    display: flex;
+    width: 8%;
+    justify-content: space-around;
+    align-items: center; }
+    .barraHeader .iconHeader a img {
+      width: 25px;
+      height: 100%;
+      object-fit: contain; }
+
+.iconHeader {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center; }
+  .iconHeader a img {
+    width: 25px;
+    height: 100%;
+    object-fit: contain; }
+
+.contenedorNav1 .navbar {
+  display: flex;
+  list-style-type: none;
+  height: 100%; }
+  .contenedorNav1 .navbar li {
+    margin: 0px 10px; }
+    .contenedorNav1 .navbar li a {
+      text-decoration: none;
+      color: black; }
+
+.contenedorNav2 h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-style: italic; }
+
+.contenedorNav3 button {
+  border: none;
+  background-color: white;
+  height: 30px;
+  margin: 0px 7px; }
+  .contenedorNav3 button img {
+    margin-left: 5px;
+    width: 20px;
+    object-fit: contain; }
+
+.bannerHomeGrid {
+  margin: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(14, 100px);
+  grid-template-rows: repeat(6, 1fr); }
+  .bannerHomeGrid .lineaBanner {
+    grid-column: 1/15;
+    grid-row: 2/6;
+    border: 2px solid white;
+    width: 1400px;
+    height: 300px;
+    border-radius: 70px; }
+  .bannerHomeGrid .karuneLogoBanner {
+    width: 410px;
+    object-fit: contain;
+    grid-column: 6/10;
+    grid-row: 1/7;
+    justify-self: center;
+    align-self: center; }
+
+.sectionHome1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 1300px;
+  background-image: url(../assets/img/fondo-banner2.png);
+  background-size: cover; }
+
+.container div div .imgShop {
+  margin: 0px 10px; }
+  .container div div .imgShop img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain; }
+
+.container div div .txtShop h3 {
+  font-size: large; }
+
+.sectionSlide {
+  background: linear-gradient(to top, #F2055D, #F64323, white);
+  width: 100%;
+  height: 400px; }
+
+.contenedorSlide {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px; }
+  .contenedorSlide .slideImg {
+    width: 710px;
+    height: 383px;
+    margin: 10px; }
+    .contenedorSlide .slideImg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .contenedorSlide .slideInfo {
+    width: 490px;
+    height: 383px;
+    margin: 10px;
+    text-align: center;
+    align-content: center; }
+
+footer {
+  background: linear-gradient(to top, #043581, #F2055D); }
+  footer .contenedorFooter {
+    display: flex;
+    justify-content: space-around; }
+    footer .contenedorFooter div ul {
+      list-style-type: none; }
+      footer .contenedorFooter div ul li {
+        margin: 10px 0px; }
+    footer .contenedorFooter .mapaIndex iframe {
+      width: 95%; }
+  footer .pieDePagina {
+    display: flex;
+    justify-content: space-around; }
+    footer .pieDePagina div {
+      display: flex; }
+
+.tituloLista {
+  text-align: center;
+  font-weight: bold; }
+
+.mainProductos {
+  background-image: url(../assets/img/fondo-banner2.png);
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.headerProductos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1000px;
+  /* background-image: url(../assets/img/fondo-banner2.png); */
+  background-size: cover; }
+
+.gridBannerProductos {
+  display: grid;
+  grid-template-columns: 300px 300px auto 300px 300px;
+  grid-template-rows: repeat(5, 150px);
+  justify-content: center;
+  gap: 0px;
+  padding-top: 30px; }
+  .gridBannerProductos h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    align-content: center; }
+  .gridBannerProductos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .gridBannerProductos .img1 {
+    grid-column: 1/3;
+    grid-row: 2/6;
+    border: 2px solid black; }
+  .gridBannerProductos .img2 {
+    grid-column: 4/6;
+    grid-row: 1/5;
+    border: 2px solid black; }
+  .gridBannerProductos .img3 {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    padding-right: 4px; }
+  .gridBannerProductos .t2 {
+    grid-column: 4/6;
+    grid-row: 5/6;
+    text-align: center;
+    align-content: center; }
+  .gridBannerProductos .gap-editado {
+    grid-column: 3/4;
+    width: 5px; }
+
+.mainProductos {
+  background-image: url(../assets/img/fondo-banner2.png);
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.headerProductos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1000px;
+  /* background-image: url(../assets/img/fondo-banner2.png); */
+  background-size: cover; }
+
+.gridBannerProductos {
+  display: grid;
+  grid-template-columns: 300px 300px auto 300px 300px;
+  grid-template-rows: repeat(5, 150px);
+  justify-content: center;
+  gap: 0px;
+  padding-top: 30px; }
+  .gridBannerProductos h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    align-content: center; }
+  .gridBannerProductos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .gridBannerProductos .img1 {
+    grid-column: 1/3;
+    grid-row: 2/6;
+    border: 2px solid black; }
+  .gridBannerProductos .img2 {
+    grid-column: 4/6;
+    grid-row: 1/5;
+    border: 2px solid black; }
+  .gridBannerProductos .img3 {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    padding-right: 4px; }
+  .gridBannerProductos .t2 {
+    grid-column: 4/6;
+    grid-row: 5/6;
+    text-align: center;
+    align-content: center; }
+  .gridBannerProductos .gap-editado {
+    grid-column: 3/4;
+    width: 5px; }
+
+/* COMPONENTS */
+.cardBannerHome {
+  display: flex; }
+
+.cardBanner {
+  width: 300px;
+  height: 444px;
+  margin: 10px; }
+  .cardBanner .imgCard {
+    background-size: cover;
+    width: 100%;
+    height: 85%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end; }
+    .cardBanner .imgCard.imgCard1 {
+      background-image: url(../assets/img/ropacian.jpg); }
+    .cardBanner .imgCard.imgCard2 {
+      background-image: url(../assets/img/roparosa.jpg); }
+    .cardBanner .imgCard.imgCard3 {
+      background-image: url(../assets/img/ropagris.jpg); }
+    .cardBanner .imgCard.imgCard4 {
+      background-image: url(../assets/img/ropagris2.jpg); }
+    .cardBanner .imgCard .imgFav {
+      margin: 4px;
+      text-align: center;
+      align-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 40px;
+      background: rgba(52, 88, 100, 0.7); }
+      .cardBanner .imgCard .imgFav .iconCard {
+        width: 35px;
+        height: 35px;
+        margin: 2px; }
+    .cardBanner .imgCard .imgAdd {
+      margin: 4px;
+      text-align: center;
+      align-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 40px;
+      background: rgba(255, 255, 255, 0.7); }
+      .cardBanner .imgCard .imgAdd .iconAddImg {
+        width: 30px;
+        height: 30px;
+        margin-right: 1px; }
+  .cardBanner .infoCard {
+    height: 15%;
+    background-color: white;
+    padding-left: 5px; }
+
+.masPopularesGrid {
+  display: grid;
+  grid-template-columns: 8px 1215px 8px;
+  grid-template-rows: 9px 60px 9px;
+  margin: 40px 0px;
+  text-align: center; }
+  .masPopularesGrid .shadowPopulares {
+    background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
+    grid-column: 2/4;
+    grid-row: 2/4;
+    border-radius: 28px; }
+  .masPopularesGrid .cartelPopulares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: white;
+    border-radius: 28px;
+    align-content: center; }
+
+/* MEDIA QUERY */

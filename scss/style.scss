@@ -1,0 +1,20 @@
+/* UTILITIES */
+
+/* BASE */
+@import "./base/reset";
+@import "./base/typografias";
+
+/* LAYOUT */
+@import "./layout/header";
+@import "./layout/grid-banner";
+@import "./layout/main-index";
+@import "./layout/footer";
+@import "./layout/main-productos";
+@import "./layout/main-productos";
+
+/* COMPONENTS */
+
+@import "./components/card-home";
+@import "./components/barra-home";
+
+/* MEDIA QUERY */

@@ -1,0 +1,64 @@
+.cardBannerHome {
+    display: flex;
+}
+
+.cardBanner {
+    width: 300px;
+    height: 444px;
+    margin: 10px;
+    .imgCard {
+        background-size: cover;
+        width: 100%;
+        height: 85%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        &.imgCard1 {
+            background-image: url(../assets/img/ropacian.jpg);
+        }
+        &.imgCard2 {
+            background-image: url(../assets/img/roparosa.jpg);
+        }
+        &.imgCard3 {
+            background-image: url(../assets/img/ropagris.jpg);
+        }
+        &.imgCard4 {
+            background-image: url(../assets/img/ropagris2.jpg);
+        }
+        .imgFav {
+            margin: 4px;
+            text-align: center;
+            align-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 40px;
+            background: rgba(52, 88, 100, 0.7);
+            .iconCard {
+                width: 35px;
+                height: 35px;
+                margin: 2px;
+            }
+        }
+        .imgAdd {
+            margin: 4px;
+            text-align: center;
+            align-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 40px;
+            background: rgba(255, 255, 255, 0.7);
+            .iconAddImg {
+                width: 30px;
+                height: 30px;
+                margin-right: 1px;
+            }
+        }
+    }
+    .infoCard {
+        height: 15%;
+        background-color: white;
+        padding-left: 5px;
+    }
+}

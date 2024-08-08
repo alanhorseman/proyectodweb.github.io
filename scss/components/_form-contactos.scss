@@ -1,0 +1,40 @@
+.contenedorForm {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContactos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.formControl {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400px;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+    border-radius: 30px;
+    border-width: 1px;
+    margin: 10px 0px;
+}
+
+.formMensaje {
+    padding-bottom: 100px;
+}
+
+.botonForm {
+    width: 300px;
+    align-self: center;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+}

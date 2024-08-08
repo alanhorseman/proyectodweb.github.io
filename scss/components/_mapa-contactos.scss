@@ -1,0 +1,12 @@
+.sectionMapa {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 20px ;
+    background: linear-gradient(to top, #F2055D, #F64323);
+    .mapsInfo {
+        text-align: center;
+        align-content: center;
+        width: 30%;
+    }
+}

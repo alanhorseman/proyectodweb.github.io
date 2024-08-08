@@ -1,0 +1,13 @@
+.bannerContactos {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    .txtBannerContactos {
+        align-content: center;
+    }
+    &.bannerC {
+        width: 50%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,27 @@
+.sectionGridContactos {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    background: linear-gradient(to top, #F64323, transparent);
+    .gridContactos {
+        display: grid;
+        grid-template-columns: 8px 300px 8px;
+        grid-template-rows: 8px 400px 8px;
+        align-content: center;
+        .shadowGridContactos {
+            background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
+            grid-column: 2/4;
+            grid-row: 2/4;
+            border-radius: 28px;
+        }
+        .gridInfoContactos {
+            grid-column: 1/3;
+            grid-row: 1/3;
+            background-color: white;
+            border-radius: 28px;
+            text-align: center;
+            align-content: center;
+        }
+    }
+}

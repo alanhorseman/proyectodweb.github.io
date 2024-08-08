@@ -1,0 +1,12 @@
+.sectionCards {
+    display: grid;
+    grid-template-columns: repeat(3, 316px);
+    grid-template-rows: repeat(3, 458px);
+    justify-content: center;
+    gap: 25px 100px;
+    background: linear-gradient(to top, #F2055D, #F64323, transparent);
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 40px;
+}

@@ -1,0 +1,41 @@
+.contenedorEnvios {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    .enviosInfo {
+        display: flex;
+        width: 57%;
+    }
+    .enviosTitulo {
+        width: 40%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.infoFaq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 57%;
+    background-color: #f1631123;
+    border: 40px solid rgba(255, 238, 0, 0.123);
+    .txtEnvios {
+        padding: 0px 20px;
+    }
+}
+
+.cartelFaq {
+    display: flex;
+    width: 40%;
+    background-color: #f1631123;
+    border: 40px solid rgba(255, 255, 255, 0.507);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+

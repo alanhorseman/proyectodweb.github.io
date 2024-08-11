@@ -1,0 +1,12 @@
+@mixin query ($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+
+@mixin font-styles ($styles) {
+    @each $property, $value in $styles {
+        #{$property}: $value;
+    }
+}
+

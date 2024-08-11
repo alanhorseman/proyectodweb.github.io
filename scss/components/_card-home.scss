@@ -62,3 +62,10 @@
         padding-left: 5px;
     }
 }
+
+@include query (tablet) {
+    .cardBannerHome {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

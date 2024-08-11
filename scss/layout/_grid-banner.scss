@@ -21,4 +21,44 @@
     }
 }
 
+@include query (tablet) {
+    .sectionHome1 {
+        height: 1700px;
+        .bannerHomeGrid {
+            grid-template-columns: repeat(6, 100px);
+            img {
+                grid-column: 2/6;
+            }
+            .lineaBanner {
+                grid-column: 1/7;
+                width: 600px;
+            }
+        }
+        .masPopularesGrid {
+            grid-template-columns: 8px 700px 8px;
+        }
+    }
+}
 
+@include query (mobile) {
+    .sectionHome1 {
+        height: 2500px;
+        .bannerHomeGrid {
+            grid-template-columns: 310px;
+            grid-template-rows: 100px;
+            width: 100%;
+            .karuneLogoBanner {
+                width: 310px;
+                grid-column: 1/2;
+                grid-row: 1/6;
+            }
+            .lineaBanner {
+                width: 0px;
+                border: none;
+            }
+        }
+        .masPopularesGrid {
+            grid-template-columns: 8px 304px 8px;
+        }
+    }
+}

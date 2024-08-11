@@ -34,3 +34,17 @@ footer {
     }
 }
 
+@include query (tablet) {
+    .contenedorFooter {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .pieDePagina {
+        div {
+            p {
+                margin-right: 5px;
+            }
+        }
+    }
+}

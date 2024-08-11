@@ -3,17 +3,26 @@
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
+    @include query (tablet) {
+        .mainProductos {
+            background-size: auto;
+        }
+    }
 }
 
 .headerProductos {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1000px;
+    height: 62.5rem;
     /* background-image: url(../assets/img/fondo-banner2.png); */
     background-size: cover;
+
+    @include query (tablet) {
+        height: 105rem;
+    }
+
+    @include query (mobile) {
+        height: 121rem;
+    }
 }
-
-
-
-

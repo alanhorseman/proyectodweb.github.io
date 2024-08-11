@@ -1,16 +1,27 @@
 .contenedorReenvolso {
     display: flex;
     justify-content: space-between;
-    height: 400px;
-    .enviosInfo {
+    height: 25rem;
+    .reenvolsoInfo {
         display: flex;
         width: 57%;
     }
-    .enviosTitulo {
+    .reenvolsoTitulo {
         width: 40%;
         text-align: center;
         display: flex;
         flex-direction: column;
+    }
+
+    @include query (tablet) {
+        height: 50rem;
+        flex-direction: column;
+        .reenvolsoInfo {
+            width: 100%;
+        }
+        .reenvolsoTitulo {
+            width: 100%;
+        }
     }
 }
 
@@ -20,9 +31,9 @@
     justify-content: space-around;
     width: 57%;
     background-color: #f1631123;
-    border: 40px solid rgba(255, 238, 0, 0.123);
-    .txtEnvios {
-        padding: 0px 20px;
+    border: 2.5rem solid rgba(255, 238, 0, 0.123);
+    .txtReenvolso {
+        padding: 0px 1.25rem;
     }
 }
 
@@ -30,7 +41,7 @@
     display: flex;
     width: 40%;
     background-color: #f1631123;
-    border: 40px solid rgba(255, 255, 255, 0.507);
+    border: 2.5rem solid rgba(255, 255, 255, 0.507);
     justify-content: center;
     align-items: center;
 }

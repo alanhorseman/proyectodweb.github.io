@@ -1,18 +1,19 @@
 .contenedorMetodos {
     display: flex;
     justify-content: space-between;
-    height: 400px;
+    height: 25rem;
+
     .cartelFaq {
         display: flex;
         width: 40%;
         background-color: #f1631123;
-        border: 40px solid rgba(255, 255, 255, 0.507);
+        border: 2.5rem solid rgba(255, 255, 255, 0.507);
         justify-content: center;
         align-items: center;
         .cartel1 {
             text-align: center;
             width: fit-content;
-            padding: 100px;
+            padding: 6.25rem;
         }
     }
     .infoFaq {
@@ -21,7 +22,7 @@
         justify-content: space-around;
         width: 57%;
         background-color: #f1631123;
-        border: 40px solid rgba(255, 238, 0, 0.123);
+        border: 2.5rem solid rgba(255, 238, 0, 0.123);
         .txtFaq {
             display: flex;
             justify-content: space-between;
@@ -34,7 +35,7 @@
                 align-items: center;
                 width: 55%;
                 img {
-                    width: 100px;
+                    width: 6.25rem;
                     object-fit: contain;
                 }
             }
@@ -50,4 +51,26 @@
             }
         }
     }
+    @include query (tablet) {
+        flex-direction: column;
+        width: 100%;
+        height: 50rem;
+        .cartelFaq {
+            width: 100%;
+        }
+        .infoFaq {
+            width: 100%;
+            .txtFaq {
+                .imgFaq {
+                    img {
+                        width: 6.25rem;
+                    }
+                    &.wallets {
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
 }
+

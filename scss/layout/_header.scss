@@ -13,7 +13,7 @@ header {
         align-items: center;
         a {
             img {
-                width: 25px;
+                width: 1.5625rem;
                 height: 100%;
                 object-fit: contain;
             }
@@ -28,7 +28,7 @@ header {
     align-items: center;
     a {
         img {
-            width: 25px;
+            width: 1.5625rem;
             height: 100%;
             object-fit: contain;
         }
@@ -36,37 +36,88 @@ header {
 }
 
 .contenedorNav1 {
+    width: 33%;
+    .imgNav {
+        display: none;
+    }
+    .arrowNav {
+        display: none;
+    }
     .navbar {
         display: flex;
         list-style-type: none;
         height: 100%;
         li {
-            margin: 0px 10px;
+            margin: 0px .625rem;
             a {
-                text-decoration: none;
-                color: black;
+                @include font-styles ($navDesktop);
             }
+        }
+    }
+
+    @include query (tablet) {
+        .navbar {
+            display: none;
+        }
+        .imgNav {
+            height: 100%;
+            display: flex;
         }
     }
 }
 .contenedorNav2 {
+    width: 33%;
+    align-self: center;
     h1{
-            font-family: "Poppins", sans-serif;
-            font-weight: bolder;
-            font-style: italic;
+            @include font-styles ($h1Desktop);
     }
 }
 .contenedorNav3 {
-    button {
-        border: none;
-        background-color: white;
-        height: 30px;
-        margin: 0px 7px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 33%;
+    div {
+        display: flex;
+        height: 70%;
+        width: 25%;
+        button {
+            border: none;
+            flex: 1;
+            text-align: center;
+            justify-content: center;
+            background-color: white;
+            margin: 0px .4375rem;
+            @include font-styles ($navDesktop);
+        }
         img {
-            margin-left: 5px;
-            width: 20px;
+            flex: 1;
+            width: 1.7rem;
+            box-sizing: content-box;
             object-fit: contain;
         }
     }
+
+    .arrowNav {
+        display: none;
+    }
+
+    @include query (tablet) {
+        div {
+            display: none;
+        }
+        .arrowNav {
+            display: flex;
+        }
+    }
 }
+
+// @include query (tablet) {
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     align-content: center;
+//     li {
+//         margin: 0px .625rem;
+//     }
+// }
 

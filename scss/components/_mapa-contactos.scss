@@ -9,4 +9,19 @@
         align-content: center;
         width: 30%;
     }
+    
+
+    @include query (tablet) {
+        padding: 0px;
+        .mapsInfo {
+            width: 40%;
+        }
+        .mapsContacto {
+            width: 60%;
+            margin: 10px;
+            iframe {
+                width: 100%;
+            }
+        }
+    }
 }

@@ -4,6 +4,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include query (tablet) {
+        width: 50%;
+    }
 }
 
 .formContactos {
@@ -13,6 +16,10 @@
     height: 100%;
     padding: 10px;
     justify-content: center;
+
+    @include query (tablet) {
+        width: 100%;
+    }
 }
 
 .formControl {

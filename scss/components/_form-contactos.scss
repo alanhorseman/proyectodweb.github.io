@@ -7,6 +7,9 @@
     @include query (tablet) {
         width: 50%;
     }
+    @include query (mobile) {
+        width: 100%;
+    }
 }
 
 .formContactos {

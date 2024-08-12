@@ -24,4 +24,17 @@
             }
         }
     }
+
+    @include query (mobile) {
+        flex-direction: column;
+        padding: 0rem 0rem;
+        margin: 0rem;
+        .mapsInfo {
+            width: 100%;
+        }
+        .mapsContacto {
+            margin: 0rem;
+            width: 100%;
+        }
+    }
 }

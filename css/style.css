@@ -51,6 +51,9 @@
   @media screen and (max-width: 48rem) {
     .bannerFaq .bannerInfoFaq {
       grid-template-columns: .5rem 37.5rem .5rem; } }
+  @media screen and (max-width: 20rem) {
+    .bannerFaq .bannerInfoFaq {
+      grid-template-columns: .5rem 18.125rem .5rem; } }
 
 footer {
   background: linear-gradient(to top, #043581, #F2055D); }
@@ -296,6 +299,12 @@ footer {
       border-radius: 28px;
       text-align: center;
       align-content: center; }
+  @media screen and (max-width: 20rem) {
+    .sectionGridContactos {
+      flex-direction: column;
+      height: 62.5rem; }
+      .sectionGridContactos .gridContactos {
+        width: 100%; } }
 
 header nav {
   display: flex;
@@ -567,81 +576,119 @@ header nav {
   background-size: 100% 62.5rem;
   background-repeat: no-repeat;
   background-position: bottom; }
+  .sectionTablaTalles .contenedorInfoTablas {
+    width: 50%;
+    height: 100%; }
+    .sectionTablaTalles .contenedorInfoTablas .tablasTalles {
+      width: 80%;
+      height: 95%;
+      background-color: white; }
+      .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        justify-content: space-around; }
+        .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .tituloM {
+          width: 100%;
+          text-align: center; }
+        .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .contenedorTablas {
+          display: flex;
+          justify-content: space-evenly; }
+      .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        justify-content: space-around; }
+        .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .tituloH {
+          width: 100%;
+          text-align: center; }
+        .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .contenedorTablas {
+          display: flex;
+          justify-content: space-evenly; }
+    .sectionTablaTalles .contenedorInfoTablas .infoTablas {
+      width: 100%;
+      height: 5%; }
+  .sectionTablaTalles .tallesTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%; }
   @media screen and (max-width: 48rem) {
     .sectionTablaTalles {
-      flex-direction: column; }
+      flex-direction: column;
+      height: 85rem; }
       .sectionTablaTalles .contenedorInfoTablas {
         width: 100%;
-        margin: 10px 0px; }
+        margin: .625rem 0rem; }
         .sectionTablaTalles .contenedorInfoTablas .tablasTalles {
           width: 100%; }
           .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM {
-            margin: 10px 0px; }
+            margin: .625rem 0rem; }
             .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .tabla1M table tr th {
-              padding: 0px 10px; }
+              padding: 0rem .625rem; }
               .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .tabla1M table tr th:first-child {
-                padding: 1px 20px; }
+                padding: .0625rem 1.25rem; }
             .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .tabla2M table tr th {
-              padding: 0px 10px; }
+              padding: 0rem .625rem; }
               .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .tabla2M table tr th:first-child {
-                padding: 1px 20px; }
+                padding: .0625rem 1.25rem; }
           .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH {
-            margin: 10px 0px; }
+            margin: .625rem 0rem; }
             .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .tabla1H table tr th {
-              padding: 0px 10px; }
+              padding: 0rem .625rem; }
               .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .tabla1H table tr th:first-child {
-                padding: 1px 20px; }
+                padding: .0625rem 1.25rem; }
             .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .tabla2H table tr th {
-              padding: 0px 10px; }
+              padding: 0rem .625rem; }
               .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .tabla2H table tr th:first-child {
-                padding: 1px 20px; }
+                padding: .0625rem 1.25rem; }
       .sectionTablaTalles .tallesTxt {
         width: 100%;
-        margin: 10px 0px; } }
+        margin: .625rem 0rem; } }
   @media screen and (max-width: 20rem) {
     .sectionTablaTalles {
-      border: 4px solid yellow; } }
-
-.contenedorInfoTablas {
-  width: 50%;
-  height: 100%; }
-  .contenedorInfoTablas .tablasTalles {
-    width: 80%;
-    height: 95%;
-    background-color: white;
-    padding-left: 2.5rem; }
-    .contenedorInfoTablas .tablasTalles .tablasM {
-      display: flex;
       flex-direction: column;
-      width: 100%;
-      height: 50%;
-      justify-content: space-around; }
-      .contenedorInfoTablas .tablasTalles .tablasM .tituloM {
-        width: 100%; }
-    .contenedorInfoTablas .tablasTalles .tablasH {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 50%;
-      justify-content: space-around; }
-  .contenedorInfoTablas .infoTablas {
-    width: 100%;
-    height: 5%; }
-  @media screen and (max-width: 20rem) {
-    .contenedorInfoTablas {
-      border: 2px solid green; }
-      .contenedorInfoTablas .tablasTalles {
-        border: 2px solid red; }
-        .contenedorInfoTablas .tablasTalles .tablasM {
-          border: 2px solid blue; }
-          .contenedorInfoTablas .tablasTalles .tablasM .tabla1M {
-            border: 2px solid palevioletred; } }
-
-.tallesTxt {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 40%; }
+      height: 140.75rem;
+      padding: 0rem;
+      margin: 0rem; }
+      .sectionTablaTalles .contenedorInfoTablas {
+        width: 100%;
+        height: 60%;
+        margin: 0rem; }
+        .sectionTablaTalles .contenedorInfoTablas .tablasTalles {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin: 0rem;
+          padding: 0rem;
+          height: 95%; }
+          .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM {
+            margin: 0rem;
+            height: 50%;
+            align-items: center;
+            justify-content: space-between; }
+            .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .tituloM {
+              align-content: center;
+              height: 10%; }
+            .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .contenedorTablas {
+              height: 90%;
+              flex-direction: column;
+              justify-content: space-between; }
+          .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH {
+            margin: 0rem;
+            height: 50%; }
+            .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .contenedorTablas {
+              width: 100%;
+              height: 90%;
+              flex-direction: column;
+              align-items: center; }
+      .sectionTablaTalles .tallesTxt {
+        height: 40%;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0rem .30rem; } }
 
 .contenedorMetodos {
   display: flex;
@@ -870,6 +917,9 @@ header nav {
   @media screen and (max-width: 48rem) {
     .contenedorForm {
       width: 50%; } }
+  @media screen and (max-width: 20rem) {
+    .contenedorForm {
+      width: 100%; } }
 
 .formContactos {
   display: flex;
@@ -923,5 +973,33 @@ header nav {
         margin: 10px; }
         .sectionMapa .mapsContacto iframe {
           width: 100%; } }
+  @media screen and (max-width: 20rem) {
+    .sectionMapa {
+      flex-direction: column;
+      padding: 0rem 0rem;
+      margin: 0rem; }
+      .sectionMapa .mapsInfo {
+        width: 100%; }
+      .sectionMapa .mapsContacto {
+        margin: 0rem;
+        width: 100%; } }
+
+table tr th {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: .1875rem;
+  border: .0625rem solid black; }
+
+table tr td {
+  text-align: center;
+  padding: .1875rem;
+  border: .0625rem solid black; }
+
+@media screen and (max-width: 20rem) {
+  table tr th {
+    padding: .0625rem; }
+  table tr td {
+    padding: .0625rem; } }
 
 /* MEDIA QUERY */

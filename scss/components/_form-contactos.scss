@@ -1,0 +1,50 @@
+.contenedorForm {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include query (tablet) {
+        width: 50%;
+    }
+    @include query (mobile) {
+        width: 100%;
+    }
+}
+
+.formContactos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: .625rem;
+    justify-content: center;
+
+    @include query (tablet) {
+        width: 100%;
+    }
+}
+
+.formControl {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 25rem;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+    border-radius: 1.875rem;
+    border-width: .0625rem;
+    margin: .625rem 0rem;
+}
+
+.formMensaje {
+    padding-bottom: 6.25rem;
+}
+
+.botonForm {
+    width: 18.75rem;
+    align-self: center;
+    background-color: aqua;
+    border: none;
+    border-radius: .625rem;
+}

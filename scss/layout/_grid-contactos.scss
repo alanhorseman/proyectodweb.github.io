@@ -1,0 +1,36 @@
+.sectionGridContactos {
+    display: flex;
+    width: 100%;
+    height: 37.5rem;
+    justify-content: center;
+    background: linear-gradient(to top, #F64323, transparent);
+    .gridContactos {
+        display: grid;
+        grid-template-columns: .5rem 18.75rem .5rem;
+        grid-template-rows: .5rem 25rem .5rem;
+        align-content: center;
+        .shadowGridContactos {
+            background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
+            grid-column: 2/4;
+            grid-row: 2/4;
+            border-radius: 1.75rem;
+        }
+        .gridInfoContactos {
+            grid-column: 1/3;
+            grid-row: 1/3;
+            background-color: white;
+            border-radius: 1.75rem;
+            text-align: center;
+            align-content: center;
+        }
+    }
+
+
+    @include query (mobile) {
+        flex-direction: column;
+        height: 62.5rem;
+        .gridContactos {
+            width: 100%;
+        }
+    }
+}

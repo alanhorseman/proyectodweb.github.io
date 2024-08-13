@@ -1,0 +1,98 @@
+.sectionHome1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 75rem;
+    background-image: url(../assets/img/fondo-banner2.png);
+    background-size: cover;
+    @include query (tablet) {
+        height: 105.25rem;
+        background-image: 
+            linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%),
+            url(../../assets/img/fondoTablet.png);
+    }
+    @include query (mobile) {
+        height: 155rem;
+        background-image: 
+            linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%),
+            url(../../assets/img/fondoMobile.png);
+    }
+}
+
+
+
+.container {
+    div {
+        div {
+            .imgShop {
+                margin: 0rem .625rem;
+                img {
+                    width: 4.375rem;
+                    height: 4.375rem;
+                    object-fit: contain;
+                }
+            }
+            .txtShop h3 {
+                font-size: large;
+            }
+        }
+    }
+}
+
+.sectionSlide {
+    background: linear-gradient(to top, #F2055D, #F64323, white);
+    width: 100%;
+    height: 25rem;
+    @include query (mobile) {
+        height: 35rem;
+    }
+}
+
+.contenedorSlide {
+    display: flex;
+    justify-content: center;
+    margin: 1.875rem 0rem;
+    .slideImg {
+        width: 44.375rem;
+        height: 23.9375rem;
+        margin: .625rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .slideInfo {
+        width: 30.625rem;
+        height: 23.9375rem;
+        margin: .625rem;
+        text-align: center;
+        align-content: center;
+    }
+
+    @include query (mobile) {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0rem;
+        .slideImg {
+            width: 100%;
+            object-fit: contain;
+            margin: 0rem;
+            align-content: center;
+            flex: 1;
+            img {
+                object-fit: contain;
+            }
+        }
+        .slideInfo {
+            flex: 1;
+            width: 100%;
+            margin: 0rem;
+        }
+    }
+}
+
+
+

@@ -87,7 +87,7 @@ h2{
 p{
     font-family: "Poppins", sans-serif;
     font-style: italic;
-}
+} 
 
 /* BANNER HOME */
 
@@ -1031,10 +1031,6 @@ td {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
-    }
-
-    .nav {
-        text-align: center;
     }
 
     .navbar li {

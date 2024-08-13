@@ -1,0 +1,64 @@
+.bannerHomeGrid {
+    margin: 1.25rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(14, 6.25rem);
+    grid-template-rows: repeat(6, 1fr);
+    .lineaBanner {
+        grid-column: 1/15;
+        grid-row: 2/6;
+        border: 2px solid white;
+        width: 87.5rem;
+        height: 18.75rem;
+        border-radius: 4.375rem;
+    }
+    .karuneLogoBanner {
+        width: 25.625rem;
+        object-fit: contain;
+        grid-column: 6/10;
+        grid-row: 1/7;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+@include query (tablet) {
+    .sectionHome1 {
+        height: 106.25rem;
+        .bannerHomeGrid {
+            grid-template-columns: repeat(6, 6.25rem);
+            img {
+                grid-column: 2/6;
+            }
+            .lineaBanner {
+                grid-column: 1/7;
+                width: 37.5rem;
+            }
+        }
+        .masPopularesGrid {
+            grid-template-columns: .5rem 43.75rem .5rem;
+        }
+    }
+}
+
+@include query (mobile) {
+    .sectionHome1 {
+        height: 156.25rem;
+        .bannerHomeGrid {
+            grid-template-columns: 19.375rem;
+            grid-template-rows: 6.25rem;
+            width: 100%;
+            .karuneLogoBanner {
+                width: 19.375rem;
+                grid-column: 1/2;
+                grid-row: 1/6;
+            }
+            .lineaBanner {
+                width: 0rem;
+                border: none;
+            }
+        }
+        .masPopularesGrid {
+            grid-template-columns: .5rem 19rem .5rem;
+        }
+    }
+}

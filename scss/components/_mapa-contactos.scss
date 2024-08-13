@@ -1,0 +1,40 @@
+.sectionMapa {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1.25rem 1.25rem;
+    background: linear-gradient(to top, #F2055D, #F64323);
+    .mapsInfo {
+        text-align: center;
+        align-content: center;
+        width: 30%;
+    }
+    
+
+    @include query (tablet) {
+        padding: 0rem;
+        .mapsInfo {
+            width: 40%;
+        }
+        .mapsContacto {
+            width: 60%;
+            margin: .625rem;
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+
+    @include query (mobile) {
+        flex-direction: column;
+        padding: 0rem 0rem;
+        margin: 0rem;
+        .mapsInfo {
+            width: 100%;
+        }
+        .mapsContacto {
+            margin: 0rem;
+            width: 100%;
+        }
+    }
+}

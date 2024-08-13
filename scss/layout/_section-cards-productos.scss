@@ -1,0 +1,24 @@
+.sectionCards {
+    display: grid;
+    grid-template-columns: repeat(3, 19.75rem);
+    grid-template-rows: repeat(3, 28.625rem);
+    justify-content: center;
+    gap: 1.5625rem 6.25rem;
+    background: linear-gradient(to top, #F2055D, #F64323, transparent);
+    background-size: 100% 62.5rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 2.5rem;
+
+    @include query (tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include query (mobile) {
+        margin-top: 0rem .3125rem;
+        gap: 0rem 0rem;
+    }
+}
+
+

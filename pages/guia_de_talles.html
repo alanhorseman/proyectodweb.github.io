@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="Encuentra la talla perfecta para tis prendas">
+    <meta name="robots" content="noindex nofollow">
+
     <title>Guia de talles</title>
+
+    <link rel="shortcut icon" href="../assets/img/karunelogo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    
 </head>
 <body>
     <header>
@@ -16,24 +22,48 @@
                 <a href="facebook.com.ar"><img src="../assets/img/facebook.png" alt="facebook"></a>
             </div>
         </div>
-        <div>
+        <div class="navContenedor">
             <nav class="nav">
                 <div class="contenedorNav1">
                     <ul class="navbar">
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="../pages/productos.html">Productos</a></li>
                         <li><a href="#">Guia de talles</a></li>
-                        <li><a href="./contactos.html">Contacto</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="../pages/contactos.html">Contacto</a></li>
+                        <li><a href="../pages/faq.html">FAQ</a></li>
                     </ul>
+                    <label for="" class="imgNav">
+                        <img src="../assets/svg/menu.svg" alt="menu">
+                    </label>
                 </div>
                 <div class="contenedorNav2">
                     <h1>KARUNE</h1>
                 </div>
                 <div class="contenedorNav3">
-                    <button class="buttonSesion">Login<img class="personIconSesion iconnav" src="../assets/img/personicon.webp" alt="icon person"></button>
-                    <button class="buttonSesion">Carrito<img class="imgIconbag iconnav" src="../assets/img/iconbag.png" alt="carrito"></button>
-                    <button class="buttonSesion">ARS<img class="iconArrow iconnav" src="../assets/img/iconarrow.png" alt=""></button>
+                    <div class="navLogin">
+                        <div>
+                            <button>Login</button>
+                        </div>
+                        <label for="" class="iconUser">
+                            <img src="../assets/svg/user.svg" alt="Login">
+                        </label>
+                    </div>
+                    <div class="navBag">
+                        <div>
+                            <button>Carrito</button>
+                        </div>
+                        <label for="" class="iconBag">
+                            <img src="../assets/svg/bag.svg" alt="Carrito">
+                        </label>
+                    </div>
+                    <div class="navIdioma">
+                        <div>
+                            <button>ARS</button>
+                        </div>
+                        <label for="" class="iconArrow">
+                            <img src="../assets/svg/arrow-nav.svg" alt="Idioma">
+                        </label>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -56,109 +86,135 @@
                             <h4>MUJER</h4>
                             <h5>Medidas en cm</h5>
                         </div>
-                        <div class="tabla1M">
-                            <table>
-                                <tr>
-                                    <th>Talle</th>
-                                    <th>34</th>
-                                    <th>36</th>
-                                    <th>38</th>
-                                    <th>40</th>
-                                    <th>42</th>
-                                    <th>44</th>
-                                    <th>46</th>
-                                    <th>48</th>
-                                    <th>50</th>
-                                    <th>52</th>
-                                    <th>54</th>
-                                </tr>
-                                <tr>
-                                    <th>Busto</th>
-                                    <td>81</td>
-                                    <td>85</td>
-                                    <td>89</td>
-                                    <td>93</td>
-                                    <td>97</td>
-                                    <td>102</td>
-                                    <td>107</td>
-                                    <td>113</td>
-                                    <td>119</td>
-                                    <td>125</td>
-                                    <td>131</td>
-                                </tr>
-                                <tr>
-                                    <th>Cintura</th>
-                                    <td>63</td>
-                                    <td>67</td>
-                                    <td>71</td>
-                                    <td>75</td>
-                                    <td>79</td>
-                                    <td>84</td>
-                                    <td>89</td>
-                                    <td>95</td>
-                                    <td>102</td>
-                                    <td>110</td>
-                                    <td>119</td>
-                                </tr>
-                                <tr>
-                                    <th>Cadera</th>
-                                    <td>90</td>
-                                    <td>94</td>
-                                    <td>98</td>
-                                    <td>102</td>
-                                    <td>106</td>
-                                    <td>111</td>
-                                    <td>116</td>
-                                    <td>123</td>
-                                    <td>131</td>
-                                    <td>140</td>
-                                    <td>150</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="tabla2M">
-                            <table>
-                                <tr>
-                                    <th>Talle</th>
-                                    <th>XS</th>
-                                    <th>S</th>
-                                    <th>M</th>
-                                    <th>L</th>
-                                    <th>XL</th>
-                                    <th>2XL</th>
-                                    <th>3XL</th>
-                                </tr>
-                                <tr>
-                                    <th>Busto</th>
-                                    <td>85</td>
-                                    <td>89</td>
-                                    <td>95</td>
-                                    <td>102</td>
-                                    <td>110</td>
-                                    <td>119</td>
-                                    <td>128</td>
-                                </tr>
-                                <tr>
-                                    <th>Cintura</th>
-                                    <td>67</td>
-                                    <td>71</td>
-                                    <td>77</td>
-                                    <td>84</td>
-                                    <td>92</td>
-                                    <td>102</td>
-                                    <td>113</td>
-                                </tr>
-                                <tr>
-                                    <th>Cadera</th>
-                                    <td>94</td>
-                                    <td>98</td>
-                                    <td>104</td>
-                                    <td>111</td>
-                                    <td>120</td>
-                                    <td>130</td>
-                                    <td>140</td>
-                                </tr>
-                            </table>
+                        <div class="contenedorTablas">
+                            <div class="tabla1M">
+                                <table>
+                                    <tr>
+                                        <th>Talle</th>
+                                        <th>Busto</th>
+                                        <th>Cintura</th>
+                                        <th>Cadera</th>
+                                    </tr>
+                                    <tr>
+                                        <th>34</th>
+                                        <td>81</td>
+                                        <td>63</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th>36</th>
+                                        <td>85</td>
+                                        <td>67</td>
+                                        <td>94</td>
+                                    </tr>
+                                    <tr>
+                                        <th>38</th>
+                                        <td>89</td>
+                                        <td>71</td>
+                                        <td>98</td>
+                                    </tr>
+                                    <tr>
+                                        <th>40</th>
+                                        <td>93</td>
+                                        <td>75</td>
+                                        <td>102</td>
+                                    </tr>
+                                    <tr>
+                                        <th>42</th>
+                                        <td>97</td>
+                                        <td>79</td>
+                                        <td>106</td>
+                                    </tr>
+                                    <tr>
+                                        <th>44</th>
+                                        <td>102</td>
+                                        <td>84</td>
+                                        <td>111</td>
+                                    </tr>
+                                    <tr>
+                                        <th>46</th>
+                                        <td>107</td>
+                                        <td>89</td>
+                                        <td>116</td>
+                                    </tr>
+                                    <tr>
+                                        <th>48</th>
+                                        <td>113</td>
+                                        <td>95</td>
+                                        <td>123</td>
+                                    </tr>
+                                    <tr>
+                                        <th>50</th>
+                                        <td>119</td>
+                                        <td>102</td>
+                                        <td>131</td>
+                                    </tr>
+                                    <tr>
+                                        <th>52</th>
+                                        <td>125</td>
+                                        <td>110</td>
+                                        <td>140</td>
+                                    </tr>
+                                    <tr>
+                                        <th>54</th>
+                                        <td>131</td>
+                                        <td>119</td>
+                                        <td>150</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tabla2M">
+                                <table>
+                                    <tr>
+                                        <th>Talle</th>
+                                        <th>Busto</th>
+                                        <th>Cintura</th>
+                                        <th>Cadera</th>
+                                    </tr>
+                                    <tr>
+                                        <th>XS</th>
+                                        <td>85</td>
+                                        <td>67</td>
+                                        <td>94</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S</th>
+                                        <td>89</td>
+                                        <td>71</td>
+                                        <td>98</td>
+                                    </tr>
+                                    <tr>
+                                        <th>M</th>
+                                        <td>95</td>
+                                        <td>77</td>
+                                        <td>104</td>
+                                    </tr>
+                                    <tr>
+                                        <th>L</th>
+                                        <td>102</td>
+                                        <td>84</td>
+                                        <td>111</td>
+                                    </tr>
+                                    <tr>
+                                        <th>XL</th>
+                                        <td>110</td>
+                                        <td>92</td>
+                                        <td>120</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2XL</th>
+                                        <td>119</td>
+                                        <td>102</td>
+                                        <td>130</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3XL</th>
+                                        <td>128</td>
+                                        <td>113</td>
+                                        <td>140</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <div class="tablasH">
@@ -166,64 +222,90 @@
                             <h4>HOMBRE</h4>
                             <h5>Medidas en cm</h5>
                         </div>
-                        <div class="tabla1H">
-                            <table>
-                                <tr>
-                                    <th>Talle</th>
-                                    <th>38</th>
-                                    <th>40</th>
-                                    <th>M</th>
-                                    <th>44</th>
-                                    <th>46</th>
-                                    <th>48</th>
-                                    <th>50</th>
-                                    <th>52</th>
-                                    <th>54</th>
-                                </tr>
-                                <tr>
-                                    <th>Cintura</th>
-                                    <td>70</td>
-                                    <td>82</td>
-                                    <td>86</td>
-                                    <td>90</td>
-                                    <td>94</td>
-                                    <td>98</td>
-                                    <td>102</td>
-                                    <td>106</td>
-                                    <td>110</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="tabla2H">
-                            <table>
-                                <tr>
-                                    <th>Talle</th>
-                                    <th>XS</th>
-                                    <th>S</th>
-                                    <th>M</th>
-                                    <th>L</th>
-                                    <th>XL</th>
-                                    <th>2XL</th>
-                                </tr>
-                                <tr>
-                                    <th>Pecho</th>
-                                    <td>93</td>
-                                    <td>99</td>
-                                    <td>105</td>
-                                    <td>111</td>
-                                    <td>117</td>
-                                    <td>123</td>
-                                </tr>
-                                <tr>
-                                    <th>Cintura</th>
-                                    <td>76</td>
-                                    <td>80</td>
-                                    <td>86</td>
-                                    <td>92</td>
-                                    <td>98</td>
-                                    <td>104</td>
-                                </tr>
-                            </table>
+                        <div class="contenedorTablas">
+                            <div class="tabla1H">
+                                <table>
+                                    <tr>
+                                        <th>Talle</th>
+                                        <th>Cintura</th>
+                                    </tr>
+                                    <tr>
+                                        <th>38</th>
+                                        <td>78</td>
+                                    </tr>
+                                    <tr>
+                                        <th>40</th>
+                                        <td>82</td>
+                                    </tr>
+                                    <tr>
+                                        <th>M</th>
+                                        <td>86</td>
+                                    </tr>
+                                    <tr>
+                                        <th>44</th>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th>46</th>
+                                        <td>94</td>
+                                    </tr>
+                                    <tr>
+                                        <th>48</th>
+                                        <td>98</td>
+                                    </tr>
+                                    <tr>
+                                        <th>50</th>
+                                        <td>102</td>
+                                    </tr>
+                                    <tr>
+                                        <th>52</th>
+                                        <td>106</td>
+                                    </tr>
+                                    <tr>
+                                        <th>54</th>
+                                        <td>110</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tabla2H">
+                                <table>
+                                    <tr>
+                                        <th>Talle</th>
+                                        <th>Pecho</th>
+                                        <th>Cintura</th>
+                                    </tr>
+                                    <tr>
+                                        <th>XS</th>
+                                        <td>93</td>
+                                        <td>76</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S</th>
+                                        <td>99</td>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <th>M</th>
+                                        <td>105</td>
+                                        <td>86</td>
+                                    </tr>
+                                    <tr>
+                                        <th>L</th>
+                                        <td>111</td>
+                                        <td>92</td>
+                                    </tr>
+                                    <tr>
+                                        <th>XL</th>
+                                        <td>117</td>
+                                        <td>98</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2XL</th>
+                                        <td>123</td>
+                                        <td>104</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

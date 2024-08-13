@@ -1,0 +1,131 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    .barraHeader {
+        display: flex;
+        .iconHeader {
+            display: flex;
+            width: 8%;
+            justify-content: space-around;
+            align-items: center;
+            a {
+                img {
+                    width: 1.5625rem;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    .navContenedor {
+        .nav {
+            display: flex; 
+            justify-content: space-between;
+            .contenedorNav1 {
+                width: 33%;
+                .imgNav {
+                    display: none;
+                }
+                .navbar {
+                    display: flex;
+                    list-style-type: none;
+                    height: 100%;
+                    li {
+                        margin: 0px .625rem;
+                        a {
+                            @include font-styles ($navDesktop);
+                            &:hover {
+                                color: grey;
+                            }
+                        }
+                        
+                    }
+                }
+            
+                @include query (tablet) {
+                    .navbar {
+                        display: none;
+                    }
+                    .imgNav {
+                        height: 100%;
+                        display: flex;
+                    }
+                }
+            }
+            .contenedorNav2 {
+                width: 33%;
+                align-self: center;
+                h1{
+                        @include font-styles ($h1Desktop);
+                }
+            }
+            .contenedorNav3 {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                gap: 0.125rem;
+                width: 33%;
+                .navLogin {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 70%;
+                    width: 14%;
+                    div {
+                        button {
+                            border: none;
+                            flex: 1;
+                            text-align: center;
+                            justify-content: center;
+                            background-color: white;
+                            margin: 0px .4375rem;
+                            @include font-styles ($navDesktop);
+
+                            &:hover {
+                                color: grey;
+                            }
+                        }
+                    }
+                    .iconUser {
+                        object-fit: contain;
+                    }
+                }
+        
+                .navBag {
+                    @extend .navLogin;
+                    .iconBag {
+                    }
+                }
+        
+                .navIdioma {
+                    @extend .navLogin;
+                    .iconArrow {
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            width: auto;
+                            height: auto;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            
+                @include query (tablet) {
+                    div {
+                        display: none;
+                    }
+                    .arrowNav {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+

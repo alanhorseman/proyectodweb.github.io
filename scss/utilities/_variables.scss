@@ -1,0 +1,39 @@
+$font-tandelle-regular: 400;
+$font-tandelle-bold: 700;
+$font-tandelle-italic: italic;
+$font-tandelle-normal: normal;
+
+$h1Desktop: (
+    font-family: ("tandelle", sans-serif),
+    font-size: 3.3rem,
+    font-weight: $font-tandelle-bold,
+    line-height: 2.5rem,
+    color: black,
+    text-align: center,
+);
+
+$navDesktop: (
+    font-family: ("tandelle", sans-serif),
+    font-size: 1.5rem,
+    font-weight: $font-tandelle-regular,
+    color: black,
+    text-align: center,
+    text-decoration: none,
+    font-style: $font-tandelle-normal,
+);
+
+$fontSubtitulos: (
+    font-family: ("tandelle", sans-serif),
+    font-size: 2.5rem,
+    font-weight: $font-tandelle-regular,
+    color: black,
+    font-style: $font-tandelle-normal,
+);
+
+$fontTituloCard: (
+    font-family: ("tandelle", sans-serif),
+    font-size: 3.5rem,
+    font-weight: $font-tandelle-regular,
+    color: rgb(0, 0, 0),
+    font-style: $font-tandelle-normal,
+)

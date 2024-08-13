@@ -1,0 +1,183 @@
+.sectionTablaTalles {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 62.5rem;
+    padding: 1.25rem;
+    background: linear-gradient(to top, #F2055D, #F64323, transparent);
+    background-size: 100% 62.5rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .contenedorInfoTablas {
+        width: 50%;
+        height: 100%;
+        .tablasTalles {
+            width: 80%;
+            height: 95%;
+            background-color: white;
+            .tablasM {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 50%;
+                justify-content: space-around;
+                .tituloM {
+                    width: 100%;
+                    text-align: center;
+                }
+                .contenedorTablas {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+            .tablasH {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 50%;
+                justify-content: space-around;
+                .tituloH {
+                    width: 100%;
+                    text-align: center;
+                }
+                .contenedorTablas {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+        .infoTablas {
+            width: 100%;
+            height: 5%;
+        }
+    }
+    .tallesTxt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40%;
+    }
+
+    @include query (tablet) {
+        flex-direction: column;
+        height: 85rem;
+        .contenedorInfoTablas {
+            width: 100%;
+            margin: .625rem 0rem;
+            .tablasTalles {
+                width: 100%;
+                .tablasM {
+                    margin: .625rem 0rem;
+                    .tabla1M {
+                        table {
+                            tr {
+                                th {
+                                    padding: 0rem .625rem;
+                                    &:first-child {
+                                        padding: .0625rem 1.25rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .tabla2M {
+                        table {
+                            tr {
+                                th {
+                                    padding: 0rem .625rem;
+                                    &:first-child {
+                                        padding: .0625rem 1.25rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .tablasH {
+                    margin: .625rem 0rem;
+                    .tabla1H {
+                        table {
+                            tr {
+                                th {
+                                    padding: 0rem .625rem;
+                                    &:first-child {
+                                        padding: .0625rem 1.25rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .tabla2H {
+                        table {
+                            tr {
+                                th {
+                                    padding: 0rem .625rem;
+                                    &:first-child {
+                                        padding: .0625rem 1.25rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tallesTxt {
+            width: 100%;
+            margin: .625rem 0rem;
+        }
+    }
+
+    @include query (mobile) {
+        flex-direction: column;
+        height: 140.75rem;
+        padding: 0rem;
+        margin: 0rem;
+        .contenedorInfoTablas{
+            width: 100%;
+            height: 60%;
+            margin: 0rem;
+            .tablasTalles {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin: 0rem;
+                padding: 0rem;
+                height: 95%;
+                .tablasM {
+                    margin: 0rem;
+                    height: 50%;
+                    align-items: center;
+                    justify-content: space-between;
+                    .tituloM {
+                        align-content: center;
+                        height: 10%;
+                    }
+                    .contenedorTablas {
+                        height: 90%;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                }
+                .tablasH {
+                    margin: 0rem;
+                    height: 50%;
+                    .contenedorTablas {
+                        width: 100%;
+                        height: 90%;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .tallesTxt {
+            height: 40%;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0rem .30rem;
+        }
+    }
+}
+

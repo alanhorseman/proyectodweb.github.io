@@ -9,7 +9,7 @@
 /* LAYOUT */
 .bannerContactos {
   width: 100%;
-  height: 200px;
+  height: 12.5rem;
   display: flex;
   justify-content: center; }
   .bannerContactos .txtBannerContactos {
@@ -63,10 +63,12 @@ footer {
     footer .contenedorFooter div ul {
       list-style-type: none; }
       footer .contenedorFooter div ul li {
-        margin: 10px 0px; }
+        margin: .625rem 0rem; }
         footer .contenedorFooter div ul li a {
           text-decoration: none;
           color: white; }
+          footer .contenedorFooter div ul li a:hover {
+            color: grey; }
         footer .contenedorFooter div ul li.tituloLista {
           text-align: center;
           font-weight: bold;
@@ -78,14 +80,16 @@ footer {
     justify-content: space-around;
     color: white; }
     footer .pieDePagina div {
-      display: flex; }
-
-@media screen and (max-width: 48rem) {
-  .contenedorFooter {
-    flex-direction: column;
-    text-align: center; }
-  .pieDePagina div p {
-    margin-right: 5px; } }
+      display: flex;
+      gap: 1.875rem; }
+      footer .pieDePagina div p:hover {
+        color: grey; }
+  @media screen and (max-width: 48rem) {
+    footer .contenedorFooter {
+      flex-direction: column;
+      text-align: center; }
+    footer .pieDePagina div p {
+      margin-right: .3125rem; } }
 
 .bannerGuia {
   width: 100%;
@@ -202,19 +206,19 @@ footer {
         object-position: center; } }
 
 .bannerHomeGrid {
-  margin: 20px 0px;
+  margin: 1.25rem 0rem;
   display: grid;
-  grid-template-columns: repeat(14, 100px);
+  grid-template-columns: repeat(14, 6.25rem);
   grid-template-rows: repeat(6, 1fr); }
   .bannerHomeGrid .lineaBanner {
     grid-column: 1/15;
     grid-row: 2/6;
     border: 2px solid white;
-    width: 1400px;
-    height: 300px;
-    border-radius: 70px; }
+    width: 87.5rem;
+    height: 18.75rem;
+    border-radius: 4.375rem; }
   .bannerHomeGrid .karuneLogoBanner {
-    width: 410px;
+    width: 25.625rem;
     object-fit: contain;
     grid-column: 6/10;
     grid-row: 1/7;
@@ -223,33 +227,33 @@ footer {
 
 @media screen and (max-width: 48rem) {
   .sectionHome1 {
-    height: 1700px; }
+    height: 106.25rem; }
     .sectionHome1 .bannerHomeGrid {
-      grid-template-columns: repeat(6, 100px); }
+      grid-template-columns: repeat(6, 6.25rem); }
       .sectionHome1 .bannerHomeGrid img {
         grid-column: 2/6; }
       .sectionHome1 .bannerHomeGrid .lineaBanner {
         grid-column: 1/7;
-        width: 600px; }
+        width: 37.5rem; }
     .sectionHome1 .masPopularesGrid {
-      grid-template-columns: 8px 700px 8px; } }
+      grid-template-columns: .5rem 43.75rem .5rem; } }
 
 @media screen and (max-width: 20rem) {
   .sectionHome1 {
-    height: 2500px; }
+    height: 156.25rem; }
     .sectionHome1 .bannerHomeGrid {
-      grid-template-columns: 310px;
-      grid-template-rows: 100px;
+      grid-template-columns: 19.375rem;
+      grid-template-rows: 6.25rem;
       width: 100%; }
       .sectionHome1 .bannerHomeGrid .karuneLogoBanner {
-        width: 310px;
+        width: 19.375rem;
         grid-column: 1/2;
         grid-row: 1/6; }
       .sectionHome1 .bannerHomeGrid .lineaBanner {
-        width: 0px;
+        width: 0rem;
         border: none; }
     .sectionHome1 .masPopularesGrid {
-      grid-template-columns: 8px 304px 8px; } }
+      grid-template-columns: .5rem 19rem .5rem; } }
 
 .barraGridProductos {
   display: grid;
@@ -279,24 +283,24 @@ footer {
 .sectionGridContactos {
   display: flex;
   width: 100%;
-  height: 600px;
+  height: 37.5rem;
   justify-content: center;
   background: linear-gradient(to top, #F64323, transparent); }
   .sectionGridContactos .gridContactos {
     display: grid;
-    grid-template-columns: 8px 300px 8px;
-    grid-template-rows: 8px 400px 8px;
+    grid-template-columns: .5rem 18.75rem .5rem;
+    grid-template-rows: .5rem 25rem .5rem;
     align-content: center; }
     .sectionGridContactos .gridContactos .shadowGridContactos {
       background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
       grid-column: 2/4;
       grid-row: 2/4;
-      border-radius: 28px; }
+      border-radius: 1.75rem; }
     .sectionGridContactos .gridContactos .gridInfoContactos {
       grid-column: 1/3;
       grid-row: 1/3;
       background-color: white;
-      border-radius: 28px;
+      border-radius: 1.75rem;
       text-align: center;
       align-content: center; }
   @media screen and (max-width: 20rem) {
@@ -306,105 +310,101 @@ footer {
       .sectionGridContactos .gridContactos {
         width: 100%; } }
 
-header nav {
-  display: flex;
-  justify-content: space-between; }
-
-.barraHeader {
-  display: flex; }
-  .barraHeader .iconHeader {
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white; }
+  header .barraHeader {
+    display: flex; }
+    header .barraHeader .iconHeader {
+      display: flex;
+      width: 8%;
+      justify-content: space-around;
+      align-items: center; }
+      header .barraHeader .iconHeader a img {
+        width: 1.5625rem;
+        height: 100%;
+        object-fit: contain; }
+  header .navContenedor .nav {
     display: flex;
-    width: 8%;
-    justify-content: space-around;
-    align-items: center; }
-    .barraHeader .iconHeader a img {
-      width: 1.5625rem;
-      height: 100%;
-      object-fit: contain; }
-
-.iconHeader {
-  display: flex;
-  width: 80%;
-  justify-content: space-around;
-  align-items: center; }
-  .iconHeader a img {
-    width: 1.5625rem;
-    height: 100%;
-    object-fit: contain; }
-
-.contenedorNav1 {
-  width: 33%; }
-  .contenedorNav1 .imgNav {
-    display: none; }
-  .contenedorNav1 .arrowNav {
-    display: none; }
-  .contenedorNav1 .navbar {
-    display: flex;
-    list-style-type: none;
-    height: 100%; }
-    .contenedorNav1 .navbar li {
-      margin: 0px .625rem; }
-      .contenedorNav1 .navbar li a {
+    justify-content: space-between; }
+    header .navContenedor .nav .contenedorNav1 {
+      width: 33%; }
+      header .navContenedor .nav .contenedorNav1 .imgNav {
+        display: none; }
+      header .navContenedor .nav .contenedorNav1 .navbar {
+        display: flex;
+        list-style-type: none;
+        height: 100%; }
+        header .navContenedor .nav .contenedorNav1 .navbar li {
+          margin: 0px .625rem; }
+          header .navContenedor .nav .contenedorNav1 .navbar li a {
+            font-family: "tandelle", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-style: normal; }
+            header .navContenedor .nav .contenedorNav1 .navbar li a:hover {
+              color: grey; }
+      @media screen and (max-width: 48rem) {
+        header .navContenedor .nav .contenedorNav1 .navbar {
+          display: none; }
+        header .navContenedor .nav .contenedorNav1 .imgNav {
+          height: 100%;
+          display: flex; } }
+    header .navContenedor .nav .contenedorNav2 {
+      width: 33%;
+      align-self: center; }
+      header .navContenedor .nav .contenedorNav2 h1 {
         font-family: "tandelle", sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
+        font-size: 3.3rem;
+        font-weight: 700;
+        line-height: 2.5rem;
         color: black;
-        text-align: center;
-        text-decoration: none;
-        font-style: normal; }
-  @media screen and (max-width: 48rem) {
-    .contenedorNav1 .navbar {
-      display: none; }
-    .contenedorNav1 .imgNav {
-      height: 100%;
-      display: flex; } }
-
-.contenedorNav2 {
-  width: 33%;
-  align-self: center; }
-  .contenedorNav2 h1 {
-    font-family: "tandelle", sans-serif;
-    font-size: 3.3rem;
-    font-weight: 700;
-    line-height: 2.5rem;
-    color: black;
-    text-align: center; }
-
-.contenedorNav3 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 33%; }
-  .contenedorNav3 div {
-    display: flex;
-    height: 70%;
-    width: 25%; }
-    .contenedorNav3 div button {
-      border: none;
-      flex: 1;
-      text-align: center;
-      justify-content: center;
-      background-color: white;
-      margin: 0px .4375rem;
-      font-family: "tandelle", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 400;
-      color: black;
-      text-align: center;
-      text-decoration: none;
-      font-style: normal; }
-    .contenedorNav3 div img {
-      flex: 1;
-      width: 1.7rem;
-      box-sizing: content-box;
-      object-fit: contain; }
-  .contenedorNav3 .arrowNav {
-    display: none; }
-  @media screen and (max-width: 48rem) {
-    .contenedorNav3 div {
-      display: none; }
-    .contenedorNav3 .arrowNav {
-      display: flex; } }
+        text-align: center; }
+    header .navContenedor .nav .contenedorNav3 {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 0.125rem;
+      width: 33%; }
+      header .navContenedor .nav .contenedorNav3 .navLogin, header .navContenedor .nav .contenedorNav3 .navBag, header .navContenedor .nav .contenedorNav3 .navIdioma {
+        display: flex;
+        justify-content: space-between;
+        height: 70%;
+        width: 14%; }
+        header .navContenedor .nav .contenedorNav3 .navLogin div button, header .navContenedor .nav .contenedorNav3 .navBag div button, header .navContenedor .nav .contenedorNav3 .navIdioma div button {
+          border: none;
+          flex: 1;
+          text-align: center;
+          justify-content: center;
+          background-color: white;
+          margin: 0px .4375rem;
+          font-family: "tandelle", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: black;
+          text-align: center;
+          text-decoration: none;
+          font-style: normal; }
+          header .navContenedor .nav .contenedorNav3 .navLogin div button:hover, header .navContenedor .nav .contenedorNav3 .navBag div button:hover, header .navContenedor .nav .contenedorNav3 .navIdioma div button:hover {
+            color: grey; }
+        header .navContenedor .nav .contenedorNav3 .navLogin .iconUser, header .navContenedor .nav .contenedorNav3 .navBag .iconUser, header .navContenedor .nav .contenedorNav3 .navIdioma .iconUser {
+          object-fit: contain; }
+      header .navContenedor .nav .contenedorNav3 .navIdioma .iconArrow img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain; }
+      @media screen and (max-width: 48rem) {
+        header .navContenedor .nav .contenedorNav3 div {
+          display: none; }
+        header .navContenedor .nav .contenedorNav3 .arrowNav {
+          display: flex; } }
 
 .contenedoresFaq {
   display: flex;
@@ -413,6 +413,11 @@ header nav {
   height: 125rem;
   padding: .625rem 2.5rem;
   background: linear-gradient(to top, #F2055D, #F64323, transparent); }
+  @media screen and (max-width: 20rem) {
+    .contenedoresFaq {
+      border: 4px solid orange;
+      height: 320rem;
+      padding: 0rem 0rem; } }
 
 .sectionHome1 {
   display: flex;
@@ -424,10 +429,12 @@ header nav {
   background-size: cover; }
   @media screen and (max-width: 48rem) {
     .sectionHome1 {
-      height: 105.25rem; } }
+      height: 105.25rem;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, white 100%), url(../../assets/img/fondoTablet.png); } }
   @media screen and (max-width: 20rem) {
     .sectionHome1 {
-      height: 155rem; } }
+      height: 155rem;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, white 100%), url(../../assets/img/fondoMobile.png); } }
 
 .container div div .imgShop {
   margin: 0rem .625rem; }
@@ -541,6 +548,7 @@ header nav {
     flex-direction: column; }
   @media screen and (max-width: 48rem) {
     .contenedorEnvios {
+      border: 3px solid green;
       flex-direction: column;
       height: 50rem; }
       .contenedorEnvios .enviosInfo {
@@ -746,6 +754,18 @@ header nav {
           width: 6.25rem; }
         .contenedorMetodos .infoFaq .txtFaq .imgFaq.wallets {
           flex-wrap: wrap; } }
+  @media screen and (max-width: 20rem) {
+    .contenedorMetodos {
+      border: 4px solid yellow;
+      height: 100rem;
+      width: 100%; }
+      .contenedorMetodos .infoFaq .txtFaq .imgFaq {
+        display: flex;
+        flex-wrap: wrap; }
+        .contenedorMetodos .infoFaq .txtFaq .imgFaq img {
+          border: 2px solid red;
+          max-width: 100%;
+          max-height: 100%; } }
 
 .contenedorReenvolso {
   display: flex;
@@ -761,6 +781,7 @@ header nav {
     flex-direction: column; }
   @media screen and (max-width: 48rem) {
     .contenedorReenvolso {
+      border: 3px solid yellow;
       height: 50rem;
       flex-direction: column; }
       .contenedorReenvolso .reenvolsoInfo {
@@ -789,15 +810,15 @@ header nav {
 /* COMPONENTS */
 .masPopularesGrid {
   display: grid;
-  grid-template-columns: 8px 1215px 8px;
-  grid-template-rows: 9px 60px 9px;
-  margin: 40px 0px;
+  grid-template-columns: .5rem 75.9375rem .5rem;
+  grid-template-rows: .5625rem 3.75rem .5625rem;
+  margin: 2.5rem 0rem;
   text-align: center; }
   .masPopularesGrid .shadowPopulares {
     background: linear-gradient(to right, #70CFE5, #043581, #F2055D);
     grid-column: 2/4;
     grid-row: 2/4;
-    border-radius: 28px; }
+    border-radius: 1.75rem; }
   .masPopularesGrid .cartelPopulares {
     display: flex;
     flex-direction: column;
@@ -805,66 +826,75 @@ header nav {
     grid-column: 1/3;
     grid-row: 1/3;
     background-color: white;
-    border-radius: 28px;
+    border-radius: 1.75rem;
     align-content: center; }
+    .masPopularesGrid .cartelPopulares h3 {
+      font-family: "tandelle", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: black;
+      font-style: normal; }
 
 .cardBannerHome {
   display: flex; }
-
-.cardBanner {
-  width: 300px;
-  height: 444px;
-  margin: 10px; }
-  .cardBanner .imgCard {
-    background-size: cover;
-    width: 100%;
-    height: 85%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: end; }
-    .cardBanner .imgCard.imgCard1 {
-      background-image: url(../assets/img/ropacian.jpg); }
-    .cardBanner .imgCard.imgCard2 {
-      background-image: url(../assets/img/roparosa.jpg); }
-    .cardBanner .imgCard.imgCard3 {
-      background-image: url(../assets/img/ropagris.jpg); }
-    .cardBanner .imgCard.imgCard4 {
-      background-image: url(../assets/img/ropagris2.jpg); }
-    .cardBanner .imgCard .imgFav {
-      margin: 4px;
-      text-align: center;
-      align-content: center;
-      width: 45px;
-      height: 45px;
-      border-radius: 40px;
-      background: rgba(52, 88, 100, 0.7); }
-      .cardBanner .imgCard .imgFav .iconCard {
-        width: 35px;
-        height: 35px;
-        margin: 2px; }
-    .cardBanner .imgCard .imgAdd {
-      margin: 4px;
-      text-align: center;
-      align-content: center;
-      width: 45px;
-      height: 45px;
-      border-radius: 40px;
-      background: rgba(255, 255, 255, 0.7); }
-      .cardBanner .imgCard .imgAdd .iconAddImg {
-        width: 30px;
-        height: 30px;
-        margin-right: 1px; }
-  .cardBanner .infoCard {
-    height: 15%;
-    background-color: white;
-    padding-left: 5px; }
-
-@media screen and (max-width: 48rem) {
-  .cardBannerHome {
-    flex-wrap: wrap;
-    justify-content: center; } }
+  .cardBannerHome .cardBanner {
+    width: 18.75rem;
+    height: 27.75rem;
+    margin: .625rem; }
+    .cardBannerHome .cardBanner .imgCard {
+      background-size: cover;
+      width: 100%;
+      height: 85%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end; }
+      .cardBannerHome .cardBanner .imgCard.imgCard1 {
+        background-image: url(../assets/img/ropacian.jpg); }
+      .cardBannerHome .cardBanner .imgCard.imgCard2 {
+        background-image: url(../assets/img/roparosa.jpg); }
+      .cardBannerHome .cardBanner .imgCard.imgCard3 {
+        background-image: url(../assets/img/ropagris.jpg); }
+      .cardBannerHome .cardBanner .imgCard.imgCard4 {
+        background-image: url(../assets/img/ropagris2.jpg); }
+      .cardBannerHome .cardBanner .imgCard .imgFav {
+        margin: .25rem;
+        text-align: center;
+        align-content: center;
+        width: 2.8125rem;
+        height: 2.8125rem;
+        border-radius: 2.5rem;
+        background: rgba(52, 88, 100, 0.7); }
+        .cardBannerHome .cardBanner .imgCard .imgFav .iconCard {
+          width: 2.1875rem;
+          height: 2.1875rem;
+          margin: .125rem; }
+      .cardBannerHome .cardBanner .imgCard .imgAdd {
+        margin: .25rem;
+        text-align: center;
+        align-content: center;
+        width: 2.8125rem;
+        height: 2.8125rem;
+        border-radius: 2.5rem;
+        background: rgba(255, 255, 255, 0.7); }
+        .cardBannerHome .cardBanner .imgCard .imgAdd .iconAddImg {
+          width: 1.875rem;
+          height: 1.875rem;
+          margin-right: .0625rem; }
+    .cardBannerHome .cardBanner .infoCard {
+      height: 15%;
+      background-color: white;
+      padding-left: .3125rem;
+      font-family: "tandelle", sans-serif;
+      font-size: 3.5rem;
+      font-weight: 400;
+      color: black;
+      font-style: normal; }
+  @media screen and (max-width: 48rem) {
+    .cardBannerHome {
+      flex-wrap: wrap;
+      justify-content: center; } }
 
 .gridCard {
   display: grid;
@@ -926,7 +956,7 @@ header nav {
   flex-direction: column;
   width: 50%;
   height: 100%;
-  padding: 10px;
+  padding: .625rem;
   justify-content: center; }
   @media screen and (max-width: 48rem) {
     .formContactos {
@@ -936,28 +966,28 @@ header nav {
   display: block;
   width: 100%;
   font-size: 1rem;
-  font-weight: 400px;
+  font-weight: 25rem;
   line-height: 1.5;
   padding: .375rem .75rem;
-  border-radius: 30px;
-  border-width: 1px;
-  margin: 10px 0px; }
+  border-radius: 1.875rem;
+  border-width: .0625rem;
+  margin: .625rem 0rem; }
 
 .formMensaje {
-  padding-bottom: 100px; }
+  padding-bottom: 6.25rem; }
 
 .botonForm {
-  width: 300px;
+  width: 18.75rem;
   align-self: center;
   background-color: aqua;
   border: none;
-  border-radius: 10px; }
+  border-radius: .625rem; }
 
 .sectionMapa {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  padding: 20px 20px;
+  padding: 1.25rem 1.25rem;
   background: linear-gradient(to top, #F2055D, #F64323); }
   .sectionMapa .mapsInfo {
     text-align: center;
@@ -965,12 +995,12 @@ header nav {
     width: 30%; }
   @media screen and (max-width: 48rem) {
     .sectionMapa {
-      padding: 0px; }
+      padding: 0rem; }
       .sectionMapa .mapsInfo {
         width: 40%; }
       .sectionMapa .mapsContacto {
         width: 60%;
-        margin: 10px; }
+        margin: .625rem; }
         .sectionMapa .mapsContacto iframe {
           width: 100%; } }
   @media screen and (max-width: 20rem) {

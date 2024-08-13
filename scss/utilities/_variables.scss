@@ -21,3 +21,19 @@ $navDesktop: (
     text-decoration: none,
     font-style: $font-tandelle-normal,
 );
+
+$fontSubtitulos: (
+    font-family: ("tandelle", sans-serif),
+    font-size: 2.5rem,
+    font-weight: $font-tandelle-regular,
+    color: black,
+    font-style: $font-tandelle-normal,
+);
+
+$fontTituloCard: (
+    font-family: ("tandelle", sans-serif),
+    font-size: 3.5rem,
+    font-weight: $font-tandelle-regular,
+    color: rgb(0, 0, 0),
+    font-style: $font-tandelle-normal,
+)

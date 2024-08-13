@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="todos nuestros productos personalizados">
+    <meta name="robots" content="index follow">
+
+    <title>Productos</title>
+
+    <link rel="shortcut icon" href="../assets/img/karunelogo.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Productos</title>
+    
 </head>
 <body>
     <header>
@@ -16,15 +22,15 @@
                 <a href="facebook.com.ar"><img src="../assets/img/facebook.png" alt="facebook"></a>
             </div>
         </div>
-        <div>
+        <div class="navContenedor">
             <nav class="nav">
                 <div class="contenedorNav1">
                     <ul class="navbar">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="#">Productos</a></li>
-                        <li><a href="./guia_de_talles.html">Guia de talles</a></li>
-                        <li><a href="./contactos.html">Contacto</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="../pages/guia_de_talles.html">Guia de talles</a></li>
+                        <li><a href="../pages/contactos.html">Contacto</a></li>
+                        <li><a href="../pages/faq.html">FAQ</a></li>
                     </ul>
                     <label for="" class="imgNav">
                         <img src="../assets/svg/menu.svg" alt="menu">
@@ -34,21 +40,30 @@
                     <h1>KARUNE</h1>
                 </div>
                 <div class="contenedorNav3">
-                    <div>
-                        <button>Login</button>
-                        <img src="../assets/img/personicon.webp" alt="icon person">
+                    <div class="navLogin">
+                        <div>
+                            <button>Login</button>
+                        </div>
+                        <label for="" class="iconUser">
+                            <img src="../assets/svg/user.svg" alt="Login">
+                        </label>
                     </div>
-                    <div>
-                        <button>Carrito</button>
-                        <img src="../assets/img/iconbag.png" alt="carrito">
+                    <div class="navBag">
+                        <div>
+                            <button>Carrito</button>
+                        </div>
+                        <label for="" class="iconBag">
+                            <img src="../assets/svg/bag.svg" alt="Carrito">
+                        </label>
                     </div>
-                    <div>
-                        <button>ARS</button>
-                        <img src="../assets/img/iconarrow.png" alt="">
+                    <div class="navIdioma">
+                        <div>
+                            <button>ARS</button>
+                        </div>
+                        <label for="" class="iconArrow">
+                            <img src="../assets/svg/arrow-nav.svg" alt="Idioma">
+                        </label>
                     </div>
-                    <label for="" class="arrowNav">
-                        <img src="../assets/svg/arrow-nav.svg" alt="">
-                    </label>
                 </div>
             </nav>
         </div>
@@ -57,9 +72,9 @@
         <section class="headerProductos">
             <div class="gridBannerProductos">
                 <h2>INVIERNO URBANO</h2>
-                <img class="imgBanner img1" src="../assets/img/pantalonesverdes.webp" alt="">
-                <img class="imgBanner img2" src="../assets/img/pantalonverdechica.jpg" alt="">
-                <img class="imgBanner img3" src="../assets/img/karune-rojo-letra.png" alt="">
+                <img class="imgBanner img1" src="../assets/img/pantalonesverdes.webp" alt="pantalones invierno 2024 hombre">
+                <img class="imgBanner img2" src="../assets/img/pantalonverdechica.jpg" alt="pantalones invierno 2024 mujer">
+                <img class="imgBanner img3" src="../assets/img/karune-rojo-letra.png" alt="logo de la marca Karune">
                 <div class="txtBanner t2">
                     <h4>LOREM</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -75,7 +90,7 @@
             <article class="gridCard">
                 <div class="shadowCardProducto"></div>
                 <div class="cardProducto">
-                    <img src="../assets/img/imgcard1.jpg" alt="">
+                    <img src="../assets/img/imgcard1.jpg" alt="remera blanca">
                     <div class="infoCardProductos">
                         <div class="txtInfoCard">
                             <h4>Buso oversize</h4>

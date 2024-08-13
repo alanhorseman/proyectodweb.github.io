@@ -7,10 +7,13 @@ footer {
             ul {
                 list-style-type: none;
                 li {
-                    margin: 10px 0px;
+                    margin: .625rem 0rem;
                     a {
                         text-decoration: none;
                         color: white;
+                        &:hover {
+                            color: grey;
+                        }
                     }
                     &.tituloLista {
                         text-align: center;
@@ -30,21 +33,27 @@ footer {
         color: white;
         div {
             display: flex;
+            gap: 1.875rem;
+            p:hover {
+                color: grey;
+            }
         }
     }
-}
 
-@include query (tablet) {
-    .contenedorFooter {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .pieDePagina {
-        div {
-            p {
-                margin-right: 5px;
+    @include query (tablet) {
+        .contenedorFooter {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .pieDePagina {
+            div {
+                p {
+                    margin-right: .3125rem;
+                }
             }
         }
     }
 }
+
+

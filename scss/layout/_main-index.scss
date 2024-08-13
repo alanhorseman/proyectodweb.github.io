@@ -8,9 +8,15 @@
     background-size: cover;
     @include query (tablet) {
         height: 105.25rem;
+        background-image: 
+            linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%),
+            url(../../assets/img/fondoTablet.png);
     }
     @include query (mobile) {
         height: 155rem;
+        background-image: 
+            linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%),
+            url(../../assets/img/fondoMobile.png);
     }
 }
 

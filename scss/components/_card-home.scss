@@ -1,71 +1,72 @@
 .cardBannerHome {
     display: flex;
-}
-
-.cardBanner {
-    width: 300px;
-    height: 444px;
-    margin: 10px;
-    .imgCard {
-        background-size: cover;
-        width: 100%;
-        height: 85%;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: end;
-        &.imgCard1 {
-            background-image: url(../assets/img/ropacian.jpg);
-        }
-        &.imgCard2 {
-            background-image: url(../assets/img/roparosa.jpg);
-        }
-        &.imgCard3 {
-            background-image: url(../assets/img/ropagris.jpg);
-        }
-        &.imgCard4 {
-            background-image: url(../assets/img/ropagris2.jpg);
-        }
-        .imgFav {
-            margin: 4px;
-            text-align: center;
-            align-content: center;
-            width: 45px;
-            height: 45px;
-            border-radius: 40px;
-            background: rgba(52, 88, 100, 0.7);
-            .iconCard {
-                width: 35px;
-                height: 35px;
-                margin: 2px;
+    .cardBanner {
+        width: 18.75rem;
+        height: 27.75rem;
+        margin: .625rem;
+    
+        .imgCard {
+            background-size: cover;
+            width: 100%;
+            height: 85%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end;
+            &.imgCard1 {
+                background-image: url(../assets/img/ropacian.jpg);
+            }
+            &.imgCard2 {
+                background-image: url(../assets/img/roparosa.jpg);
+            }
+            &.imgCard3 {
+                background-image: url(../assets/img/ropagris.jpg);
+            }
+            &.imgCard4 {
+                background-image: url(../assets/img/ropagris2.jpg);
+            }
+            .imgFav {
+                margin: .25rem;
+                text-align: center;
+                align-content: center;
+                width: 2.8125rem;
+                height: 2.8125rem;
+                border-radius: 2.5rem;
+                background: rgba(52, 88, 100, 0.7);
+                .iconCard {
+                    width: 2.1875rem;
+                    height: 2.1875rem;
+                    margin: .125rem;
+                }
+            }
+            .imgAdd {
+                margin: .25rem;
+                text-align: center;
+                align-content: center;
+                width: 2.8125rem;
+                height: 2.8125rem;
+                border-radius: 2.5rem;
+                background: rgba(255, 255, 255, 0.7);
+                .iconAddImg {
+                    width: 1.875rem;
+                    height: 1.875rem;
+                    margin-right: .0625rem;
+                }
             }
         }
-        .imgAdd {
-            margin: 4px;
-            text-align: center;
-            align-content: center;
-            width: 45px;
-            height: 45px;
-            border-radius: 40px;
-            background: rgba(255, 255, 255, 0.7);
-            .iconAddImg {
-                width: 30px;
-                height: 30px;
-                margin-right: 1px;
-            }
+        .infoCard {
+            height: 15%;
+            background-color: white;
+            padding-left: .3125rem;
+            @include font-styles ($fontTituloCard);
         }
     }
-    .infoCard {
-        height: 15%;
-        background-color: white;
-        padding-left: 5px;
-    }
-}
-
-@include query (tablet) {
-    .cardBannerHome {
+    @include query (tablet) {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
+
+
+

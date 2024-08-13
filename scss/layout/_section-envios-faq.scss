@@ -14,6 +14,7 @@
     }
 
     @include query (tablet) {
+        border: 3px solid green;
         flex-direction: column;
         height: 50rem;
         .enviosInfo {

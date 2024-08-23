@@ -19,46 +19,42 @@
         justify-self: center;
         align-self: center;
     }
-}
 
-@include query (tablet) {
-    .sectionHome1 {
-        height: 106.25rem;
-        .bannerHomeGrid {
-            grid-template-columns: repeat(6, 6.25rem);
-            img {
-                grid-column: 2/6;
-            }
-            .lineaBanner {
-                grid-column: 1/7;
-                width: 37.5rem;
-            }
+    @include query (laptop) {
+        grid-template-columns: repeat(10, 6.25rem);
+        .lineaBanner {
+            grid-column: 2/10;
+            width: 50rem;
         }
-        .masPopularesGrid {
-            grid-template-columns: .5rem 43.75rem .5rem;
+        .karuneLogoBanner {
+            grid-column: 4/8;
+        }
+    }
+
+    @include query (tablet) {
+        grid-template-columns: repeat(6, 6.25rem);
+        img {
+            grid-column: 2/6;
+        }
+        .lineaBanner {
+            grid-column: 1/7;
+            width: 37.5rem;
+        }
+    }
+
+    @include query (mobile) {
+        grid-template-columns: 19.375rem;
+        grid-template-rows: 6.25rem;
+        width: 100%;
+        .karuneLogoBanner {
+            width: 19.375rem;
+            grid-column: 1/2;
+            grid-row: 1/6;
+        }
+        .lineaBanner {
+            width: 0rem;
+            border: none;
         }
     }
 }
 
-@include query (mobile) {
-    .sectionHome1 {
-        height: 156.25rem;
-        .bannerHomeGrid {
-            grid-template-columns: 19.375rem;
-            grid-template-rows: 6.25rem;
-            width: 100%;
-            .karuneLogoBanner {
-                width: 19.375rem;
-                grid-column: 1/2;
-                grid-row: 1/6;
-            }
-            .lineaBanner {
-                width: 0rem;
-                border: none;
-            }
-        }
-        .masPopularesGrid {
-            grid-template-columns: .5rem 19rem .5rem;
-        }
-    }
-}

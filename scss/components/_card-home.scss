@@ -62,6 +62,13 @@
             @include font-styles ($fontTituloCard);
         }
     }
+
+    @include query (laptop) {
+        .cardDelete {
+            display: none;
+        }
+    }
+
     @include query (tablet) {
         flex-wrap: wrap;
         justify-content: center;

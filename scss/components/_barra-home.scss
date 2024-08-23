@@ -23,4 +23,16 @@
             @include font-styles ($fontSubtitulos)
         }
     }
+
+    @include query (laptop) {
+        grid-template-columns: .5rem 59.375rem .5rem;
+    }
+
+    @include query (tablet) {
+        grid-template-columns: .5rem 43.75rem .5rem;
+    }
+
+    @include query (mobile) {
+        grid-template-columns: .5rem 19rem .5rem;
+    }
 }

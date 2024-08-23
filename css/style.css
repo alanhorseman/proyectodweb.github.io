@@ -224,36 +224,34 @@ footer {
     grid-row: 1/7;
     justify-self: center;
     align-self: center; }
-
-@media screen and (max-width: 48rem) {
-  .sectionHome1 {
-    height: 106.25rem; }
-    .sectionHome1 .bannerHomeGrid {
+  @media screen and (max-width: 64rem) {
+    .bannerHomeGrid {
+      grid-template-columns: repeat(10, 6.25rem); }
+      .bannerHomeGrid .lineaBanner {
+        grid-column: 2/10;
+        width: 50rem; }
+      .bannerHomeGrid .karuneLogoBanner {
+        grid-column: 4/8; } }
+  @media screen and (max-width: 48rem) {
+    .bannerHomeGrid {
       grid-template-columns: repeat(6, 6.25rem); }
-      .sectionHome1 .bannerHomeGrid img {
+      .bannerHomeGrid img {
         grid-column: 2/6; }
-      .sectionHome1 .bannerHomeGrid .lineaBanner {
+      .bannerHomeGrid .lineaBanner {
         grid-column: 1/7;
-        width: 37.5rem; }
-    .sectionHome1 .masPopularesGrid {
-      grid-template-columns: .5rem 43.75rem .5rem; } }
-
-@media screen and (max-width: 20rem) {
-  .sectionHome1 {
-    height: 156.25rem; }
-    .sectionHome1 .bannerHomeGrid {
+        width: 37.5rem; } }
+  @media screen and (max-width: 20rem) {
+    .bannerHomeGrid {
       grid-template-columns: 19.375rem;
       grid-template-rows: 6.25rem;
       width: 100%; }
-      .sectionHome1 .bannerHomeGrid .karuneLogoBanner {
+      .bannerHomeGrid .karuneLogoBanner {
         width: 19.375rem;
         grid-column: 1/2;
         grid-row: 1/6; }
-      .sectionHome1 .bannerHomeGrid .lineaBanner {
+      .bannerHomeGrid .lineaBanner {
         width: 0rem;
-        border: none; }
-    .sectionHome1 .masPopularesGrid {
-      grid-template-columns: .5rem 19rem .5rem; } }
+        border: none; } }
 
 .barraGridProductos {
   display: grid;
@@ -835,6 +833,15 @@ header {
       color: black;
       font-style: normal;
       line-height: normal; }
+  @media screen and (max-width: 64rem) {
+    .masPopularesGrid {
+      grid-template-columns: .5rem 59.375rem .5rem; } }
+  @media screen and (max-width: 48rem) {
+    .masPopularesGrid {
+      grid-template-columns: .5rem 43.75rem .5rem; } }
+  @media screen and (max-width: 20rem) {
+    .masPopularesGrid {
+      grid-template-columns: .5rem 19rem .5rem; } }
 
 .cardBannerHome {
   display: flex; }
@@ -892,6 +899,9 @@ header {
       font-weight: 400;
       color: black;
       font-style: normal; }
+  @media screen and (max-width: 64rem) {
+    .cardBannerHome .cardDelete {
+      display: none; } }
   @media screen and (max-width: 48rem) {
     .cardBannerHome {
       flex-wrap: wrap;

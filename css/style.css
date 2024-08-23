@@ -833,7 +833,8 @@ header {
       font-size: 2.5rem;
       font-weight: 400;
       color: black;
-      font-style: normal; }
+      font-style: normal;
+      line-height: normal; }
 
 .cardBannerHome {
   display: flex; }

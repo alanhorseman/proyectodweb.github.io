@@ -19,7 +19,7 @@
         background-color: white;
         border-radius: 1.75rem;
         align-content: center;
-        h3 {
+        h2 {
             @include font-styles ($fontSubtitulos)
         }
     }

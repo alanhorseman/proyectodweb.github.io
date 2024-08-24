@@ -36,6 +36,10 @@
         grid-template-columns: .5rem 25rem .5rem;
     }
 
+    @include query (mobileM) {
+        grid-template-columns: .5rem 21.875rem .5rem;
+    }
+
     @include query (mobile) {
         grid-template-columns: .5rem 19rem .5rem;
     }

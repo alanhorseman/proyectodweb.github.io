@@ -6,7 +6,7 @@
     .lineaBanner {
         grid-column: 1/15;
         grid-row: 2/6;
-        border: 2px solid white;
+        border: .125rem solid white;
         width: 87.5rem;
         height: 18.75rem;
         border-radius: 4.375rem;
@@ -33,7 +33,7 @@
 
     @include query (tablet) {
         grid-template-columns: repeat(6, 6.25rem);
-        img {
+        .karuneLogoBanner {
             grid-column: 2/6;
         }
         .lineaBanner {
@@ -53,6 +53,14 @@
             width: 25rem;
             height: 12.5rem;
             grid-row: 3/5;
+        }
+    }
+
+    @include query (mobileM) {
+        grid-template-columns: 19.375rem;
+        margin: 0rem;
+        .lineaBanner {
+            display: none;
         }
     }
 

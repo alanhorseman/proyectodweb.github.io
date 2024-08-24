@@ -3,11 +3,12 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 75rem;
+    height: auto;
     background-image: url(../assets/img/fondo-banner2.png);
     background-size: cover;
+    margin-bottom: .25rem;
     @include query (tablet) {
-        height: 105.25rem;
+        height: auto;
         background-image: 
             linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%),
             url(../../assets/img/fondoTablet.png);
@@ -18,7 +19,7 @@
     }
 
     @include query (mobile) {
-        height: 155rem;
+        height: auto;
         background-image: 
             linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%),
             url(../../assets/img/fondoMobile.png);
@@ -28,6 +29,7 @@
 
 
 .container {
+    padding: 0rem;
     div {
         div {
             .imgShop {
@@ -40,6 +42,23 @@
             }
             .txtShop h3 {
                 font-size: large;
+            }
+        }
+    }
+}
+
+@include query (mobileL){
+    .container {
+        margin: 0rem;
+        padding: 0rem .25rem;
+        div {
+            gap: .625rem;
+            margin: 0rem;
+            div {
+                padding: 0rem;
+                    .imgShop {
+                        margin: 0rem;
+                    }
             }
         }
     }

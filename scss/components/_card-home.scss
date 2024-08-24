@@ -2,7 +2,7 @@
     display: flex;
     .cardBanner {
         width: 18.75rem;
-        height: 27.75rem;
+        height: 31.25rem;
         margin: .625rem;
     
         .imgCard {
@@ -72,6 +72,9 @@
     @include query (tablet) {
         flex-wrap: wrap;
         justify-content: center;
+        .cardDelete {
+            display: block;
+        }
     }
 }
 

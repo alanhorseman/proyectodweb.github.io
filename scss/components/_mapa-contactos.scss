@@ -4,6 +4,7 @@
     width: 100%;
     padding: 1.25rem 1.25rem;
     background: linear-gradient(to top, #F2055D, #F64323);
+    align-items: center;
     .mapsInfo {
         text-align: center;
         align-content: center;
@@ -26,6 +27,10 @@
     }
     @include query (mobileL) {
         flex-direction: column;
+        .mapsContacto {
+            width: 100%;
+            padding: 0rem .625rem;
+        }
     }
     @include query (mobile) {
         flex-direction: column;

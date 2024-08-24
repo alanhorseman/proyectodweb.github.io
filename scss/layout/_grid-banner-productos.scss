@@ -59,8 +59,11 @@
     }
     @include query (tablet) {
         width: 100%;
-        grid-template-columns: 43.75rem;
+        grid-template-columns: 37.5rem;
         grid-template-rows: 9.375rem 37.5rem .625rem 37.5rem 9.375rem;
+        img {
+            width: auto;
+        }
         h2 {
             grid-column: 1/2;
             grid-row: 1/2;
@@ -69,7 +72,7 @@
             object-fit: cover;
             grid-column: 1/2;
             grid-row: 2/3;
-            width: 100%;
+            width: auto;
         }
         .img2 {
             object-fit: cover;
@@ -91,6 +94,9 @@
     }
     @include query (mobileL) {
         grid-template-columns: 25.625rem;
+        .img1 {
+            width: 100%;
+        }
         .img2 {
             width: 100%;
         }

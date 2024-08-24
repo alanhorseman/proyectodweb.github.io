@@ -166,6 +166,16 @@ footer {
   .gridBannerProductos .gap-editado {
     grid-column: 3/4;
     width: .3125rem; }
+  @media screen and (max-width: 64rem) {
+    .gridBannerProductos {
+      grid-template-columns: 15.3125rem 15.3125rem auto 15.3125rem 15.3125rem;
+      grid-template-rows: repeat(5, 120px); }
+      .gridBannerProductos .img1 {
+        width: auto; }
+      .gridBannerProductos .img2 {
+        width: auto; }
+      .gridBannerProductos .img3 {
+        padding-right: .625rem; } }
   @media screen and (max-width: 48rem) {
     .gridBannerProductos {
       width: 100%;
@@ -270,6 +280,9 @@ footer {
     background-color: white;
     border-radius: 1.75rem;
     align-content: center; }
+  @media screen and (max-width: 64rem) {
+    .barraGridProductos {
+      grid-template-columns: .5rem 59.375rem .5rem; } }
   @media screen and (max-width: 48rem) {
     .barraGridProductos {
       grid-template-columns: .5rem 43.75rem .5rem; } }
@@ -523,6 +536,13 @@ header {
   background-repeat: no-repeat;
   background-position: bottom;
   padding-bottom: 2.5rem; }
+  @media screen and (max-width: 64rem) {
+    .sectionCards {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap; }
+      .sectionCards .cardDelete {
+        display: none; } }
   @media screen and (max-width: 48rem) {
     .sectionCards {
       display: flex;

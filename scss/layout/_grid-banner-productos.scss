@@ -42,6 +42,23 @@
         width: .3125rem;
     }
 
+    @include query (laptop) {
+        grid-template-columns: 15.3125rem 15.3125rem auto 15.3125rem 15.3125rem;
+        grid-template-rows: repeat(5, 120px);
+        
+        .img1 {
+            width: auto;
+        }
+
+        .img2 {
+            width: auto;
+        }
+
+        .img3 {
+            padding-right: .625rem;
+        }
+    }
+
     @include query (tablet) {
         width: 100%;
         grid-template-columns: 43.75rem;

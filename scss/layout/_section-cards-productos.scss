@@ -10,6 +10,16 @@
     background-position: bottom;
     padding-bottom: 2.5rem;
 
+    @include query (laptop) {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+
+        .cardDelete {
+            display: none;
+        }
+    }
+
     @include query (tablet) {
         display: flex;
         flex-wrap: wrap;

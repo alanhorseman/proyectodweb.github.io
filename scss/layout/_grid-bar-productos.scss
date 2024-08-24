@@ -18,6 +18,10 @@
         align-content: center;
     }
 
+    @include query (laptop) {
+        grid-template-columns: .5rem 59.375rem .5rem;
+    }
+
     @include query (tablet) {
         grid-template-columns: .5rem 43.75rem .5rem;
     }

@@ -72,9 +72,20 @@
             }
         }
     }
-
+    @include query (mobileL) {
+        height: auto;
+        .cartelFaq {
+            border: 0rem;
+        }
+        .infoFaq {
+            border: 0rem;
+            .txtFaq {
+                flex-direction: column;
+                height: auto;
+            }
+        }
+    }
     @include query (mobile) {
-        border: 4px solid yellow;
         height: 100rem;
         width: 100%;
         .infoFaq {
@@ -83,7 +94,6 @@
                     display: flex;
                     flex-wrap: wrap;
                     img {
-                        border: 2px solid red;
                         max-width: 100%;
                         max-height: 100%;
                     }

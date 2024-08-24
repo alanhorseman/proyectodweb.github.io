@@ -14,7 +14,6 @@
     }
 
     @include query (tablet) {
-        border: 3px solid green;
         flex-direction: column;
         height: 50rem;
         .enviosInfo {
@@ -27,12 +26,13 @@
 }
 
 .infoFaq {
+    border: 2px solid green;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 57%;
     background-color: #f1631123;
-    border: 2.5rem solid rgba(255, 238, 0, 0.123);
+    border: .3125rem;
     .txtEnvios {
         padding: 0px 1.25rem;
     }
@@ -42,7 +42,7 @@
     display: flex;
     width: 40%;
     background-color: #f1631123;
-    border: 2.5rem solid rgba(255, 255, 255, 0.507);
+    border: .125rem;
     justify-content: center;
     align-items: center;
 }

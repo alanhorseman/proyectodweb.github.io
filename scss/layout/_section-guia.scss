@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 62.5rem;
-    padding: 1.25rem;
+    height: auto;
+    padding: .3125rem;
     background: linear-gradient(to top, #F2055D, #F64323, transparent);
     background-size: 100% 62.5rem;
     background-repeat: no-repeat;
@@ -11,10 +11,10 @@
 
     .contenedorInfoTablas {
         width: 50%;
-        height: 100%;
+        height: auto;
         .tablasTalles {
-            width: 80%;
-            height: 95%;
+            width: 100%;
+            height: auto;
             background-color: white;
             .tablasM {
                 display: flex;
@@ -61,7 +61,7 @@
 
     @include query (tablet) {
         flex-direction: column;
-        height: 85rem;
+        height: auto;
         .contenedorInfoTablas {
             width: 100%;
             margin: .625rem 0rem;
@@ -69,57 +69,6 @@
                 width: 100%;
                 .tablasM {
                     margin: .625rem 0rem;
-                    .tabla1M {
-                        table {
-                            tr {
-                                th {
-                                    padding: 0rem .625rem;
-                                    &:first-child {
-                                        padding: .0625rem 1.25rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .tabla2M {
-                        table {
-                            tr {
-                                th {
-                                    padding: 0rem .625rem;
-                                    &:first-child {
-                                        padding: .0625rem 1.25rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .tablasH {
-                    margin: .625rem 0rem;
-                    .tabla1H {
-                        table {
-                            tr {
-                                th {
-                                    padding: 0rem .625rem;
-                                    &:first-child {
-                                        padding: .0625rem 1.25rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .tabla2H {
-                        table {
-                            tr {
-                                th {
-                                    padding: 0rem .625rem;
-                                    &:first-child {
-                                        padding: .0625rem 1.25rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -129,9 +78,30 @@
         }
     }
 
+    @include query (mobileL) {
+        .contenedorInfoTablas {
+            .tablasTalles {
+                .tablasM {
+                    .contenedorTablas {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+
+    @include query (mobileM) {
+        .contenedorInfoTablas {
+            .tablasTalles {
+                .tablasM {}
+            }
+        }
+    }
+
     @include query (mobile) {
         flex-direction: column;
-        height: 140.75rem;
+        height: auto;
         padding: 0rem;
         margin: 0rem;
         .contenedorInfoTablas{
@@ -155,14 +125,14 @@
                         height: 10%;
                     }
                     .contenedorTablas {
-                        height: 90%;
+                        height: auto;
                         flex-direction: column;
                         justify-content: space-between;
                     }
                 }
                 .tablasH {
                     margin: 0rem;
-                    height: 50%;
+                    height: auto;
                     .contenedorTablas {
                         width: 100%;
                         height: 90%;

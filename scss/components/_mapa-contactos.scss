@@ -24,7 +24,9 @@
             }
         }
     }
-
+    @include query (mobileL) {
+        flex-direction: column;
+    }
     @include query (mobile) {
         flex-direction: column;
         padding: 0rem 0rem;

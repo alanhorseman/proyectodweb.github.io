@@ -42,6 +42,20 @@
         }
     }
 
+    @include query (mobileL) {
+        grid-template-columns: repeat(5, 5rem);
+        grid-template-rows: .0625rem 1fr 1fr 1fr 1fr .0625rem;
+        .karuneLogoBanner {
+            grid-column: 1/7;
+            width: 18.75rem;
+        }
+        .lineaBanner {
+            width: 25rem;
+            height: 12.5rem;
+            grid-row: 3/5;
+        }
+    }
+
     @include query (mobile) {
         grid-template-columns: 19.375rem;
         grid-template-rows: 6.25rem;

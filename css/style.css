@@ -51,6 +51,11 @@
   @media screen and (max-width: 48rem) {
     .bannerFaq .bannerInfoFaq {
       grid-template-columns: .5rem 37.5rem .5rem; } }
+  @media screen and (max-width: 26.5625rem) {
+    .bannerFaq {
+      height: auto; }
+      .bannerFaq .bannerInfoFaq {
+        grid-template-columns: .5rem 25rem .5rem; } }
   @media screen and (max-width: 20rem) {
     .bannerFaq .bannerInfoFaq {
       grid-template-columns: .5rem 18.125rem .5rem; } }
@@ -90,6 +95,10 @@ footer {
       text-align: center; }
     footer .pieDePagina div p {
       margin-right: .3125rem; } }
+  @media screen and (max-width: 20rem) {
+    footer .pieDePagina {
+      flex-direction: column;
+      flex-wrap: wrap; } }
 
 .bannerGuia {
   width: 100%;
@@ -126,6 +135,12 @@ footer {
       grid-template-columns: .5rem 37.5rem .5rem; }
       .bannerGuia .gridBannerGuia .txtBannerGuia {
         background-color: white; } }
+  @media screen and (max-width: 26.5625rem) {
+    .bannerGuia .gridBannerGuia {
+      grid-template-columns: .5rem 25rem .5rem; } }
+  @media screen and (max-width: 23.4375rem) {
+    .bannerGuia .gridBannerGuia {
+      grid-template-columns: .5rem 21.875rem .5rem; } }
   @media screen and (max-width: 20rem) {
     .bannerGuia .gridBannerGuia {
       grid-template-columns: .5rem 18.05rem .5rem; } }
@@ -204,7 +219,9 @@ footer {
         grid-column: 1/2; } }
   @media screen and (max-width: 26.5625rem) {
     .gridBannerProductos {
-      grid-template-columns: 25.625rem; } }
+      grid-template-columns: 25.625rem; }
+      .gridBannerProductos .img2 {
+        width: 100%; } }
   @media screen and (max-width: 23.4375rem) {
     .gridBannerProductos {
       grid-template-columns: 21.875rem; } }
@@ -250,6 +267,17 @@ footer {
       .bannerHomeGrid .lineaBanner {
         grid-column: 1/7;
         width: 37.5rem; } }
+  @media screen and (max-width: 26.5625rem) {
+    .bannerHomeGrid {
+      grid-template-columns: repeat(5, 5rem);
+      grid-template-rows: .0625rem 1fr 1fr 1fr 1fr .0625rem; }
+      .bannerHomeGrid .karuneLogoBanner {
+        grid-column: 1/7;
+        width: 18.75rem; }
+      .bannerHomeGrid .lineaBanner {
+        width: 25rem;
+        height: 12.5rem;
+        grid-row: 3/5; } }
   @media screen and (max-width: 20rem) {
     .bannerHomeGrid {
       grid-template-columns: 19.375rem;
@@ -286,6 +314,9 @@ footer {
   @media screen and (max-width: 48rem) {
     .barraGridProductos {
       grid-template-columns: .5rem 43.75rem .5rem; } }
+  @media screen and (max-width: 26.5625rem) {
+    .barraGridProductos {
+      grid-template-columns: .5rem 25rem .5rem; } }
   @media screen and (max-width: 20rem) {
     .barraGridProductos {
       grid-template-columns: .375rem 18.75rem .375rem;
@@ -314,6 +345,10 @@ footer {
       border-radius: 1.75rem;
       text-align: center;
       align-content: center; }
+  @media screen and (max-width: 26.5625rem) {
+    .sectionGridContactos {
+      flex-direction: column;
+      height: auto; } }
   @media screen and (max-width: 20rem) {
     .sectionGridContactos {
       flex-direction: column;
@@ -424,9 +459,13 @@ header {
   height: 125rem;
   padding: .625rem 2.5rem;
   background: linear-gradient(to top, #F2055D, #F64323, transparent); }
+  @media screen and (max-width: 26.5625rem) {
+    .contenedoresFaq {
+      padding: .3125rem;
+      border: 2px solid blue;
+      height: auto; } }
   @media screen and (max-width: 20rem) {
     .contenedoresFaq {
-      border: 4px solid orange;
       height: 320rem;
       padding: 0rem 0rem; } }
 
@@ -442,6 +481,9 @@ header {
     .sectionHome1 {
       height: 105.25rem;
       background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, white 100%), url(../../assets/img/fondoTablet.png); } }
+  @media screen and (max-width: 26.5625rem) {
+    .sectionHome1 {
+      height: auto; } }
   @media screen and (max-width: 20rem) {
     .sectionHome1 {
       height: 155rem;
@@ -461,46 +503,59 @@ header {
   background: linear-gradient(to top, #F2055D, #F64323, white);
   width: 100%;
   height: 25rem; }
+  .sectionSlide .contenedorSlide {
+    display: flex;
+    justify-content: center;
+    margin: 1.875rem 0rem; }
+    .sectionSlide .contenedorSlide .slideImg {
+      width: 44.375rem;
+      height: 23.9375rem;
+      margin: .625rem; }
+      .sectionSlide .contenedorSlide .slideImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .sectionSlide .contenedorSlide .slideInfo {
+      width: 30.625rem;
+      height: 23.9375rem;
+      margin: .625rem;
+      text-align: center;
+      align-content: center; }
+    @media screen and (max-width: 26.5625rem) {
+      .sectionSlide .contenedorSlide {
+        display: flex;
+        flex-direction: column;
+        margin: 0rem; }
+        .sectionSlide .contenedorSlide .slideImg {
+          width: auto; }
+          .sectionSlide .contenedorSlide .slideImg img {
+            width: 100%; }
+        .sectionSlide .contenedorSlide .slideInfo {
+          width: auto; } }
+    @media screen and (max-width: 20rem) {
+      .sectionSlide .contenedorSlide {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0rem; }
+        .sectionSlide .contenedorSlide .slideImg {
+          width: 100%;
+          object-fit: contain;
+          margin: 0rem;
+          align-content: center;
+          flex: 1; }
+          .sectionSlide .contenedorSlide .slideImg img {
+            object-fit: contain; }
+        .sectionSlide .contenedorSlide .slideInfo {
+          flex: 1;
+          width: 100%;
+          margin: 0rem; } }
+  @media screen and (max-width: 26.5625rem) {
+    .sectionSlide {
+      height: auto; } }
   @media screen and (max-width: 20rem) {
     .sectionSlide {
       height: 35rem; } }
-
-.contenedorSlide {
-  display: flex;
-  justify-content: center;
-  margin: 1.875rem 0rem; }
-  .contenedorSlide .slideImg {
-    width: 44.375rem;
-    height: 23.9375rem;
-    margin: .625rem; }
-    .contenedorSlide .slideImg img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .contenedorSlide .slideInfo {
-    width: 30.625rem;
-    height: 23.9375rem;
-    margin: .625rem;
-    text-align: center;
-    align-content: center; }
-  @media screen and (max-width: 20rem) {
-    .contenedorSlide {
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      margin: 0rem; }
-      .contenedorSlide .slideImg {
-        width: 100%;
-        object-fit: contain;
-        margin: 0rem;
-        align-content: center;
-        flex: 1; }
-        .contenedorSlide .slideImg img {
-          object-fit: contain; }
-      .contenedorSlide .slideInfo {
-        flex: 1;
-        width: 100%;
-        margin: 0rem; } }
 
 .mainProductos {
   background-image: url(../assets/img/fondo-banner2.png);
@@ -566,7 +621,6 @@ header {
     flex-direction: column; }
   @media screen and (max-width: 48rem) {
     .contenedorEnvios {
-      border: 3px solid green;
       flex-direction: column;
       height: 50rem; }
       .contenedorEnvios .enviosInfo {
@@ -575,12 +629,13 @@ header {
         width: 100%; } }
 
 .infoFaq {
+  border: 2px solid green;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 57%;
   background-color: #f1631123;
-  border: 2.5rem solid rgba(255, 238, 0, 0.123); }
+  border: .3125rem; }
   .infoFaq .txtEnvios {
     padding: 0px 1.25rem; }
 
@@ -588,7 +643,7 @@ header {
   display: flex;
   width: 40%;
   background-color: #f1631123;
-  border: 2.5rem solid rgba(255, 255, 255, 0.507);
+  border: .125rem;
   justify-content: center;
   align-items: center; }
 
@@ -596,18 +651,18 @@ header {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 62.5rem;
-  padding: 1.25rem;
+  height: auto;
+  padding: .3125rem;
   background: linear-gradient(to top, #F2055D, #F64323, transparent);
   background-size: 100% 62.5rem;
   background-repeat: no-repeat;
   background-position: bottom; }
   .sectionTablaTalles .contenedorInfoTablas {
     width: 50%;
-    height: 100%; }
+    height: auto; }
     .sectionTablaTalles .contenedorInfoTablas .tablasTalles {
-      width: 80%;
-      height: 95%;
+      width: 100%;
+      height: auto;
       background-color: white; }
       .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM {
         display: flex;
@@ -644,7 +699,7 @@ header {
   @media screen and (max-width: 48rem) {
     .sectionTablaTalles {
       flex-direction: column;
-      height: 85rem; }
+      height: auto; }
       .sectionTablaTalles .contenedorInfoTablas {
         width: 100%;
         margin: .625rem 0rem; }
@@ -652,31 +707,17 @@ header {
           width: 100%; }
           .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM {
             margin: .625rem 0rem; }
-            .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .tabla1M table tr th {
-              padding: 0rem .625rem; }
-              .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .tabla1M table tr th:first-child {
-                padding: .0625rem 1.25rem; }
-            .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .tabla2M table tr th {
-              padding: 0rem .625rem; }
-              .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .tabla2M table tr th:first-child {
-                padding: .0625rem 1.25rem; }
-          .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH {
-            margin: .625rem 0rem; }
-            .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .tabla1H table tr th {
-              padding: 0rem .625rem; }
-              .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .tabla1H table tr th:first-child {
-                padding: .0625rem 1.25rem; }
-            .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .tabla2H table tr th {
-              padding: 0rem .625rem; }
-              .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .tabla2H table tr th:first-child {
-                padding: .0625rem 1.25rem; }
       .sectionTablaTalles .tallesTxt {
         width: 100%;
         margin: .625rem 0rem; } }
+  @media screen and (max-width: 26.5625rem) {
+    .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .contenedorTablas {
+      display: flex;
+      flex-wrap: wrap; } }
   @media screen and (max-width: 20rem) {
     .sectionTablaTalles {
       flex-direction: column;
-      height: 140.75rem;
+      height: auto;
       padding: 0rem;
       margin: 0rem; }
       .sectionTablaTalles .contenedorInfoTablas {
@@ -699,12 +740,12 @@ header {
               align-content: center;
               height: 10%; }
             .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasM .contenedorTablas {
-              height: 90%;
+              height: auto;
               flex-direction: column;
               justify-content: space-between; }
           .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH {
             margin: 0rem;
-            height: 50%; }
+            height: auto; }
             .sectionTablaTalles .contenedorInfoTablas .tablasTalles .tablasH .contenedorTablas {
               width: 100%;
               height: 90%;
@@ -772,16 +813,24 @@ header {
           width: 6.25rem; }
         .contenedorMetodos .infoFaq .txtFaq .imgFaq.wallets {
           flex-wrap: wrap; } }
+  @media screen and (max-width: 26.5625rem) {
+    .contenedorMetodos {
+      height: auto; }
+      .contenedorMetodos .cartelFaq {
+        border: 0rem; }
+      .contenedorMetodos .infoFaq {
+        border: 0rem; }
+        .contenedorMetodos .infoFaq .txtFaq {
+          flex-direction: column;
+          height: auto; } }
   @media screen and (max-width: 20rem) {
     .contenedorMetodos {
-      border: 4px solid yellow;
       height: 100rem;
       width: 100%; }
       .contenedorMetodos .infoFaq .txtFaq .imgFaq {
         display: flex;
         flex-wrap: wrap; }
         .contenedorMetodos .infoFaq .txtFaq .imgFaq img {
-          border: 2px solid red;
           max-width: 100%;
           max-height: 100%; } }
 
@@ -799,7 +848,6 @@ header {
     flex-direction: column; }
   @media screen and (max-width: 48rem) {
     .contenedorReenvolso {
-      border: 3px solid yellow;
       height: 50rem;
       flex-direction: column; }
       .contenedorReenvolso .reenvolsoInfo {
@@ -859,6 +907,9 @@ header {
   @media screen and (max-width: 48rem) {
     .masPopularesGrid {
       grid-template-columns: .5rem 43.75rem .5rem; } }
+  @media screen and (max-width: 26.5625rem) {
+    .masPopularesGrid {
+      grid-template-columns: .5rem 25rem .5rem; } }
   @media screen and (max-width: 20rem) {
     .masPopularesGrid {
       grid-template-columns: .5rem 19rem .5rem; } }
@@ -1034,6 +1085,9 @@ header {
         margin: .625rem; }
         .sectionMapa .mapsContacto iframe {
           width: 100%; } }
+  @media screen and (max-width: 26.5625rem) {
+    .sectionMapa {
+      flex-direction: column; } }
   @media screen and (max-width: 20rem) {
     .sectionMapa {
       flex-direction: column;
@@ -1044,23 +1098,5 @@ header {
       .sectionMapa .mapsContacto {
         margin: 0rem;
         width: 100%; } }
-
-table tr th {
-  color: white;
-  background-color: black;
-  text-align: center;
-  padding: .1875rem;
-  border: .0625rem solid black; }
-
-table tr td {
-  text-align: center;
-  padding: .1875rem;
-  border: .0625rem solid black; }
-
-@media screen and (max-width: 20rem) {
-  table tr th {
-    padding: .0625rem; }
-  table tr td {
-    padding: .0625rem; } }
 
 /* MEDIA QUERY */

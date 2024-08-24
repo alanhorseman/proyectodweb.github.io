@@ -54,6 +54,13 @@ footer {
             }
         }
     }
+
+    @include query (mobile) {
+        .pieDePagina {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 

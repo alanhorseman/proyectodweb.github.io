@@ -12,6 +12,11 @@
             linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%),
             url(../../assets/img/fondoTablet.png);
     }
+
+    @include query (mobileL) {
+        height: auto;
+    }
+
     @include query (mobile) {
         height: 155rem;
         background-image: 
@@ -44,55 +49,78 @@
     background: linear-gradient(to top, #F2055D, #F64323, white);
     width: 100%;
     height: 25rem;
+
+    .contenedorSlide {
+        display: flex;
+        justify-content: center;
+        margin: 1.875rem 0rem;
+        .slideImg {
+            width: 44.375rem;
+            height: 23.9375rem;
+            margin: .625rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .slideInfo {
+            width: 30.625rem;
+            height: 23.9375rem;
+            margin: .625rem;
+            text-align: center;
+            align-content: center;
+        }
+
+        @include query (mobileL) {
+            display: flex;
+            flex-direction: column;
+            margin: 0rem;
+
+            .slideImg {
+                width: auto;
+                img {
+                    width: 100%;
+                }
+            }
+            .slideInfo {
+                width: auto;
+            }
+        }
+    
+        @include query (mobile) {
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            margin: 0rem;
+            .slideImg {
+                width: 100%;
+                object-fit: contain;
+                margin: 0rem;
+                align-content: center;
+                flex: 1;
+                img {
+                    object-fit: contain;
+                }
+            }
+            .slideInfo {
+                flex: 1;
+                width: 100%;
+                margin: 0rem;
+            }
+        }
+    }
+
+    @include query (mobileL) {
+        height: auto;
+    }
+
     @include query (mobile) {
         height: 35rem;
     }
 }
 
-.contenedorSlide {
-    display: flex;
-    justify-content: center;
-    margin: 1.875rem 0rem;
-    .slideImg {
-        width: 44.375rem;
-        height: 23.9375rem;
-        margin: .625rem;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-    .slideInfo {
-        width: 30.625rem;
-        height: 23.9375rem;
-        margin: .625rem;
-        text-align: center;
-        align-content: center;
-    }
 
-    @include query (mobile) {
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin: 0rem;
-        .slideImg {
-            width: 100%;
-            object-fit: contain;
-            margin: 0rem;
-            align-content: center;
-            flex: 1;
-            img {
-                object-fit: contain;
-            }
-        }
-        .slideInfo {
-            flex: 1;
-            width: 100%;
-            margin: 0rem;
-        }
-    }
-}
 
 
 

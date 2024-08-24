@@ -24,8 +24,10 @@
             align-content: center;
         }
     }
-
-
+    @include query (mobileL) {
+        flex-direction: column;
+        height: auto;
+    }
     @include query (mobile) {
         flex-direction: column;
         height: 62.5rem;

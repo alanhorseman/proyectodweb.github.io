@@ -40,6 +40,18 @@
         }
     }
 
+    @include query (mobileL) {
+        .gridBannerGuia {
+            grid-template-columns: .5rem 25rem .5rem;
+        }
+    }
+
+    @include query (mobileM) {
+        .gridBannerGuia {
+            grid-template-columns: .5rem 21.875rem .5rem;
+        }
+    }
+
     @include query (mobile) {
         .gridBannerGuia {
             grid-template-columns: .5rem 18.05rem .5rem;

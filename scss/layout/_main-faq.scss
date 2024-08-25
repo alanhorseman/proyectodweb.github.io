@@ -12,20 +12,20 @@
         height: auto;
         align-items: center;
         justify-content: center;
-        gap: 100px;
-        padding: 20px 0px;
+        gap: 6.25rem;
+        padding: 1.25rem 0rem;
         .cartel {
-            border: 2px solid rgba(52, 88, 100, 0.2);
-            box-shadow: inset 0 0 10px rgba(52, 88, 100, 0.2),
-            0 0 10px rgba(52, 88, 100, 0.2);
-            padding: 100px 140px;
+            border: .125rem solid rgba(52, 88, 100, 0.2);
+            box-shadow: inset 0 0 .625rem rgba(52, 88, 100, 0.2),
+            0 0 .625rem rgba(52, 88, 100, 0.2);
+            padding: 6.25rem 8.75rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
 
             .cartelTexto {
-                margin-top: 10px;
+                margin-top: .625rem;
                 h2 {
                     @include font-styles ($fontTituloCard);
                 }
@@ -33,18 +33,18 @@
         }
         .informacion {
             .transferencias {
-                border-bottom: 2px solid grey;
+                border-bottom: .125rem solid grey;
             }
             div {
                 .imgFaq {
                     display: flex;
                     img {
                         object-fit: contain;
-                        width: 100px;
+                        width: 6.25rem;
                     }
                 }
                 .textoFaq {
-                    max-width: 600px;
+                    max-width: 37.5rem;
                     h3 {
                         @include font-styles ($fontSubtitulos);
                         font-size: 2.7rem;
@@ -57,10 +57,10 @@
                 }
             }
             .tarjetas {
-                border-bottom: 2px solid grey;
+                border-bottom: .125rem solid grey;
                 .imgFaq {
                     img {
-                        width: 300px;
+                        width: 18.75rem;
                     }
                 }
             }
@@ -73,21 +73,21 @@
         height: auto;
         align-items: center;
         justify-content: center;
-        gap: 100px;
-        padding: 20px 0px;
+        gap: 6.25rem;
+        padding: 1.25rem 0rem;
 
         .cartel {
-            border: 2px solid rgba(52, 88, 100, 0.2);
-            box-shadow: inset 0 0 10px rgba(52, 88, 100, 0.2),
-            0 0 10px rgba(52, 88, 100, 0.2);
-            padding: 80px;
+            border: .125rem solid rgba(52, 88, 100, 0.2);
+            box-shadow: inset 0 0 .625rem rgba(52, 88, 100, 0.2),
+            0 0 .625rem rgba(52, 88, 100, 0.2);
+            padding: 5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
 
             .cartelTexto {
-                margin-top: 10px;
+                margin-top: .625rem;
                 text-align: center;
                 h2 {
                     @include font-styles ($fontTituloCard);
@@ -98,15 +98,15 @@
             }
         }
         .informacion {
-            max-width: 600px;
+            max-width: 37.5rem;
             p {
                 color: grey;
             }
             .costo {
-                border-bottom: 2px solid grey;
+                border-bottom: .125rem solid grey;
             }
             .enviosExterior {
-                border-bottom: 2px solid grey;
+                border-bottom: .125rem solid grey;
             }
         }
     }
@@ -116,22 +116,22 @@
         height: auto;
         align-items: center;
         justify-content: center;
-        gap: 100px;
-        padding: 20px 0px;
+        gap: 6.25rem;
+        padding: 1.25rem 0rem;
 
         .cartel {
-            border: 2px solid rgba(52, 88, 100, 0.2);
-            box-shadow: inset 0 0 10px rgba(52, 88, 100, 0.2),
-            0 0 10px rgba(52, 88, 100, 0.2);
-            padding: 60px 0px;
+            border: .125rem solid rgba(52, 88, 100, 0.2);
+            box-shadow: inset 0 0 .625rem rgba(52, 88, 100, 0.2),
+            0 0 .625rem rgba(52, 88, 100, 0.2);
+            padding: 3.75rem 0rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            max-width: 540px;
+            max-width: 33.75rem;
 
             .cartelTexto {
-                margin-top: 10px;
+                margin-top: .625rem;
                 text-align: center;
                 h2 {
                     @include font-styles ($fontTituloCard);
@@ -142,12 +142,126 @@
             }
         }
         .informacion {
-            max-width: 600px;
+            max-width: 37.5rem;
             .reenvolso1, .reenvolso2 {
                 p {
                     color: grey;
                 }
-                border-bottom: 2px solid grey;
+                border-bottom: .125rem solid grey;
+            }
+        }
+    }
+
+    @include query (laptop) {
+        width: 100%;
+        .metodos {
+            width: 100%;
+            padding: 0rem;
+            gap: 2.5rem;
+            .informacion {
+                height: auto;
+                width: 25rem;
+                .wallets {
+                    .imgFaq {
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+        .envios {
+            display: flex;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            gap: 1.25rem;
+            padding: 1.25rem 0rem;
+            .cartel {
+                padding: 6.25rem 6.25rem;
+            }
+            .informacion {
+                height: auto;
+                width: 25rem;
+            }
+        }
+        .reenvolsos {
+            display: flex;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            gap: 1.25rem;
+            padding: 1.25rem 0rem;
+            .informacion {
+                height: auto;
+                width: 25rem;
+            }
+        }
+    }
+
+    @include query (tablet) {
+        .metodos {
+            flex-direction: column;
+            margin-top: .625rem;
+            .cartel {
+                padding: 4.6875rem;
+            }
+        }
+        .envios {
+            flex-direction: column;
+            .cartel {
+                padding: 3.125rem;
+            }
+        }
+        .reenvolsos {
+            flex-direction: column;
+            .cartel {
+                width: 24.375rem;
+                .cartelTexto {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    @include query (mobileM) {
+        .metodos {
+            .cartel {
+                padding: 1.875rem 3.125rem;
+            }
+            .informacion {
+                width: 100%;
+                padding-left: .3125rem;
+            }
+        }
+        .envios {
+            .cartel {
+                margin-left: .3125rem;
+                padding: 1.875rem 3.125rem;
+            }
+            .informacion {
+                width: 100%;
+                padding-left: .3125rem;
+            }
+        }
+        .reenvolsos {
+            .cartel {
+                width: 100%;
+                margin-left: .3125rem;
+                padding: 1.875rem .0625rem;
+                .cartelTexto {
+                    width: auto;
+                    h2 {
+                        max-width: 21.25rem;
+                    }
+                    p {
+                        max-width: 21.25rem;
+                    }
+                }
+            }
+            .informacion {
+                width: 100%;
+                padding-left: .3125rem;
             }
         }
     }

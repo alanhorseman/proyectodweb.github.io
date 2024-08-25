@@ -82,4 +82,19 @@
             }
         }
     }
+
+    @include query (tablet) {
+        flex-direction: column;
+        .bannerFaqInfo {
+            align-self: center;
+            padding: 1.25rem;
+            width: auto;
+        }
+    }
+
+    @include query (mobileM) {
+        .bannerFaqInfo {
+            padding: 1.25rem 0rem;
+        }
+    }
 }

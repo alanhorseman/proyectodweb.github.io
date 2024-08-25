@@ -1,5 +1,7 @@
 footer {
-    background: linear-gradient(to top, #70CFE5, white);
+    padding-top: .625rem;
+    height: auto;
+    background: linear-gradient(to top, #F2055D, #F2055D);
     // background-color: rgba(112, 207, 229, 0.8);
     .contenedorFooter {
         display: flex;
@@ -9,10 +11,10 @@ footer {
         @include font-styles ($fontTituloCard);
         font-size: 1.5rem;
         text-shadow:
-            1px 1px 0 #000, 
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000;
+            .0625rem .0625rem 0 #000, 
+            -0.0625rem -0.0625rem 0 #000,
+            .0625rem -0.0625rem 0 #000,
+            -0.0625rem .0625rem 0 #000;
         div {
             ul {
                 list-style-type: none;
@@ -73,4 +75,6 @@ footer {
     }
 }
 
-
+.footerFaq {
+    background: linear-gradient(to top, #70CFE5, white);
+}

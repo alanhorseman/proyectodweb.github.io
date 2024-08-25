@@ -91,9 +91,21 @@
           border: none;
           cursor: pointer;
           font-size: 1rem; }
+  @media screen and (max-width: 48rem) {
+    .bannerFaq {
+      flex-direction: column; }
+      .bannerFaq .bannerFaqInfo {
+        align-self: center;
+        padding: 1.25rem;
+        width: auto; } }
+  @media screen and (max-width: 23.4375rem) {
+    .bannerFaq .bannerFaqInfo {
+      padding: 1.25rem 0rem; } }
 
 footer {
-  background: linear-gradient(to top, #70CFE5, white); }
+  padding-top: .625rem;
+  height: auto;
+  background: linear-gradient(to top, #F2055D, #F2055D); }
   footer .contenedorFooter {
     display: flex;
     justify-content: space-around;
@@ -104,7 +116,7 @@ footer {
     color: black;
     font-style: normal;
     font-size: 1.5rem;
-    text-shadow: 1px 1px 0 #000,  -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+    text-shadow: .0625rem .0625rem 0 #000,  -0.0625rem -0.0625rem 0 #000, .0625rem -0.0625rem 0 #000, -0.0625rem .0625rem 0 #000; }
     footer .contenedorFooter div ul {
       list-style-type: none; }
       footer .contenedorFooter div ul li {
@@ -139,6 +151,9 @@ footer {
     footer .pieDePagina {
       flex-direction: column;
       flex-wrap: wrap; } }
+
+.footerFaq {
+  background: linear-gradient(to top, #70CFE5, white); }
 
 .bannerGuia {
   width: 100%;
@@ -519,18 +534,18 @@ header {
     height: auto;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    padding: 20px 0px; }
+    gap: 6.25rem;
+    padding: 1.25rem 0rem; }
     .contenedorFaq .metodos .cartel {
-      border: 2px solid rgba(52, 88, 100, 0.2);
-      box-shadow: inset 0 0 10px rgba(52, 88, 100, 0.2), 0 0 10px rgba(52, 88, 100, 0.2);
-      padding: 100px 140px;
+      border: 0.125rem solid rgba(52, 88, 100, 0.2);
+      box-shadow: inset 0 0 0.625rem rgba(52, 88, 100, 0.2), 0 0 0.625rem rgba(52, 88, 100, 0.2);
+      padding: 6.25rem 8.75rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between; }
       .contenedorFaq .metodos .cartel .cartelTexto {
-        margin-top: 10px; }
+        margin-top: .625rem; }
         .contenedorFaq .metodos .cartel .cartelTexto h2 {
           font-family: "tandelle", sans-serif;
           font-size: 3.5rem;
@@ -538,14 +553,14 @@ header {
           color: black;
           font-style: normal; }
     .contenedorFaq .metodos .informacion .transferencias {
-      border-bottom: 2px solid grey; }
+      border-bottom: .125rem solid grey; }
     .contenedorFaq .metodos .informacion div .imgFaq {
       display: flex; }
       .contenedorFaq .metodos .informacion div .imgFaq img {
         object-fit: contain;
-        width: 100px; }
+        width: 6.25rem; }
     .contenedorFaq .metodos .informacion div .textoFaq {
-      max-width: 600px; }
+      max-width: 37.5rem; }
       .contenedorFaq .metodos .informacion div .textoFaq h3 {
         font-family: "tandelle", sans-serif;
         font-size: 2.5rem;
@@ -564,27 +579,27 @@ header {
         font-size: 2rem;
         color: grey; }
     .contenedorFaq .metodos .informacion .tarjetas {
-      border-bottom: 2px solid grey; }
+      border-bottom: .125rem solid grey; }
       .contenedorFaq .metodos .informacion .tarjetas .imgFaq img {
-        width: 300px; }
+        width: 18.75rem; }
   .contenedorFaq .envios {
     display: flex;
     width: 80%;
     height: auto;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    padding: 20px 0px; }
+    gap: 6.25rem;
+    padding: 1.25rem 0rem; }
     .contenedorFaq .envios .cartel {
-      border: 2px solid rgba(52, 88, 100, 0.2);
-      box-shadow: inset 0 0 10px rgba(52, 88, 100, 0.2), 0 0 10px rgba(52, 88, 100, 0.2);
-      padding: 80px;
+      border: 0.125rem solid rgba(52, 88, 100, 0.2);
+      box-shadow: inset 0 0 0.625rem rgba(52, 88, 100, 0.2), 0 0 0.625rem rgba(52, 88, 100, 0.2);
+      padding: 5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between; }
       .contenedorFaq .envios .cartel .cartelTexto {
-        margin-top: 10px;
+        margin-top: .625rem;
         text-align: center; }
         .contenedorFaq .envios .cartel .cartelTexto h2 {
           font-family: "tandelle", sans-serif;
@@ -595,32 +610,32 @@ header {
         .contenedorFaq .envios .cartel .cartelTexto h3, .contenedorFaq .envios .cartel .cartelTexto h4 {
           color: grey; }
     .contenedorFaq .envios .informacion {
-      max-width: 600px; }
+      max-width: 37.5rem; }
       .contenedorFaq .envios .informacion p {
         color: grey; }
       .contenedorFaq .envios .informacion .costo {
-        border-bottom: 2px solid grey; }
+        border-bottom: .125rem solid grey; }
       .contenedorFaq .envios .informacion .enviosExterior {
-        border-bottom: 2px solid grey; }
+        border-bottom: .125rem solid grey; }
   .contenedorFaq .reenvolsos {
     display: flex;
     width: 80%;
     height: auto;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    padding: 20px 0px; }
+    gap: 6.25rem;
+    padding: 1.25rem 0rem; }
     .contenedorFaq .reenvolsos .cartel {
-      border: 2px solid rgba(52, 88, 100, 0.2);
-      box-shadow: inset 0 0 10px rgba(52, 88, 100, 0.2), 0 0 10px rgba(52, 88, 100, 0.2);
-      padding: 60px 0px;
+      border: 0.125rem solid rgba(52, 88, 100, 0.2);
+      box-shadow: inset 0 0 0.625rem rgba(52, 88, 100, 0.2), 0 0 0.625rem rgba(52, 88, 100, 0.2);
+      padding: 3.75rem 0rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      max-width: 540px; }
+      max-width: 33.75rem; }
       .contenedorFaq .reenvolsos .cartel .cartelTexto {
-        margin-top: 10px;
+        margin-top: .625rem;
         text-align: center; }
         .contenedorFaq .reenvolsos .cartel .cartelTexto h2 {
           font-family: "tandelle", sans-serif;
@@ -631,11 +646,88 @@ header {
         .contenedorFaq .reenvolsos .cartel .cartelTexto p {
           color: grey; }
     .contenedorFaq .reenvolsos .informacion {
-      max-width: 600px; }
+      max-width: 37.5rem; }
       .contenedorFaq .reenvolsos .informacion .reenvolso1, .contenedorFaq .reenvolsos .informacion .reenvolso2 {
-        border-bottom: 2px solid grey; }
+        border-bottom: .125rem solid grey; }
         .contenedorFaq .reenvolsos .informacion .reenvolso1 p, .contenedorFaq .reenvolsos .informacion .reenvolso2 p {
           color: grey; }
+  @media screen and (max-width: 64rem) {
+    .contenedorFaq {
+      width: 100%; }
+      .contenedorFaq .metodos {
+        width: 100%;
+        padding: 0rem;
+        gap: 2.5rem; }
+        .contenedorFaq .metodos .informacion {
+          height: auto;
+          width: 25rem; }
+          .contenedorFaq .metodos .informacion .wallets .imgFaq {
+            flex-wrap: wrap; }
+      .contenedorFaq .envios {
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        padding: 1.25rem 0rem; }
+        .contenedorFaq .envios .cartel {
+          padding: 6.25rem 6.25rem; }
+        .contenedorFaq .envios .informacion {
+          height: auto;
+          width: 25rem; }
+      .contenedorFaq .reenvolsos {
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        padding: 1.25rem 0rem; }
+        .contenedorFaq .reenvolsos .informacion {
+          height: auto;
+          width: 25rem; } }
+  @media screen and (max-width: 48rem) {
+    .contenedorFaq .metodos {
+      flex-direction: column;
+      margin-top: .625rem; }
+      .contenedorFaq .metodos .cartel {
+        padding: 4.6875rem; }
+    .contenedorFaq .envios {
+      flex-direction: column; }
+      .contenedorFaq .envios .cartel {
+        padding: 3.125rem; }
+    .contenedorFaq .reenvolsos {
+      flex-direction: column; }
+      .contenedorFaq .reenvolsos .cartel {
+        width: 24.375rem; }
+        .contenedorFaq .reenvolsos .cartel .cartelTexto {
+          width: 90%; } }
+  @media screen and (max-width: 23.4375rem) {
+    .contenedorFaq .metodos .cartel {
+      padding: 1.875rem 3.125rem; }
+    .contenedorFaq .metodos .informacion {
+      width: 100%;
+      padding-left: .3125rem; }
+    .contenedorFaq .envios .cartel {
+      margin-left: .3125rem;
+      padding: 1.875rem 3.125rem; }
+    .contenedorFaq .envios .informacion {
+      width: 100%;
+      padding-left: .3125rem; }
+    .contenedorFaq .reenvolsos .cartel {
+      width: 100%;
+      margin-left: .3125rem;
+      padding: 1.875rem .0625rem; }
+      .contenedorFaq .reenvolsos .cartel .cartelTexto {
+        width: auto; }
+        .contenedorFaq .reenvolsos .cartel .cartelTexto h2 {
+          max-width: 21.25rem; }
+        .contenedorFaq .reenvolsos .cartel .cartelTexto p {
+          max-width: 21.25rem; }
+    .contenedorFaq .reenvolsos .informacion {
+      width: 100%;
+      padding-left: .3125rem; } }
 
 .sectionHome1 {
   display: flex;
@@ -811,7 +903,6 @@ header {
         width: 100%; } }
 
 .infoFaq {
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -819,7 +910,7 @@ header {
   background-color: #f1631123;
   border: .3125rem; }
   .infoFaq .txtEnvios {
-    padding: 0px 1.25rem; }
+    padding: 0rem 1.25rem; }
 
 .cartelFaq {
   display: flex;
@@ -1045,7 +1136,7 @@ header {
   background-color: #f1631123;
   border: 2.5rem solid rgba(255, 238, 0, 0.123); }
   .infoFaq .txtReenvolso {
-    padding: 0px 1.25rem; }
+    padding: 0rem 1.25rem; }
 
 .cartelFaq {
   display: flex;

@@ -1,8 +1,18 @@
 footer {
-    background: linear-gradient(to top, #043581, #F2055D);
+    background: linear-gradient(to top, #70CFE5, white);
+    // background-color: rgba(112, 207, 229, 0.8);
     .contenedorFooter {
         display: flex;
         justify-content: space-around;
+        align-items: end;
+
+        @include font-styles ($fontTituloCard);
+        font-size: 1.5rem;
+        text-shadow:
+            1px 1px 0 #000, 
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000;
         div {
             ul {
                 list-style-type: none;

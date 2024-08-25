@@ -1,19 +1,154 @@
-.contenedoresFaq {
+.contenedorFaq {
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 125rem;
-    padding: .625rem 2.5rem;
-    background: linear-gradient(to top, #F2055D, #F64323, transparent);
+    align-items: center;
 
-    @include query (mobileL) {
-        padding: .3125rem;
-        border: 2px solid blue;
+    // background-color: rgba(112, 207, 229, 0.4);
+
+    .metodos{
+        display: flex;
+        width: 80%;
         height: auto;
-    }
-    @include query (mobile) {
-        height: 320rem;
-        padding: 0rem 0rem;
-    } 
-}
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 20px 0px;
+        .cartel {
+            border: 2px solid rgba(52, 88, 100, 0.2);
+            box-shadow: inset 0 0 10px rgba(52, 88, 100, 0.2),
+            0 0 10px rgba(52, 88, 100, 0.2);
+            padding: 100px 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
 
+            .cartelTexto {
+                margin-top: 10px;
+                h2 {
+                    @include font-styles ($fontTituloCard);
+                }
+            }
+        }
+        .informacion {
+            .transferencias {
+                border-bottom: 2px solid grey;
+            }
+            div {
+                .imgFaq {
+                    display: flex;
+                    img {
+                        object-fit: contain;
+                        width: 100px;
+                    }
+                }
+                .textoFaq {
+                    max-width: 600px;
+                    h3 {
+                        @include font-styles ($fontSubtitulos);
+                        font-size: 2.7rem;
+                    }
+                    p {
+                        @include font-styles ($fontSubtitulos);
+                        font-size: 2rem;
+                        color: grey;
+                    }
+                }
+            }
+            .tarjetas {
+                border-bottom: 2px solid grey;
+                .imgFaq {
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    .envios{
+        display: flex;
+        width: 80%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 20px 0px;
+
+        .cartel {
+            border: 2px solid rgba(52, 88, 100, 0.2);
+            box-shadow: inset 0 0 10px rgba(52, 88, 100, 0.2),
+            0 0 10px rgba(52, 88, 100, 0.2);
+            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .cartelTexto {
+                margin-top: 10px;
+                text-align: center;
+                h2 {
+                    @include font-styles ($fontTituloCard);
+                }
+                h3, h4 {
+                    color: grey;
+                }
+            }
+        }
+        .informacion {
+            max-width: 600px;
+            p {
+                color: grey;
+            }
+            .costo {
+                border-bottom: 2px solid grey;
+            }
+            .enviosExterior {
+                border-bottom: 2px solid grey;
+            }
+        }
+    }
+    .reenvolsos{
+        display: flex;
+        width: 80%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 20px 0px;
+
+        .cartel {
+            border: 2px solid rgba(52, 88, 100, 0.2);
+            box-shadow: inset 0 0 10px rgba(52, 88, 100, 0.2),
+            0 0 10px rgba(52, 88, 100, 0.2);
+            padding: 60px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 540px;
+
+            .cartelTexto {
+                margin-top: 10px;
+                text-align: center;
+                h2 {
+                    @include font-styles ($fontTituloCard);
+                }
+                p {
+                    color: grey;
+                }
+            }
+        }
+        .informacion {
+            max-width: 600px;
+            .reenvolso1, .reenvolso2 {
+                p {
+                    color: grey;
+                }
+                border-bottom: 2px solid grey;
+            }
+        }
+    }
+}

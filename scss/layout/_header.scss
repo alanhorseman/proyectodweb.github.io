@@ -24,14 +24,16 @@ header {
             display: flex; 
             justify-content: space-between;
             .contenedorNav1 {
-                width: 33%;
+                display: flex;
+                flex-grow: 1;
                 .imgNav {
                     display: none;
                 }
                 .navbar {
                     display: flex;
                     list-style-type: none;
-                    height: 100%;
+                    width: 100%;
+                    height: auto;
                     li {
                         margin: 0px .625rem;
                         a {
@@ -55,18 +57,20 @@ header {
                 }
             }
             .contenedorNav2 {
-                width: 33%;
+                display: flex;
+                flex-grow: 1;
                 align-self: center;
+                height: auto;
                 h1{
                         @include font-styles ($h1Desktop);
                 }
             }
             .contenedorNav3 {
+                flex-grow: 1;
                 display: flex;
                 justify-content: end;
                 align-items: center;
                 gap: 0.125rem;
-                width: 33%;
                 .navLogin {
                     display: flex;
                     justify-content: space-between;

@@ -447,13 +447,15 @@ header {
     display: flex;
     justify-content: space-between; }
     header .navContenedor .nav .contenedorNav1 {
-      width: 33%; }
+      display: flex;
+      flex-grow: 1; }
       header .navContenedor .nav .contenedorNav1 .imgNav {
         display: none; }
       header .navContenedor .nav .contenedorNav1 .navbar {
         display: flex;
         list-style-type: none;
-        height: 100%; }
+        width: 100%;
+        height: auto; }
         header .navContenedor .nav .contenedorNav1 .navbar li {
           margin: 0px .625rem; }
           header .navContenedor .nav .contenedorNav1 .navbar li a {
@@ -473,8 +475,10 @@ header {
           height: 100%;
           display: flex; } }
     header .navContenedor .nav .contenedorNav2 {
-      width: 33%;
-      align-self: center; }
+      display: flex;
+      flex-grow: 1;
+      align-self: center;
+      height: auto; }
       header .navContenedor .nav .contenedorNav2 h1 {
         font-family: "tandelle", sans-serif;
         font-size: 3.3rem;
@@ -483,11 +487,11 @@ header {
         color: black;
         text-align: center; }
     header .navContenedor .nav .contenedorNav3 {
+      flex-grow: 1;
       display: flex;
       justify-content: end;
       align-items: center;
-      gap: 0.125rem;
-      width: 33%; }
+      gap: 0.125rem; }
       header .navContenedor .nav .contenedorNav3 .navLogin, header .navContenedor .nav .contenedorNav3 .navBag, header .navContenedor .nav .contenedorNav3 .navIdioma {
         display: flex;
         justify-content: space-between;

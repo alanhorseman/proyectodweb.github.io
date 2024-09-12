@@ -3,6 +3,7 @@ header {
     top: 0;
     z-index: 1000;
     background-color: white;
+    width: auto;
     .barraHeader {
         display: flex;
         .iconHeader {
@@ -20,113 +21,75 @@ header {
         }
     }
     .navContenedor {
+        width: 100%;
         .nav {
-            display: flex; 
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 33% auto 33%;
             .contenedorNav1 {
                 display: flex;
-                flex-grow: 1;
+                justify-content: space-around;
                 .imgNav {
                     display: none;
                 }
                 .navbar {
-                    display: flex;
+                    height: 100%;
                     list-style-type: none;
-                    width: 100%;
-                    height: auto;
+                    display: flex;
                     li {
-                        margin: 0px .625rem;
                         a {
                             @include font-styles ($navDesktop);
                             &:hover {
                                 color: grey;
                             }
+                            padding: 1.5rem;
                         }
-                        
-                    }
-                }
-            
-                @include query (tablet) {
-                    .navbar {
-                        display: none;
-                    }
-                    .imgNav {
-                        height: 100%;
-                        display: flex;
                     }
                 }
             }
+
             .contenedorNav2 {
                 display: flex;
-                flex-grow: 1;
-                align-self: center;
-                height: auto;
+                justify-content: center;
+                align-items: center;
                 h1{
-                        @include font-styles ($h1Desktop);
+                    @include font-styles ($h1Desktop);
                 }
             }
+
             .contenedorNav3 {
-                flex-grow: 1;
                 display: flex;
-                justify-content: end;
+                justify-content: flex-end;
                 align-items: center;
-                gap: 0.125rem;
                 .navLogin {
                     display: flex;
-                    justify-content: space-between;
-                    height: 70%;
-                    width: 14%;
+                    flex-direction: row;
+                    padding: 1.5rem;
                     div {
                         button {
                             border: none;
-                            flex: 1;
-                            text-align: center;
-                            justify-content: center;
-                            background-color: white;
-                            margin: 0px .4375rem;
+                            background-color: transparent;
                             @include font-styles ($navDesktop);
-
                             &:hover {
                                 color: grey;
                             }
                         }
                     }
-                    .iconUser {
-                        object-fit: contain;
-                    }
-                }
-        
-                .navBag {
-                    @extend .navLogin;
-                    .iconBag {
-                    }
-                }
-        
-                .navIdioma {
-                    @extend .navLogin;
-                    .iconArrow {
+                    label {
                         img {
-                            max-width: 100%;
-                            max-height: 100%;
-                            width: auto;
-                            height: auto;
-                            object-fit: contain;
+                            width: 24px;
+                            height: 24px;
                         }
                     }
                 }
-            
-                @include query (tablet) {
-                    div {
-                        display: none;
-                    }
-                    .arrowNav {
-                        display: flex;
-                    }
+                .navBag {
+                    @extend .navLogin;
+                }
+                .navIdioma {
+                    @extend .navLogin;
                 }
             }
         }
     }
-    
 }
 
 

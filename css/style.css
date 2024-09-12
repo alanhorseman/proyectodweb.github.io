@@ -431,7 +431,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: white; }
+  background-color: white;
+  width: auto; }
   header .barraHeader {
     display: flex; }
     header .barraHeader .iconHeader {
@@ -443,21 +444,20 @@ header {
         width: 1.5625rem;
         height: 100%;
         object-fit: contain; }
-  header .navContenedor .nav {
-    display: flex;
-    justify-content: space-between; }
-    header .navContenedor .nav .contenedorNav1 {
-      display: flex;
-      flex-grow: 1; }
-      header .navContenedor .nav .contenedorNav1 .imgNav {
-        display: none; }
-      header .navContenedor .nav .contenedorNav1 .navbar {
+  header .navContenedor {
+    width: 100%; }
+    header .navContenedor .nav {
+      display: grid;
+      grid-template-columns: 33% auto 33%; }
+      header .navContenedor .nav .contenedorNav1 {
         display: flex;
-        list-style-type: none;
-        width: 100%;
-        height: auto; }
-        header .navContenedor .nav .contenedorNav1 .navbar li {
-          margin: 0px .625rem; }
+        justify-content: space-around; }
+        header .navContenedor .nav .contenedorNav1 .imgNav {
+          display: none; }
+        header .navContenedor .nav .contenedorNav1 .navbar {
+          height: 100%;
+          list-style-type: none;
+          display: flex; }
           header .navContenedor .nav .contenedorNav1 .navbar li a {
             font-family: "tandelle", sans-serif;
             font-size: 1.5rem;
@@ -465,67 +465,44 @@ header {
             color: black;
             text-align: center;
             text-decoration: none;
-            font-style: normal; }
+            font-style: normal;
+            padding: 1.5rem; }
             header .navContenedor .nav .contenedorNav1 .navbar li a:hover {
               color: grey; }
-      @media screen and (max-width: 48rem) {
-        header .navContenedor .nav .contenedorNav1 .navbar {
-          display: none; }
-        header .navContenedor .nav .contenedorNav1 .imgNav {
-          height: 100%;
-          display: flex; } }
-    header .navContenedor .nav .contenedorNav2 {
-      display: flex;
-      flex-grow: 1;
-      align-self: center;
-      height: auto; }
-      header .navContenedor .nav .contenedorNav2 h1 {
-        font-family: "tandelle", sans-serif;
-        font-size: 3.3rem;
-        font-weight: 700;
-        line-height: 2.5rem;
-        color: black;
-        text-align: center; }
-    header .navContenedor .nav .contenedorNav3 {
-      flex-grow: 1;
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      gap: 0.125rem; }
-      header .navContenedor .nav .contenedorNav3 .navLogin, header .navContenedor .nav .contenedorNav3 .navBag, header .navContenedor .nav .contenedorNav3 .navIdioma {
+      header .navContenedor .nav .contenedorNav2 {
         display: flex;
-        justify-content: space-between;
-        height: 70%;
-        width: 14%; }
-        header .navContenedor .nav .contenedorNav3 .navLogin div button, header .navContenedor .nav .contenedorNav3 .navBag div button, header .navContenedor .nav .contenedorNav3 .navIdioma div button {
-          border: none;
-          flex: 1;
-          text-align: center;
-          justify-content: center;
-          background-color: white;
-          margin: 0px .4375rem;
+        justify-content: center;
+        align-items: center; }
+        header .navContenedor .nav .contenedorNav2 h1 {
           font-family: "tandelle", sans-serif;
-          font-size: 1.5rem;
-          font-weight: 400;
+          font-size: 3.3rem;
+          font-weight: 700;
+          line-height: 2.5rem;
           color: black;
-          text-align: center;
-          text-decoration: none;
-          font-style: normal; }
-          header .navContenedor .nav .contenedorNav3 .navLogin div button:hover, header .navContenedor .nav .contenedorNav3 .navBag div button:hover, header .navContenedor .nav .contenedorNav3 .navIdioma div button:hover {
-            color: grey; }
-        header .navContenedor .nav .contenedorNav3 .navLogin .iconUser, header .navContenedor .nav .contenedorNav3 .navBag .iconUser, header .navContenedor .nav .contenedorNav3 .navIdioma .iconUser {
-          object-fit: contain; }
-      header .navContenedor .nav .contenedorNav3 .navIdioma .iconArrow img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-        object-fit: contain; }
-      @media screen and (max-width: 48rem) {
-        header .navContenedor .nav .contenedorNav3 div {
-          display: none; }
-        header .navContenedor .nav .contenedorNav3 .arrowNav {
-          display: flex; } }
+          text-align: center; }
+      header .navContenedor .nav .contenedorNav3 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        header .navContenedor .nav .contenedorNav3 .navLogin, header .navContenedor .nav .contenedorNav3 .navBag, header .navContenedor .nav .contenedorNav3 .navIdioma {
+          display: flex;
+          flex-direction: row;
+          padding: 1.5rem; }
+          header .navContenedor .nav .contenedorNav3 .navLogin div button, header .navContenedor .nav .contenedorNav3 .navBag div button, header .navContenedor .nav .contenedorNav3 .navIdioma div button {
+            border: none;
+            background-color: transparent;
+            font-family: "tandelle", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-style: normal; }
+            header .navContenedor .nav .contenedorNav3 .navLogin div button:hover, header .navContenedor .nav .contenedorNav3 .navBag div button:hover, header .navContenedor .nav .contenedorNav3 .navIdioma div button:hover {
+              color: grey; }
+          header .navContenedor .nav .contenedorNav3 .navLogin label img, header .navContenedor .nav .contenedorNav3 .navBag label img, header .navContenedor .nav .contenedorNav3 .navIdioma label img {
+            width: 24px;
+            height: 24px; }
 
 .contenedorFaq {
   height: auto;

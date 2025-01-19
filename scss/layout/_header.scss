@@ -66,6 +66,10 @@ header {
                     padding: 1.5rem;
                     div {
                         button {
+                            a{
+                                color: black;
+                                text-decoration: none;
+                            }
                             border: none;
                             background-color: transparent;
                             @include font-styles ($navDesktop);

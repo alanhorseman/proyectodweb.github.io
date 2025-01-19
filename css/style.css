@@ -504,6 +504,28 @@ header {
             width: 24px;
             height: 24px; }
 
+.contenedorLogin {
+  width: 60%;
+  height: auto;
+  display: flex;
+  margin: 30px auto;
+  border: 1px solid lightblue; }
+  .contenedorLogin .inicioSesion {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contenedorLogin .inicioSesion .formSesion {
+      width: 70%; }
+  .contenedorLogin .logoSesion {
+    width: 60%;
+    display: flex;
+    background-color: lightblue; }
+    .contenedorLogin .logoSesion img {
+      object-fit: contain;
+      width: 100%;
+      height: auto; }
+
 .contenedorFaq {
   height: auto;
   display: flex;
@@ -1127,127 +1149,6 @@ header {
   justify-content: center;
   align-items: center; }
 
-header nav {
-  background-color: rgba(0, 255, 255, 0.507);
-  padding: 10px 0px; }
-  header nav ul {
-    display: flex;
-    gap: .625rem;
-    justify-content: center; }
-    header nav ul li {
-      list-style: none; }
-      header nav ul li:hover {
-        color: grey;
-        text-shadow: 2px 2px rgba(128, 128, 128, 0.479); }
-      header nav ul li a {
-        text-decoration: none;
-        color: black; }
-
-main .bannerPrueba {
-  width: 100%;
-  height: 500px;
-  display: flex;
-  position: relative; }
-  main .bannerPrueba .lado-izq, main .bannerPrueba .lado-der {
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden; }
-    main .bannerPrueba .lado-izq::after, main .bannerPrueba .lado-der::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.4);
-      opacity: 0;
-      transition: opacity 0.3s; }
-    main .bannerPrueba .lado-izq:hover::after, main .bannerPrueba .lado-der:hover::after {
-      opacity: 1; }
-  main .bannerPrueba .lado-izq {
-    background-image: url("../../assets/img/car-izq.jpg"); }
-    main .bannerPrueba .lado-izq::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 220px;
-      height: 200px;
-      background-color: rgba(0, 0, 0, 0.479);
-      z-index: 1; }
-  main .bannerPrueba .lado-der {
-    background-image: url("../../assets/img/car-der.webp"); }
-    main .bannerPrueba .lado-der::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 220px;
-      height: 200px;
-      background-color: rgba(0, 0, 0, 0.479);
-      z-index: 1; }
-
-main .contenedor-cards {
-  display: flex;
-  justify-content: center; }
-  main .contenedor-cards .card {
-    margin: 20px;
-    max-width: 18.75rem;
-    max-height: 350px;
-    border: 1px solid black; }
-    main .contenedor-cards .card .img-card {
-      height: 80%; }
-      main .contenedor-cards .card .img-card img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain; }
-    main .contenedor-cards .card .info-card {
-      height: 20%;
-      background-color: beige;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-top: .3125rem;
-      padding-left: 5px; }
-      main .contenedor-cards .card .info-card ul li {
-        color: grey;
-        list-style: none; }
-        main .contenedor-cards .card .info-card ul li span {
-          color: black;
-          font-weight: 600; }
-      main .contenedor-cards .card .info-card ul .list-item-1 {
-        color: black; }
-      main .contenedor-cards .card .info-card button {
-        padding: 3px;
-        background-color: white;
-        border: 1px solid grey;
-        width: max-content; }
-        main .contenedor-cards .card .info-card button:hover {
-          background-color: rgba(201, 200, 200, 0.363); }
-
-main .submenu {
-  display: flex;
-  justify-content: center;
-  margin: 1.25rem 0rem;
-  background-color: rgba(255, 68, 0, 0.644); }
-  main .submenu ul {
-    display: flex;
-    gap: 1.25rem; }
-    main .submenu ul li {
-      list-style: none; }
-      main .submenu ul li a {
-        color: black;
-        text-decoration: none;
-        font-size: xx-large; }
-      main .submenu ul li:hover {
-        color: grey;
-        text-shadow: 2px 2px 2px grey; }
-
 /* COMPONENTS */
 .masPopularesGrid {
   display: grid;
@@ -1480,6 +1381,35 @@ main .submenu {
   background-color: aqua;
   border: none;
   border-radius: .625rem; }
+
+.formLogin {
+  display: flex;
+  flex-direction: column; }
+  .formLogin .usuario, .formLogin .password {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 25rem;
+    line-height: 1.5;
+    padding: 9px 0.75rem;
+    border-radius: 1.875rem;
+    border: none;
+    margin: 0.625rem 0rem;
+    background-color: rgba(128, 128, 128, 0.199); }
+  .formLogin div {
+    margin: 4px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .formLogin div .btnLogin {
+      width: 200px;
+      padding: 5px 0px;
+      align-self: center;
+      background-color: lightblue;
+      border: none;
+      border-radius: 0.625rem;
+      font-weight: 400;
+      margin-right: 5px; }
 
 .sectionMapa {
   display: flex;

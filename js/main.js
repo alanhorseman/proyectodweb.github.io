@@ -1,8 +1,8 @@
 const formularioContactos = document.querySelector("#formularioContactos");
 
-formularioContactos.addEventListener("submit", prueba);
+formularioContactos.addEventListener("submit", ObjectoToJSON);
 
-function prueba (e) {
+function ObjectoToJSON (e) {
     e.preventDefault();
 
     const datosFormulario = {
@@ -15,4 +15,4 @@ function prueba (e) {
     sessionStorage.setItem("formulario", JSON.stringify(datosFormulario));
 };
 
-sessionStorage.clear(); 
+sessionStorage.clear();

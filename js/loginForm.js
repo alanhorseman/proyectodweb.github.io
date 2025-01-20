@@ -1,4 +1,4 @@
-import { verificarUsuario } from "./class/verificarUsuario.js";
+import { verificarUsuario } from "./verificarUsuario.js";
 
 const iniciarSesion = document.querySelector('#formLoginSesion');
 

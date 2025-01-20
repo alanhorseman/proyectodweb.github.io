@@ -38,4 +38,16 @@ En esta entrega, decidí usar el proyecto que empecé en **Maquetacion**, por lo
 
 - Hice uso de los **EXPORT** e **IMPORT** para enlazar los *Function* a diferentes archivos *.js*.
 
-Pretendo implementar la funcion de *Olvidé mi contraseña* en una próxima Update.
+## Próxima Update
+
+- Implementar la función de *Olvidé mi contraseña*.
+
+- Corregir error al iniciar sesión teniendo un **Storage** vacio.
+
+- Agregar condiciones para el ingreso de Password *(Cantidad min de caracteres, numeros, mayusculas, etc)*.
+
+- Hacer uso también del **localStorage** y de funciones **Arrow Function**.
+
+- Mejor organización de las carpetas.
+
+- Agregar validaciones a los *Form* para asegurar que el usuario ingrese información válida.

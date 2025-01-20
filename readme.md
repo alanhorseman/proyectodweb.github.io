@@ -40,6 +40,8 @@ En esta entrega, decidí usar el proyecto que empecé en **Maquetacion**, por lo
 
 ## Próxima Update
 
+- Corregir error almacenamiento de usuarios *(actualmente solo se almacena 1 usuario)*.
+
 - Implementar la función de *Olvidé mi contraseña*.
 
 - Corregir error al iniciar sesión teniendo un **Storage** vacio.

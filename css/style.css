@@ -102,6 +102,28 @@
     .bannerFaq .bannerFaqInfo {
       padding: 1.25rem 0rem; } }
 
+.contenedorCrearCuenta {
+  width: 60%;
+  height: auto;
+  display: flex;
+  margin: 30px auto;
+  border: 1px solid black; }
+  .contenedorCrearCuenta .logoCrearCuenta {
+    width: 60%;
+    display: flex;
+    background-color: black; }
+    .contenedorCrearCuenta .logoCrearCuenta .imgCrearCuenta img {
+      object-fit: contain;
+      width: 100%;
+      height: auto; }
+  .contenedorCrearCuenta .crearCuenta {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contenedorCrearCuenta .crearCuenta .formCreateAccount {
+      width: 70%; }
+
 footer {
   padding-top: .625rem;
   height: auto;
@@ -1385,10 +1407,42 @@ header {
   border: none;
   border-radius: .625rem; }
 
+.formCreate {
+  display: flex;
+  flex-direction: column; }
+  .formCreate .usuario, .formCreate .password, .formCreate .emailAccount {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 25rem;
+    line-height: 1.5;
+    padding: 9px 0.75rem;
+    border-radius: 1.875rem;
+    border: none;
+    margin: 0.625rem 0rem;
+    background-color: rgba(128, 128, 128, 0.199); }
+  .formCreate div {
+    align-content: center;
+    margin: 4px 0px;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px; }
+    .formCreate div .btnCreate {
+      width: 200px;
+      padding: 5px 0px;
+      align-self: center;
+      background-color: lightblue;
+      border: none;
+      border-radius: 0.625rem;
+      font-weight: 400; }
+  .formCreate p {
+    text-align: center;
+    margin-top: 20px; }
+
 .formLogin {
   display: flex;
   flex-direction: column; }
-  .formLogin .usuario, .formLogin .password {
+  .formLogin .usuario, .formLogin .formCreate .emailAccount, .formCreate .formLogin .emailAccount, .formLogin .password {
     display: block;
     width: 100%;
     font-size: 1rem;
@@ -1417,11 +1471,9 @@ header {
       text-decoration: none;
       width: auto;
       text-align: center; }
-  .formLogin .linkCrearCuenta {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    text-decoration: none; }
+  .formLogin p {
+    text-align: center;
+    margin-top: 20px; }
 
 .sectionMapa {
   display: flex;

@@ -1,0 +1,31 @@
+.contenedorCrearCuenta {
+    width: 60%;
+    height: auto;
+    display: flex;
+    margin: 30px auto;
+    border: 1px solid black;
+
+    .logoCrearCuenta {
+        width: 60%;
+        display: flex;
+        .imgCrearCuenta {
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: auto;
+            }
+        }
+        background-color: black;
+    }
+
+    .crearCuenta {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .formCreateAccount {
+            width: 70%;
+        }
+    }
+}

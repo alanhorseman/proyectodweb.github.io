@@ -65,24 +65,24 @@
         </div>
     </header>
     <main>
-        <div class="contenedorLogin">
-            <div class="inicioSesion">
-                <div class="formSesion">
-                    <h2>Iniciar Sesion</h2>
-                    <form action="" id="formLoginSesion" class="formLogin">
-                        <input type="text" name="usuario" id="usuarioLogin" class="usuario" placeholder="Usuario" required>
-                        <input type="password" name="passwordLogin" id="passwordLogin" class="password" placeholder="Contraseña" required>
-                        <div>
-                            <input type="submit" value="Iniciar Sesion" id="btnLogin" class="btnLogin">
-                            <a href="" class="linkOlvidePass">Olvide mi contraseña</a>
-                        </div>
-                        <p>¿No tienes una cuenta?&nbsp;<a href="./crear-cuenta.html" class="linkCrearCuenta">Crear cuenta</a></p>
-                    </form>
+        <div class="contenedorCrearCuenta">
+            <div class="logoCrearCuenta">
+                <div class="imgCrearCuenta">
+                    <img src="../assets/img/karune-negro-cian.png" alt="logo karune negro cian">
                 </div>
             </div>
-            <div class="logoSesion">
-                <div class="imgLogoSesion">
-                    <img src="../assets/img/karune-blanco.png" alt="logo karune blanco">
+            <div class="crearCuenta">
+                <div class="formAccount">
+                    <h2>Crear Cuenta</h2>
+                    <form action="" id="formCreateAccount" class="formCreate">
+                        <input type="text" name="usuario" id="usuarioLogin" class="usuario" placeholder="Usuario" required>
+                        <input type="password" name="passwordLogin" id="passwordLogin" class="password" placeholder="Contraseña" required>
+                        <input type="email" name="emailAccount" id="emailAccount" class="emailAccount" placeholder="Correo" required>
+                        <div>
+                            <input type="submit" value="Crear cuenta" id="btnCreate" class="btnCreate">
+                        </div>
+                        <p>¿Ya tienes una cuenta?&nbsp;<a href="./login.html">Iniciar sesión.</a></p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -136,7 +136,7 @@
         </div>
     </footer>
 
-    <script type="module" src="../js/loginForm.js"></script>
+    <script type="module" src="../js/crearCuenta.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

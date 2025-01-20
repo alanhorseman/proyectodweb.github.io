@@ -1,14 +1,5 @@
-const formLogin = document.querySelector('#formLoginSesion');
+import { verificarUsuario } from "./class/verificarUsuario.js";
 
-formLogin.addEventListener("submit", iniciarSesion);
+const iniciarSesion = document.querySelector('#formLoginSesion');
 
-function iniciarSesion(e) {
-    e.preventDefault();
-
-    const datosLogin = {
-        usuario: document.querySelector('#usuarioLogin').value,
-        password: document.querySelector('#passwordLogin').value
-    }
-
-    sessionStorage.setItem('login', JSON.stringify(datosLogin));
-};
+iniciarSesion.addEventListener("submit", verificarUsuario);

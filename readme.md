@@ -13,7 +13,7 @@ const formularioContactos = document.querySelector("#formularioContactos");
 
 2. Implementé un **Evento** a esa variable.
 ```javascript
-formularioContactos.addEventListener("submit", prueba);
+formularioContactos.addEventListener("submit", ObjectoToJSON);
 ```
 
 3. Usé **JSON** sobre el Objecto creado dentro de la función **ObjectoToJSON**.

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-function prueba(object) {
+function comprobarUsuarioExistente(object) {
     let listaUsuarios = JSON.parse(sessionStorage.getItem("usuarios")) || [];
     for (let i = 0; i < listaUsuarios.length; i++) {
         if (
@@ -34,7 +34,7 @@ function crearCuenta(e) {
         document.querySelector("#emailAccount").value
     );
 
-    if (prueba(datosCuenta)){
+    if (comprobarUsuarioExistente(datosCuenta)){
         listaUsuarios.push(datosCuenta);
         guardarUsuario(listaUsuarios);
         alert("Cuenta creada con éxito");

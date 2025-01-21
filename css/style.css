@@ -1471,6 +1471,8 @@ header {
       text-decoration: none;
       width: auto;
       text-align: center; }
+    .formLogin div .recordar {
+      margin-right: 10px; }
   .formLogin p {
     text-align: center;
     margin-top: 20px; }

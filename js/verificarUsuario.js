@@ -37,7 +37,7 @@ import { listaUsuarios } from './crearCuenta.js';
 export function verificarUsuario (e) {
     e.preventDefault();
 
-    const datosUsuario = JSON.parse(sessionStorage.getItem('usuarios'));
+    const datosUsuario = JSON.parse(sessionStorage.getItem('usuarios')) || [];
 
     for (let i = 0; i < datosUsuario.length; i++) {
         const {usuario, password} = desestructurarUsuario(datosUsuario[i]);

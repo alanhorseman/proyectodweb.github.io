@@ -1,8 +1,21 @@
 import {Usuario} from '../js/class/usuario.js';
 
-const newAccount = document.querySelector('#formCreateAccount');
+export let listaUsuarios = JSON.parse(sessionStorage.getItem('usuarios')) || [];
 
-newAccount.addEventListener("submit", crearCuenta);
+// const newAccount = document.querySelector('#formCreateAccount');
+
+// newAccount.addEventListener("submit", crearCuenta);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const newAccount = document.querySelector('#formCreateAccount');
+    if (newAccount) {
+        newAccount.addEventListener("submit", crearCuenta);
+    } else {
+        console.error('Formulario no encontrado');
+    }
+});
+
+
 
 function crearCuenta (e) {
     e.preventDefault();
@@ -13,5 +26,11 @@ function crearCuenta (e) {
         document.querySelector('#emailAccount').value,
     )
 
-    datosCuenta.guardarUsuario();
+    listaUsuarios.push(datosCuenta);
+
+    guardarUsuario(listaUsuarios);
+}
+
+function guardarUsuario(listaUsuarios){
+    sessionStorage.setItem('usuarios', JSON.stringify(listaUsuarios));
 }

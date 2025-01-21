@@ -1,3 +1,4 @@
+
 export class Usuario {
     constructor(usuario, password, email){
         this.usuario = usuario;
@@ -5,12 +6,9 @@ export class Usuario {
         this.email = email;
     }
 
-    guardarUsuario(){
-        sessionStorage.setItem('usuario', JSON.stringify(this));
-    }
 }
 
 export function desestructurarUsuario(object){
-    const {usuario, password, email} = JSON.parse(object);
+    const {usuario, password, email} = object;
     return {usuario, password, email};
 }

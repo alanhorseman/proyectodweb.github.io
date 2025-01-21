@@ -1,36 +1,71 @@
-import {Usuario} from '../js/class/usuario.js';
+import { Usuario } from "../js/class/usuario.js";
 
-export let listaUsuarios = JSON.parse(sessionStorage.getItem('usuarios')) || [];
+export let listaUsuarios = JSON.parse(sessionStorage.getItem("usuarios")) || [];
 
 // const newAccount = document.querySelector('#formCreateAccount');
 
 // newAccount.addEventListener("submit", crearCuenta);
 
 document.addEventListener("DOMContentLoaded", () => {
-    const newAccount = document.querySelector('#formCreateAccount');
+    const newAccount = document.querySelector("#formCreateAccount");
     if (newAccount) {
         newAccount.addEventListener("submit", crearCuenta);
     } else {
-        console.error('Formulario no encontrado');
+        console.error("Formulario no encontrado");
     }
 });
 
+// function crearCuenta (e) {
+//     e.preventDefault();
 
+//     const datosCuenta = new Usuario(
+//         document.querySelector('#usuarioLogin').value,
+//         document.querySelector('#passwordLogin').value,
+//         document.querySelector('#emailAccount').value,
+//     )
 
-function crearCuenta (e) {
+//     listaUsuarios.push(datosCuenta);
+
+//     guardarUsuario(listaUsuarios);
+// }
+
+// function guardarUsuario(listaUsuarios){
+//     sessionStorage.setItem('usuarios', JSON.stringify(listaUsuarios));
+// }
+
+function prueba(object) {
+    let listaUsuarios = JSON.parse(sessionStorage.getItem("usuarios")) || [];
+    for (let i = 0; i < listaUsuarios.length; i++) {
+        if (
+            listaUsuarios[i].usuario === object.usuario ||
+            listaUsuarios[i].password === object.password ||
+            listaUsuarios[i].email === object.email
+        ) {
+            return false;
+        } 
+    }
+    return true;
+}
+
+function crearCuenta(e) {
     e.preventDefault();
 
     const datosCuenta = new Usuario(
-        document.querySelector('#usuarioLogin').value,
-        document.querySelector('#passwordLogin').value,
-        document.querySelector('#emailAccount').value,
-    )
+        document.querySelector("#usuarioLogin").value,
+        document.querySelector("#passwordLogin").value,
+        document.querySelector("#emailAccount").value
+    );
 
-    listaUsuarios.push(datosCuenta);
-
-    guardarUsuario(listaUsuarios);
+    if (prueba(datosCuenta)){
+        listaUsuarios.push(datosCuenta);
+        guardarUsuario(listaUsuarios);
+        alert("Cuenta creada con éxito");
+    } else {
+        alert("El usuario ya existe");
+    }
+    
 }
 
-function guardarUsuario(listaUsuarios){
-    sessionStorage.setItem('usuarios', JSON.stringify(listaUsuarios));
+function guardarUsuario(listaUsuarios) {
+    sessionStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
 }

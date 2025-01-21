@@ -32,23 +32,19 @@ En esta entrega, decidí usar el proyecto que empecé en **Maquetacion**, por lo
 
 ### Funcionalidades implementadas en un sistema de Creación de Usuario e Inicio de Sesión
 
-- Usé una **Class** y su **Constructor** para crear nuevos *Usuarios*, y un *Metodo* para guardarlos en una *SessionStorage*.
+- Usé una **Class** y su **Constructor** para crear nuevos *Usuarios*.
 
-- Creé una **Function** para hacer un *Desconstructor*; Para la creación de una *nueva cuenta* y para la *verificación de usuarios*.
+- Creé una **Function** para hacer un *Desconstructor*, usado para la *verificación de usuarios*.
 
 - Hice uso de los **EXPORT** e **IMPORT** para enlazar los *Function* a diferentes archivos *.js*.
 
 ## Próxima Update
 
-- Corregir error almacenamiento de usuarios *(actualmente solo se almacena 1 usuario)*.
-
 - Implementar la función de *Olvidé mi contraseña*.
-
-- Corregir error al iniciar sesión teniendo un **Storage** vacio.
 
 - Agregar condiciones para el ingreso de Password *(Cantidad min de caracteres, numeros, mayusculas, etc)*.
 
-- Hacer uso también del **localStorage** y de funciones **Arrow Function**.
+- Hacer uso de **Arrow Function**.
 
 - Mejor organización de las carpetas.
 

@@ -1,8 +1,8 @@
-.formCreate {
+.formRestoredSesion {
     display: flex;
     flex-direction: column;
 
-    .usuario {
+    .usuarioRestored {
         display: block;
         width: 100%;
         font-size: 1rem;
@@ -15,16 +15,12 @@
         background-color: rgba(128, 128, 128, 0.199)
     }
 
-    .password {
-        @extend .usuario;
+    .emailRestored {
+        @extend .usuarioRestored;
     }
 
-    .emailAccount {
-        @extend .usuario;
-    }
-
-    .preguntaSeguridad {
-        @extend .usuario;
+    .respuestaSeguridad {
+        @extend .usuarioRestored;
     }
 
     div {
@@ -33,7 +29,7 @@
         display: flex;
         justify-content: center;
         padding-left: 15px;
-        .btnCreate {
+        .btnRestored {
             width: 200px;
             padding: 5px 0px;
             align-self: center;
@@ -41,6 +37,15 @@
             border: none;
             border-radius: 0.625rem;
             font-weight: 400;
+        }
+        a{
+            text-decoration: none;
+            width: auto;
+            text-align: center;
+        }
+
+        .recordar {
+            margin-right: 10px;
         }
     }
 

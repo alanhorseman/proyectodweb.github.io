@@ -1,0 +1,31 @@
+.contenedorFormRestored {
+    width: 60%;
+    height: auto;
+    display: flex;
+    margin: 30px auto;
+    border: 1px solid lightblue;
+
+    .restoredSesion {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .formRestored {
+            width: 70%;
+        }
+    }
+
+    .logoRestored {
+        width: 60%;
+        display: flex;
+        .imgLogoRestored{
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: auto;
+            }
+        }
+        background-color: lightblue;
+    }
+}

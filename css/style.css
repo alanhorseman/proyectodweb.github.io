@@ -882,6 +882,28 @@ header {
     .headerProductos {
       height: 121rem; } }
 
+.contenedorFormRestored {
+  width: 60%;
+  height: auto;
+  display: flex;
+  margin: 30px auto;
+  border: 1px solid lightblue; }
+  .contenedorFormRestored .restoredSesion {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contenedorFormRestored .restoredSesion .formRestored {
+      width: 70%; }
+  .contenedorFormRestored .logoRestored {
+    width: 60%;
+    display: flex;
+    background-color: lightblue; }
+    .contenedorFormRestored .logoRestored .imgLogoRestored img {
+      object-fit: contain;
+      width: 100%;
+      height: auto; }
+
 .sectionCards {
   display: grid;
   grid-template-columns: repeat(3, 19.75rem);
@@ -1410,7 +1432,7 @@ header {
 .formCreate {
   display: flex;
   flex-direction: column; }
-  .formCreate .usuario, .formCreate .password, .formCreate .emailAccount {
+  .formCreate .usuario, .formCreate .password, .formCreate .emailAccount, .formCreate .preguntaSeguridad {
     display: block;
     width: 100%;
     font-size: 1rem;
@@ -1442,7 +1464,7 @@ header {
 .formLogin {
   display: flex;
   flex-direction: column; }
-  .formLogin .usuario, .formLogin .formCreate .emailAccount, .formCreate .formLogin .emailAccount, .formLogin .password {
+  .formLogin .usuario, .formLogin .formCreate .emailAccount, .formCreate .formLogin .emailAccount, .formLogin .formCreate .preguntaSeguridad, .formCreate .formLogin .preguntaSeguridad, .formLogin .password {
     display: block;
     width: 100%;
     font-size: 1rem;
@@ -1474,6 +1496,44 @@ header {
     .formLogin div .recordar {
       margin-right: 10px; }
   .formLogin p {
+    text-align: center;
+    margin-top: 20px; }
+
+.formRestoredSesion {
+  display: flex;
+  flex-direction: column; }
+  .formRestoredSesion .usuarioRestored, .formRestoredSesion .emailRestored, .formRestoredSesion .respuestaSeguridad {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 25rem;
+    line-height: 1.5;
+    padding: 9px 0.75rem;
+    border-radius: 1.875rem;
+    border: none;
+    margin: 0.625rem 0rem;
+    background-color: rgba(128, 128, 128, 0.199); }
+  .formRestoredSesion div {
+    align-content: center;
+    margin: 4px 0px;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px; }
+    .formRestoredSesion div .btnRestored {
+      width: 200px;
+      padding: 5px 0px;
+      align-self: center;
+      background-color: lightblue;
+      border: none;
+      border-radius: 0.625rem;
+      font-weight: 400; }
+    .formRestoredSesion div a {
+      text-decoration: none;
+      width: auto;
+      text-align: center; }
+    .formRestoredSesion div .recordar {
+      margin-right: 10px; }
+  .formRestoredSesion p {
     text-align: center;
     margin-top: 20px; }
 

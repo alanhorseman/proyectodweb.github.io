@@ -1502,7 +1502,7 @@ header {
 .formRestoredSesion {
   display: flex;
   flex-direction: column; }
-  .formRestoredSesion .usuarioRestored, .formRestoredSesion .emailRestored, .formRestoredSesion .respuestaSeguridad {
+  .formRestoredSesion .usuarioRestored, .formRestoredSesion .emailRestored, .formRestoredSesion .respuestaSeguridad, .formRestoredSesion .passwordRestored {
     display: block;
     width: 100%;
     font-size: 1rem;

@@ -16,7 +16,6 @@ function comprobarUsuarioExistente(object) {
     for (let i = 0; i < listaUsuarios.length; i++) {
         if (
             listaUsuarios[i].usuario === object.usuario ||
-            listaUsuarios[i].password === object.password ||
             listaUsuarios[i].email === object.email
         ) {
             return false;
@@ -31,7 +30,8 @@ function crearCuenta(e) {
     const datosCuenta = new Usuario(
         document.querySelector("#usuarioLogin").value,
         document.querySelector("#passwordLogin").value,
-        document.querySelector("#emailAccount").value
+        document.querySelector("#emailAccount").value,
+        document.querySelector("#preguntaSeguridad").value
     );
 
     if (comprobarUsuarioExistente(datosCuenta)){

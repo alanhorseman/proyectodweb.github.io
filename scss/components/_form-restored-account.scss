@@ -23,6 +23,10 @@
         @extend .usuarioRestored;
     }
 
+    .passwordRestored {
+        @extend .usuarioRestored;
+    }
+
     div {
         align-content: center;
         margin: 4px 0px;

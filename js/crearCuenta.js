@@ -19,7 +19,7 @@ function comprobarUsuarioExistente(object) {
             listaUsuarios[i].email === object.email
         ) {
             return false;
-        } 
+        }
     }
     return true;
 }
@@ -34,14 +34,26 @@ function crearCuenta(e) {
         document.querySelector("#preguntaSeguridad").value
     );
 
-    if (comprobarUsuarioExistente(datosCuenta)){
+    if (comprobarUsuarioExistente(datosCuenta)) {
         listaUsuarios.push(datosCuenta);
         guardarUsuario(listaUsuarios);
-        alert("Cuenta creada con éxito");
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Cuenta creada exitosamente",
+            showConfirmButton: false,
+            timer: 2000
+        });
     } else {
-        alert("El usuario ya existe");
+        Swal.fire({
+            position: "top-end",
+            icon: "error",
+            title: "Usuario o email ya existente",
+            showConfirmButton: false,
+            timer: 2000
+        });
     }
-    
+
 }
 
 function guardarUsuario(listaUsuarios) {

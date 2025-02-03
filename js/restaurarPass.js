@@ -17,11 +17,25 @@ function restaurarPassword(e) {
         ) {
             usuariosAVerificar[i].password = nuevaPass;
             sessionStorage.setItem("usuarios", JSON.stringify(usuariosAVerificar));
-            alert("Usuario restaurado");
+            Toastify({
+                text: "Usuario restaurado",
+                gravity: "top",
+                position: "center",
+                duration: 3000,
+                style: {
+                    background: "linear-gradient(to right, #eeaeca, #94bbe9)",
+                },
+            }).showToast();
             return;
         }
     }
-    alert("Usuario no encontrado");
+    Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "Usuario no encontrado",
+        showConfirmButton: false,
+        timer: 2000
+    });
 }
 
 addEventListener("submit", restaurarPassword);

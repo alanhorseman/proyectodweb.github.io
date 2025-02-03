@@ -8,10 +8,18 @@ export function verificarUsuario (e) {
     const passLogin = document.querySelector('#passwordLogin').value;
     const recordarCheck = document.querySelector('#recordar').checked;
 
+
     for (let i = 0; i < datosUsuario.length; i++) {
         const {usuario, password} = desestructurarUsuario(datosUsuario[i]);
         if (userLogin === usuario && passLogin === password) {
-            alert('Usuario correcto');
+            Toastify({
+                text: "Usuario correcto",
+                duration: 3000,
+                position: "center",
+                style: {
+                    background: "linear-gradient(to right, #5bb43a, #1dfde8)",
+                },
+            }).showToast();
             
             if (recordarCheck){
                 localStorage.setItem('usuario', JSON.stringify(usuario, password));
@@ -21,5 +29,12 @@ export function verificarUsuario (e) {
             return;
         }
     }
-    alert('Usuario incorrecto');
+    Toastify({
+        text: "Usuario incorrecto",
+        duration: 3000,
+        position: "center",
+        style: {
+            background: "linear-gradient(to right, #833ab4, #fd1d1d)",
+        },
+    }).showToast();
 }

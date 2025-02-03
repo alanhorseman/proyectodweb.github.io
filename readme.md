@@ -1,10 +1,10 @@
-# Preentrega 3
+# Entrega Final
 
 ## DOM, EVENTS, JSON & STORAGE
 
 Quise crear un archivo Markdown para detallar un poco lo que hice en el código.
 
-En la página de **Contacto** hay un pequeño *Form* donde implementé los requisitos de esta 3ra preentrega.
+En la página de **Contacto** hay un pequeño *Form* donde implementé los requisitos de esta entrega final.
 
 1. Usé el **DOM** en la obtención de los datos del formulario y los almacené en una variable *formularioContactos*.
 ```javascript
@@ -13,10 +13,10 @@ const formularioContactos = document.querySelector("#formularioContactos");
 
 2. Implementé un **Evento** a esa variable.
 ```javascript
-formularioContactos.addEventListener("submit", ObjectoToJSON);
+formularioContactos.addEventListener("submit", ObjectToJSON);
 ```
 
-3. Usé **JSON** sobre el Objecto creado dentro de la función **ObjectoToJSON**.
+3. Usé **JSON** sobre el Objeto creado dentro de la función **ObjectToJSON**.
 ```javascript
 JSON.stringify(datosFormulario);
 ```
@@ -28,7 +28,7 @@ sessionStorage.setItem("formulario", JSON.stringify(datosFormulario));
 
 ## CLASS, FUNCTION, IMPORT Y EXPORT
 
-En esta entrega, decidí usar el proyecto que empecé en **Maquetacion**, por lo que tuve que agregarle también algunas *Function* y *Class* ya que no tenía ninguna.
+En esta entrega, decidí usar el proyecto que empecé en **Maquetación**, por lo que tuve que agregarle también algunas *Function* y *Class* ya que no tenía ninguna.
 
 ### Funcionalidades implementadas en un sistema de Creación de Usuario e Inicio de Sesión
 
@@ -38,14 +38,10 @@ En esta entrega, decidí usar el proyecto que empecé en **Maquetacion**, por lo
 
 - Hice uso de los **EXPORT** e **IMPORT** para enlazar los *Function* a diferentes archivos *.js*.
 
-## Próxima Update
+- Implementé **Promise** para la función *verificarUsuarioConPromesa* simulando una DB.
 
-- Implementar la función de *Olvidé mi contraseña*.
+- Implementé también **setTimeout** para un *SweetAlert* y dentro del *Promise*.
 
-- Agregar condiciones para el ingreso de Password *(Cantidad min de caracteres, numeros, mayusculas, etc)*.
+- Usé las librerías *SweetAlert* y *Toastify*.
 
-- Hacer uso de **Arrow Function**.
-
-- Mejor organización de las carpetas.
-
-- Agregar validaciones a los *Form* para asegurar que el usuario ingrese información válida.
+- Agregué la función de *Olvidé mi contraseña*.

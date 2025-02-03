@@ -1,6 +1,6 @@
 import { desestructurarUsuario } from './class/usuario.js';
 
-export function verificarUsuario (e) {
+export function verificarUsuario(e) {
     e.preventDefault();
 
     const datosUsuario = JSON.parse(sessionStorage.getItem('usuarios')) || [];
@@ -8,10 +8,8 @@ export function verificarUsuario (e) {
     const passLogin = document.querySelector('#passwordLogin').value;
     const recordarCheck = document.querySelector('#recordar').checked;
 
-
-    for (let i = 0; i < datosUsuario.length; i++) {
-        const {usuario, password} = desestructurarUsuario(datosUsuario[i]);
-        if (userLogin === usuario && passLogin === password) {
+    verificarUsuarioConPromesa(userLogin, passLogin, datosUsuario)
+        .then(() => {
             Toastify({
                 text: "Usuario correcto",
                 duration: 3000,
@@ -20,21 +18,34 @@ export function verificarUsuario (e) {
                     background: "linear-gradient(to right, #5bb43a, #1dfde8)",
                 },
             }).showToast();
-            
-            if (recordarCheck){
-                localStorage.setItem('usuario', JSON.stringify(usuario, password));
+
+            if (recordarCheck) {
+                localStorage.setItem('usuario', JSON.stringify(userLogin));
             } else {
                 localStorage.removeItem('usuario');
             }
-            return;
-        }
-    }
-    Toastify({
-        text: "Usuario incorrecto",
-        duration: 3000,
-        position: "center",
-        style: {
-            background: "linear-gradient(to right, #833ab4, #fd1d1d)",
-        },
-    }).showToast();
+        })
+        .catch(() => {
+            Toastify({
+                text: "Usuario incorrecto",
+                duration: 3000,
+                position: "center",
+                style: {
+                    background: "linear-gradient(to right, #833ab4, #fd1d1d)",
+                },
+            }).showToast();
+        });
+}
+
+function verificarUsuarioConPromesa(usuario, password, listaUsuarios) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const usuarioEncontrado = listaUsuarios.find(user => {
+                const { usuario: nombre, password: pass } = desestructurarUsuario(user);
+                return nombre === usuario && pass === password;
+            });
+
+            usuarioEncontrado ? resolve() : reject();
+        }, 1500);
+    });
 }

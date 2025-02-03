@@ -33,25 +33,43 @@ function crearCuenta(e) {
         document.querySelector("#emailAccount").value,
         document.querySelector("#preguntaSeguridad").value
     );
-
     if (comprobarUsuarioExistente(datosCuenta)) {
         listaUsuarios.push(datosCuenta);
         guardarUsuario(listaUsuarios);
         Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: "Cuenta creada exitosamente",
-            showConfirmButton: false,
-            timer: 2000
+            title: "¡Espere!",
+            text: "Creando cuenta...",
+            icon: "info",
+            timer: 2000,
+            showConfirmButton: false
         });
+        setTimeout(() => {
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Cuenta creada exitosamente",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        }, 2000);
     } else {
         Swal.fire({
-            position: "top-end",
-            icon: "error",
-            title: "Usuario o email ya existente",
-            showConfirmButton: false,
-            timer: 2000
+            title: "¡Espere!",
+            text: "Creando cuenta...",
+            icon: "info",
+            timer: 2000,
+            showConfirmButton: false
         });
+        setTimeout(() => {
+            Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: "Usuario o email ya existente",
+                showConfirmButton: false,
+                timer: 2000
+            });
+        }, 2000);
+        
     }
 
 }

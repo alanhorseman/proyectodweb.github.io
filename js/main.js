@@ -1,8 +1,8 @@
 const formularioContactos = document.querySelector("#formularioContactos");
 
-formularioContactos.addEventListener("submit", ObjectoToJSON);
+formularioContactos.addEventListener("submit", ObjectToJSON);
 
-function ObjectoToJSON (e) {
+function ObjectToJSON (e) {
     e.preventDefault();
 
     const datosFormulario = {
